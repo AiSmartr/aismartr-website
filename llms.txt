@@ -1,0 +1,53 @@
+# AI Smartr
+
+> AI Smartr is a full-service AI automation company that builds custom AI workflows, intelligent agents, fine-tuned models, AI applications, and implements OpenClaw for professionals, small businesses, and mid-market companies. We save businesses time, money, and headaches by replacing manual bottlenecks with intelligent, automated systems.
+
+## Who We Are
+
+AI Smartr is a specialized AI services company serving professionals (lawyers, consultants, advisors), small businesses (1–50 employees), and mid-market companies (51–500 employees). We design, build, deploy, and manage AI solutions end-to-end — functioning as a full-service AI partner rather than a one-time vendor.
+
+Contact: derek@aismartr.com
+LinkedIn: https://www.linkedin.com/company/ai-smartr/
+Website: https://aismartr.com
+
+## Services
+
+- **Custom AI Automation Workflows**: End-to-end automation pipelines built for specific business processes — lead generation, client onboarding, billing, reporting, approvals, and operational task routing.
+
+- **Customized AI Agents**: Always-on intelligent agents that reason, plan, and take autonomous action — customer service agents, sales agents, research agents, scheduling agents, and multi-agent orchestration systems.
+
+- **Easy Integrations**: Seamless AI connections to existing business tools including CRMs (HubSpot, Salesforce, Pipedrive), email (Gmail, Outlook), communication platforms (Slack, Teams, WhatsApp), project management tools (Monday, Asana, Notion, Linear), and custom APIs.
+
+- **Fine-Tuned Models**: Custom AI models trained on proprietary business data for domain-specific accuracy — document understanding, sentiment analysis, classification, and industry-specific language models.
+
+- **AI Apps**: Purpose-built AI-powered applications — internal tools, client-facing portals, AI document processors, reporting dashboards, and mobile-ready platforms.
+
+- **OpenClaw Implementation**: Secure deployment and management of OpenClaw, the world's fastest-growing open-source AI agent platform (310,000+ GitHub stars). AI Smartr handles hardened deployment, custom skill development, tool integrations, and 24/7 monitoring so businesses capture autonomous AI action without complexity or security risk.
+
+## Key Value Propositions
+
+- Save time: Clients typically reclaim 10–30+ hours per week through automation
+- Save money: Intelligent automation reduces operational costs with 24/7 systems
+- Drive revenue: AI workflows directly impact sales pipelines, lead response, and follow-up
+- Eliminate bottlenecks: Custom-built solutions remove the specific friction points in each business
+
+## Who Should Use AI Smartr
+
+- Independent professionals wanting to automate client intake, scheduling, document drafting, and follow-up
+- Small businesses needing sales automation, customer service agents, and operational workflows
+- Mid-market companies deploying AI across departments with custom apps, fine-tuned models, and enterprise OpenClaw
+
+## Process
+
+1. Free 30-minute discovery consultation to identify highest-value AI opportunities
+2. Solution architecture scoped to goals, budget, and existing tech stack
+3. Build and integration — most implementations live within one week
+4. Ongoing monitoring, optimization, and support
+
+## Pages
+
+- [Home](https://aismartr.com/): Overview of all services and value propositions
+- [Services](https://aismartr.com/services.html): Detailed breakdown of all AI services including OpenClaw implementation
+- [About](https://aismartr.com/about.html): Company mission, values, and approach
+- [Blog](https://aismartr.com/blog.html): Practical AI guides and strategies for businesses
+- [Contact](https://aismartr.com/contact.html): Book a free consultation or send a message

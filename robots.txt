@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aismartr.com/sitemap.xml
+LLMs: https://aismartr.com/llms.txt
