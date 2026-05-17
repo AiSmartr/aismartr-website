@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="logo-A.png" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root{--black:#0A0A0A;--burg:#6B1428;--gold:#C4982B;--cream:#F5F0E8;--gray:#999;--dgray:#333;--gold-mid:#A8821F;--gold-dark:#7a5e14;--gold-lite:#EDD070;}
+    :root{--black:#0A0A0A;--burg:#6a0c1a;--gold:#C4982B;--cream:#F5F0E8;--gray:#999;--dgray:#333;--gold-mid:#A8821F;--gold-dark:#7a5e14;--gold-lite:#EDD070;}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
     body{background:var(--black);color:#e8e8e8;font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65;}
     a{color:inherit;text-decoration:none;}
@@ -106,7 +106,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
-      <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-nav">Get Started</a></li>
+      <li><a href="https://cal.com/derek-moore-4gqft7/15min" target="_blank" class="btn-nav">Get Started</a></li>
     </ul>
     <button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
       <span></span><span></span><span></span>
@@ -131,7 +131,7 @@
       <p class="section-eyebrow">Get In Touch</p>
       <p style="font-size:16px;color:#ccc;line-height:1.7;margin-top:12px;">The fastest way to start is the free 30-minute consultation. No pressure, no sales pitch. We'll listen to where your business is, identify the biggest automation opportunities, and give you a clear picture of what we'd build and what it would cost.</p>
       <div class="contact-methods">
-        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="contact-method">
+        <a href="https://cal.com/derek-moore-4gqft7/15min" target="_blank" class="contact-method">
           <div class="contact-method-icon">CAL</div>
           <div>
             <div class="contact-method-label">Book a Call</div>
@@ -156,20 +156,9 @@
     </div>
     <div>
       <p class="section-eyebrow">Book a Time</p>
-      <p style="font-size:16px;color:#ccc;line-height:1.7;margin-top:12px;">Pick a time that works for you. 30 minutes, no pressure.</p>
+      <p style="font-size:16px;color:#ccc;line-height:1.7;margin-top:12px;margin-bottom:28px;">Pick a time below. 15 minutes, no pressure, no pitch.</p>
+      <div id="cal-booking" style="min-height:600px;border:1px solid rgba(196,152,43,0.15);border-radius:2px;overflow:hidden;"></div>
     </div>
-  </div>
-</section>
-
-<div class="stripe"></div>
-
-<section style="background:var(--cream);padding:64px 24px;">
-  <div style="max-width:900px;margin:0 auto;">
-    <p style="font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-dark);margin-bottom:12px;">Schedule a Call</p>
-    <h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,4vw,52px);line-height:0.92;text-transform:uppercase;color:var(--black);margin-bottom:32px;">Pick a Time That Works<br>For You.</h2>
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ27u30NDG9TexgKb6hRuBjSTkf8OYN0vjRHnjh4X8adQCIkBJf48b7CIQAA6fFIgPWqurszRyio?gv=true" style="border:0;border-radius:4px;display:block;" width="100%" height="620" frameborder="0"></iframe>
-    <!-- end Google Calendar Appointment Scheduling -->
   </div>
 </section>
 
@@ -240,11 +229,50 @@
       </div>
       <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li><li><a href="services.html">OpenClaw</a></li></ul></div>
       <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
+      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://cal.com/derek-moore-4gqft7/15min" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
   </div>
 </footer>
+
+<!-- Cal.com inline embed -->
+<script type="text/javascript">
+(function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const namespace=ar[1];api.q=api.q||[];typeof namespace==="string"?(cal.ns[namespace]=api)&&p(api,ar):p(cal,ar);return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+
+Cal("init", { origin: "https://cal.com" });
+
+Cal("inline", {
+  elementOrSelector: "#cal-booking",
+  calLink: "derek-moore-4gqft7/15min",
+  layout: "month_view"
+});
+
+Cal("ui", {
+  theme: "dark",
+  hideEventTypeDetails: true,
+  layout: "month_view",
+  cssVarsPerTheme: {
+    dark: {
+      "cal-bg":               "#0A0A0A",
+      "cal-bg-muted":         "#0f0f0f",
+      "cal-bg-emphasis":      "#161616",
+      "cal-bg-subtle":        "#111111",
+      "cal-bg-inverted":      "#F5F0E8",
+      "cal-border":           "rgba(196,152,43,0.12)",
+      "cal-border-emphasis":  "rgba(196,152,43,0.35)",
+      "cal-border-subtle":    "rgba(196,152,43,0.07)",
+      "cal-border-booker":    "rgba(196,152,43,0.12)",
+      "cal-text":             "#F5F0E8",
+      "cal-text-emphasis":    "#FFFFFF",
+      "cal-text-subtle":      "rgba(245,240,232,0.45)",
+      "cal-text-inverted":    "#0A0A0A",
+      "cal-brand":            "#C4982B",
+      "cal-brand-emphasis":   "#d4a830",
+      "cal-brand-text":       "#0A0A0A"
+    }
+  }
+});
+</script>
 
 </body>
 </html>
