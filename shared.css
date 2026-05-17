@@ -1,0 +1,82 @@
+/* AI Smartr — shared.css */
+:root {
+  --black:    #0A0A0A;
+  --burg:     #6a0c1a;
+  --gold:     #C4982B;
+  --cream:    #F5F0E8;
+  --gray:     #999;
+  --dgray:    #333;
+  --gold-mid: #A8821F;
+  --gold-dark:#7a5e14;
+  --gold-lite:#EDD070;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--black); color: #e8e8e8; font-family: 'Outfit', sans-serif; font-weight: 300; line-height: 1.65; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* NAV */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; height: 60px; background: var(--black); border-bottom: 1px solid #1a1a1a; display: flex; align-items: center; }
+.nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%; display: flex; align-items: center; gap: 32px; }
+.nav-brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.nav-logo-wrap { background: var(--burg); border-radius: 4px; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.nav-logo-wrap img { width: 48px; height: 48px; object-fit: cover; }
+.nav-wordmark { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: 0.04em; text-transform: uppercase; color: #fff; }
+.nav-wordmark span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 28px; margin-left: auto; list-style: none; }
+.nav-links a { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gray); transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: #fff; }
+.btn-nav { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; padding: 8px 20px; border-radius: 2px; background: transparent; color: var(--gold); border: 1px solid var(--gold); cursor: pointer; transition: background 0.2s, color 0.2s; }
+.btn-nav:hover { background: var(--gold); color: var(--black); }
+.nav-mobile-btn { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; margin-left: auto; }
+.nav-mobile-btn span { display: block; width: 22px; height: 2px; background: #fff; }
+
+/* BUTTONS */
+.btn-primary { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; padding: 14px 32px; border-radius: 2px; background: var(--gold); color: var(--black); border: none; cursor: pointer; transition: background 0.2s; }
+.btn-primary:hover { background: var(--gold-mid); }
+.btn-ghost { display: inline-block; font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.16em; text-transform: uppercase; padding: 14px 32px; border-radius: 2px; background: transparent; color: #fff; border: 1px solid #fff; cursor: pointer; transition: background 0.2s, color 0.2s; }
+.btn-ghost:hover { background: #fff; color: var(--black); }
+
+/* STRIPE */
+.stripe { height: 6px; background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-lite), var(--gold), var(--gold-dark)); }
+
+/* SECTION COMMON */
+.section-eyebrow { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.section-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(40px, 5vw, 72px); line-height: 0.92; text-transform: uppercase; color: #fff; }
+.section-header { margin-bottom: 56px; }
+
+/* PAGE HERO (inner pages) */
+.page-hero { background: var(--burg); padding: 140px 24px 100px; position: relative; overflow: hidden; }
+.page-hero-grid { position: absolute; inset: 0; opacity: 0.04; background-image: repeating-linear-gradient(0deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px); }
+.page-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
+.page-eyebrow { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lite); margin-bottom: 16px; }
+.page-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: clamp(48px, 7vw, 96px); line-height: 0.9; text-transform: uppercase; color: #fff; }
+.page-sub { font-size: 18px; color: rgba(255,255,255,0.75); margin-top: 24px; max-width: 560px; line-height: 1.55; }
+
+/* FOOTER */
+.footer { background: #050505; padding: 60px 24px 0; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid #1a1a1a; }
+.footer-brand-wordmark { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; color: #fff; letter-spacing: 0.04em; margin-bottom: 12px; }
+.footer-brand-wordmark span { color: var(--gold); }
+.footer-tagline { font-size: 14px; color: var(--gray); line-height: 1.6; }
+.footer-col h5 { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col ul li a { font-size: 14px; color: var(--gray); transition: color 0.2s; }
+.footer-col ul li a:hover { color: #fff; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 11px; color: #555; letter-spacing: 0.08em; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .page-hero { padding: 120px 24px 64px; }
+}
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 60px; left: 0; right: 0; background: var(--black); padding: 24px; border-bottom: 1px solid #1a1a1a; }
+  .nav-mobile-btn { display: flex; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
