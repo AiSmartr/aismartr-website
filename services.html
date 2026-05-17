@@ -2,408 +2,317 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="apple-touch-icon" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — AI Smartr</title>
-  <meta name="description" content="Explore AI Smartr's full suite of AI services: custom automation workflows, AI agents, integrations, fine-tuned models, AI apps, and OpenClaw implementation." />
-  <meta name="keywords" content="AI automation services, custom AI agents, OpenClaw implementation, AI workflow automation, fine-tuned AI models, AI app development, business AI integrations" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://aismartr.com/services.html" />
+  <meta name="description" content="Workflow automation, AI agents, integrations, fine-tuned models, AI apps, and OpenClaw. Here's what we build and how it saves your business time and money." />
+  <link rel="icon" type="image/png" href="logo-A.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --black:#0A0A0A; --burg:#6B1428; --gold:#C4982B; --cream:#F5F0E8; --gray:#999; --dgray:#333; --gold-mid:#A8821F; --gold-dark:#7a5e14; --gold-lite:#EDD070; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--black);color:#e8e8e8;font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--black);border-bottom:1px solid #1a1a1a;display:flex;align-items:center;}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:32px;}
+    .nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+    .nav-logo-wrap{background:var(--burg);border-radius:4px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .nav-logo-wrap img{width:48px;height:48px;object-fit:cover;}
+    .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.04em;text-transform:uppercase;color:#fff;}
+    .nav-wordmark span{color:var(--gold);}
+    .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none;}
+    .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .btn-nav{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:8px 20px;border-radius:2px;background:transparent;color:var(--gold);border:1px solid var(--gold);cursor:pointer;transition:background 0.2s,color 0.2s;}
+    .btn-nav:hover{background:var(--gold);color:var(--black);}
+    .nav-mobile-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;margin-left:auto;}
+    .nav-mobile-btn span{display:block;width:22px;height:2px;background:#fff;}
+    .btn-primary{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 32px;border-radius:2px;background:var(--gold);color:var(--black);border:none;cursor:pointer;transition:background 0.2s;}
+    .btn-primary:hover{background:var(--gold-mid);}
+    .stripe{height:6px;background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-lite),var(--gold),var(--gold-dark));}
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://aismartr.com/services.html" />
-  <meta property="og:site_name"   content="AI Smartr" />
-  <meta property="og:title"       content="Services — AI Smartr | Full-Service AI Solutions" />
-  <meta property="og:description" content="Custom AI automation workflows, intelligent agents, fine-tuned models, AI apps, easy integrations, and OpenClaw implementation. Built for real results." />
-  <meta property="og:image"       content="https://aismartr.com/assets/logo.png" />
+    /* PAGE HERO */
+    .page-hero{background:var(--burg);padding:120px 24px 80px;position:relative;overflow:hidden;}
+    .page-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .page-eyebrow{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);margin-bottom:16px;}
+    .page-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(56px,8vw,110px);line-height:0.9;text-transform:uppercase;color:#fff;}
+    .page-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-top:24px;max-width:560px;}
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Services — AI Smartr | Full-Service AI Solutions" />
-  <meta name="twitter:description" content="Custom AI automation workflows, intelligent agents, fine-tuned models, and OpenClaw implementation for businesses of all sizes." />
-  <meta name="twitter:image"       content="https://aismartr.com/assets/logo.png" />
+    /* STATS BAR */
+    .stats-bar{background:#0f0f0f;padding:48px 24px;border-bottom:1px solid #1a1a1a;}
+    .stats-bar-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+    .sbar-item{text-align:center;}
+    .sbar-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .sbar-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "provider": {"@type": "Organization", "name": "AI Smartr", "url": "https://aismartr.com"},
-    "serviceType": "AI Automation & Consulting",
-    "name": "Full-Service AI Solutions",
-    "description": "Custom AI automation workflows, intelligent agents, fine-tuned models, AI apps, integrations, and OpenClaw implementation for professionals and businesses.",
-    "url": "https://aismartr.com/services.html",
-    "areaServed": "Worldwide"
-  }
-  </script>
+    /* SERVICE BLOCKS */
+    .service-block{padding:80px 24px;border-bottom:1px solid #1a1a1a;}
+    .service-block:nth-child(odd){background:var(--black);}
+    .service-block:nth-child(even){background:#0a0a0a;}
+    .sb-inner{max-width:1200px;margin:0 auto;}
+    .sb-header{display:flex;align-items:baseline;gap:24px;margin-bottom:48px;}
+    .sb-num{font-family:'DM Mono',monospace;font-size:13px;font-weight:500;letter-spacing:0.14em;color:var(--gold);}
+    .sb-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,64px);text-transform:uppercase;color:#fff;}
+    .sb-body{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+    .sb-desc{font-size:16px;color:#ccc;line-height:1.7;}
+    .sb-desc p+p{margin-top:16px;}
+    .sb-points{list-style:none;}
+    .sb-points li{font-size:14px;color:var(--gray);padding:10px 0;border-bottom:1px solid #1a1a1a;display:flex;gap:12px;}
+    .sb-points li::before{content:'—';color:var(--gold);flex-shrink:0;}
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    /* CTA */
+    .cta-section{background:var(--burg);padding:100px 24px;position:relative;overflow:hidden;text-align:center;}
+    .cta-grid-bg{position:absolute;inset:0;opacity:0.05;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px);}
+    .cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+    .cta-headline{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:0.9;text-transform:uppercase;color:#fff;margin-bottom:24px;}
+    .cta-headline span{color:var(--gold);}
+    .cta-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-bottom:40px;}
+
+    /* FOOTER */
+    .footer{background:#050505;padding:60px 24px 0;}
+    .footer-inner{max-width:1200px;margin:0 auto;}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #1a1a1a;}
+    .footer-brand-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;letter-spacing:0.04em;margin-bottom:12px;}
+    .footer-brand-wordmark span{color:var(--gold);}
+    .footer-tagline{font-size:14px;color:var(--gray);line-height:1.6;}
+    .footer-col h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{font-size:14px;color:var(--gray);transition:color 0.2s;}
+    .footer-col ul li a:hover{color:#fff;}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:11px;color:#555;letter-spacing:0.08em;}
+
+    @media(max-width:768px){
+      .stats-bar-inner{grid-template-columns:repeat(2,1fr);}
+      .sb-body{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+    }
+    @media(max-width:640px){
+      .nav-links{display:none;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}
+      .nav-mobile-btn{display:flex;}
+      .stats-bar-inner{grid-template-columns:1fr 1fr;}
+      .footer-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo.png" alt="AI Smartr" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html"    class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="about.html"    class="nav-link">About</a></li>
-        <li><a href="blog.html"     class="nav-link">Blog</a></li>
-        <li><a href="contact.html"  class="nav-link">Contact</a></li>
-        <li class="nav-cta">
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-            Book a Consultation <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </li>
-      </ul>
-      <button class="nav-mobile-btn" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr logo" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-grid"></div>
-  <div class="container">
-    <div class="page-hero-content">
-      <span class="section-label">What We Build</span>
-      <h1>AI Solutions Built<br/>For <span class="text-blue">Real Results</span></h1>
-      <p>Every service we offer is designed around one goal — removing the friction that's slowing your business down and replacing it with intelligent, automated systems that work around the clock.</p>
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">What We Build</p>
+    <h1 class="page-title">WHAT WE BUILD.</h1>
+    <p class="page-sub">Six services. One goal: less time on the stuff that doesn't need you, and more time on the stuff that does.</p>
+  </div>
+</section>
+
+<div class="stripe"></div>
+
+<section class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="sbar-item">
+      <div class="sbar-num">20–40</div>
+      <div class="sbar-label">Hours Saved Per Week</div>
+    </div>
+    <div class="sbar-item">
+      <div class="sbar-num">30–60%</div>
+      <div class="sbar-label">Ops Cost Reduction</div>
+    </div>
+    <div class="sbar-item">
+      <div class="sbar-num">5–10x</div>
+      <div class="sbar-label">First-Year ROI</div>
+    </div>
+    <div class="sbar-item">
+      <div class="sbar-num">&lt;60 Days</div>
+      <div class="sbar-label">Average Break-Even</div>
     </div>
   </div>
 </section>
 
-<!-- ROI & RESULTS -->
-<section class="section" style="padding-top:3rem; padding-bottom:0;">
-  <div class="container">
-
-    <!-- ROI Hero Block -->
-    <div class="service-full-card featured fade-up" style="margin-bottom:1.75rem; padding:3rem 3.5rem;">
-      <div class="section-header text-center" style="margin-bottom:2.5rem;">
-        <span class="section-label">Measurable Impact</span>
-        <h2 class="section-title" style="margin-bottom:0.75rem;">AI That Pays For Itself — Fast</h2>
-        <p class="section-sub" style="margin:0 auto; max-width:620px;">We don't measure success in features deployed. We measure it in hours reclaimed, costs eliminated, and revenue generated around the clock.</p>
-      </div>
-
-      <!-- Top stat row -->
-      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:1.25rem; margin-bottom:2.5rem;">
-        <div class="oc-stat" style="text-align:center;">
-          <span class="num" style="font-size:2.4rem;">20–40</span>
-          <span class="lbl">Hours Saved Per Week</span>
-        </div>
-        <div class="oc-stat" style="text-align:center;">
-          <span class="num" style="font-size:2.4rem;">30–60%</span>
-          <span class="lbl">Reduction in Operational Costs</span>
-        </div>
-        <div class="oc-stat" style="text-align:center;">
-          <span class="num" style="font-size:2.4rem;">5–10x</span>
-          <span class="lbl">Typical First-Year ROI</span>
-        </div>
-        <div class="oc-stat" style="text-align:center;">
-          <span class="num" style="font-size:2.4rem;">&lt;60</span>
-          <span class="lbl">Days to Break-Even</span>
-        </div>
-      </div>
-
-      <!-- 3-column breakdown -->
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1.5rem; margin-bottom:2.5rem;">
-
-        <div style="background:rgba(0,180,255,0.04); border:1px solid rgba(0,180,255,0.12); border-radius:12px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">⏱️</div>
-          <h4 style="font-family:var(--font-head); font-size:1.15rem; color:var(--text-primary); margin-bottom:0.75rem; letter-spacing:0.02em;">Time Savings</h4>
-          <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">Manual tasks — lead follow-up, scheduling, data entry, reporting, onboarding — typically consume 40–60% of a team's week. Automation reclaims that time immediately.</p>
-          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> 15 hrs/wk saved on email & follow-up alone</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> 8–12 hrs/wk saved on reporting & admin</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Client onboarding cut from days to minutes</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Zero manual data entry or handoff delays</li>
-          </ul>
-        </div>
-
-        <div style="background:rgba(0,180,255,0.04); border:1px solid rgba(0,180,255,0.12); border-radius:12px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">💰</div>
-          <h4 style="font-family:var(--font-head); font-size:1.15rem; color:var(--text-primary); margin-bottom:0.75rem; letter-spacing:0.02em;">Cost Savings</h4>
-          <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">AI agents work 24/7 without salary, overtime, benefits, or turnover. The same output that required 2–3 headcount can be handled by a single well-built automation stack.</p>
-          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> $80K–$200K/yr in equivalent labor costs</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> No benefits, sick days, or turnover costs</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Eliminate SaaS tools that are no longer needed</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Scale output without scaling headcount</li>
-          </ul>
-        </div>
-
-        <div style="background:rgba(0,180,255,0.04); border:1px solid rgba(0,180,255,0.12); border-radius:12px; padding:1.75rem;">
-          <div style="font-size:1.75rem; margin-bottom:0.75rem;">📈</div>
-          <h4 style="font-family:var(--font-head); font-size:1.15rem; color:var(--text-primary); margin-bottom:0.75rem; letter-spacing:0.02em;">Revenue Growth</h4>
-          <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.7; margin-bottom:1rem;">24/7 AI agents capture leads, respond instantly, and follow up persistently — turning opportunities you'd otherwise miss into closed revenue.</p>
-          <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.45rem;">
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> 3–5x lead conversion with instant response</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Revenue captured at 2 AM, weekends, holidays</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Automated upsell & re-engagement sequences</li>
-            <li style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:0.5rem;"><i class="fa-solid fa-check" style="color:var(--blue); font-size:0.7rem;"></i> Never miss a follow-up or renewal window</li>
-          </ul>
-        </div>
-
-      </div>
-
-      <!-- 24/7 callout bar -->
-      <div style="background:linear-gradient(135deg,rgba(0,30,70,0.9),rgba(0,15,45,0.95)); border:1px solid rgba(0,180,255,0.2); border-radius:12px; padding:1.5rem 2rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
-        <div style="display:flex; align-items:center; gap:1rem;">
-          <div style="font-size:2rem;">🤖</div>
-          <div>
-            <h4 style="font-family:var(--font-head); font-size:1.1rem; color:var(--text-primary); margin:0 0 0.25rem; letter-spacing:0.02em;">Your Business Never Sleeps Again</h4>
-            <p style="font-size:0.875rem; color:var(--text-muted); margin:0;">AI agents handle leads, customers, and operations 24/7 — while you do. That's 8,760 hours of active selling, serving, and operating every year.</p>
-          </div>
-        </div>
-        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary" style="white-space:nowrap;">
-          Calculate My ROI <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">01</span>
+      <h2 class="sb-title">Workflow Automation</h2>
     </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>We map your process, find the waste, and build pipelines that handle the repetitive work. Lead follow-up, onboarding, invoicing, approvals, internal handoffs. If it follows a pattern, it can probably run without you.</p>
+        <p>Most businesses are surprised how much of what their team does every day is actually just rule-following. We document that logic, build it into automated pipelines, and hand you back the hours. The result isn't just speed. It's consistency. Every lead gets followed up. Every client gets onboarded correctly. Every invoice goes out on time.</p>
+      </div>
+      <ul class="sb-points">
+        <li>Lead follow-up and nurture sequences</li>
+        <li>Client onboarding and offboarding</li>
+        <li>Invoice generation and payment reminders</li>
+        <li>Internal approval routing</li>
+        <li>Weekly and monthly reporting pipelines</li>
+        <li>Multi-step cross-system workflows</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">02</span>
+      <h2 class="sb-title">AI Agents</h2>
+    </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>Not chatbots. Agents do things. They research, reach out, book meetings, manage inboxes, and run workflows without anyone watching. Around the clock.</p>
+        <p>A chatbot answers a question. An AI agent reads your email, pulls the relevant context from your CRM, drafts a response, sends it, logs the interaction, and schedules the next follow-up. Before you've finished your coffee. That's what we build. Agents that handle multi-step work autonomously, escalate when something genuinely needs a human, and get smarter about your business over time.</p>
+      </div>
+      <ul class="sb-points">
+        <li>Email triage and response agents</li>
+        <li>Lead qualification and outreach</li>
+        <li>CRM hygiene and data management</li>
+        <li>Customer support agents</li>
+        <li>Research and briefing generation</li>
+        <li>Scheduling and calendar management</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">03</span>
+      <h2 class="sb-title">Integrations</h2>
+    </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>HubSpot, Salesforce, Gmail, Outlook, Slack, Notion, Monday. We connect AI to what you're already using. Nobody has to learn a new system.</p>
+        <p>The best automation is the kind that works invisibly inside tools your team already opens every day. We specialize in connecting AI intelligence to your existing stack, so the benefit is real and immediate, not theoretical. Your CRM stays accurate. Your inbox gets triaged. Your reports write themselves. Same tools. Better outcomes.</p>
+      </div>
+      <ul class="sb-points">
+        <li>CRM integrations (HubSpot, Salesforce, Pipedrive)</li>
+        <li>Email and calendar (Gmail, Outlook, Google Calendar)</li>
+        <li>Messaging (Slack, Teams, WhatsApp Business)</li>
+        <li>Project management (Notion, Monday, Asana, Linear)</li>
+        <li>Billing and payments (Stripe, QuickBooks, FreshBooks)</li>
+        <li>Custom API and webhook connections</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">04</span>
+      <h2 class="sb-title">Fine-Tuned Models</h2>
+    </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>Generic AI gives generic results. We train models on your data so the output sounds like it came from someone who actually knows your field.</p>
+        <p>A base model knows a lot about everything in general. A model fine-tuned on your contracts, your client communications, your products, and your style guide knows your business specifically. That difference shows up in every output: the right tone, the right terminology, the right level of detail. No more sounding like AI wrote it. Just faster, more consistent work that reflects your actual standards.</p>
+      </div>
+      <ul class="sb-points">
+        <li>Domain-specific language and terminology</li>
+        <li>Brand voice and tone consistency</li>
+        <li>Industry compliance and standards</li>
+        <li>Contract and document drafting models</li>
+        <li>Sales email and outreach models</li>
+        <li>Customer communication models</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">05</span>
+      <h2 class="sb-title">AI Apps</h2>
+    </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>Internal dashboards, client portals, document generators, reporting tools. If you always wished someone would build it, we build it.</p>
+        <p>Some automation needs a proper interface. A client-facing portal where they can check project status. An internal dashboard where your team can trigger workflows, review AI outputs, and manage exceptions. A document generator that takes a few inputs and produces a fully formatted proposal or report. We build purpose-built AI applications that fit your specific workflow, not generic SaaS that you adapt your workflow around.</p>
+      </div>
+      <ul class="sb-points">
+        <li>Internal AI dashboards and tools</li>
+        <li>Client portals and status hubs</li>
+        <li>Proposal and document generators</li>
+        <li>Automated reporting applications</li>
+        <li>Data processing and analysis tools</li>
+        <li>Custom AI-powered interfaces</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="service-block">
+  <div class="sb-inner">
+    <div class="sb-header">
+      <span class="sb-num">06</span>
+      <h2 class="sb-title">OpenClaw</h2>
+    </div>
+    <div class="sb-body">
+      <div class="sb-desc">
+        <p>The fastest-growing AI agent platform in the world. 310,000+ GitHub stars. We deploy it on your private cloud, build custom skills, and lock it down.</p>
+        <p>OpenClaw is what happens when you give AI the ability to actually do things: browse the web, manage email, update your CRM, run reports, coordinate across tools. We handle the full deployment, including security configuration, custom skill development, and ongoing monitoring. You get an enterprise-grade autonomous agent without needing an engineering team to build or maintain it.</p>
+      </div>
+      <ul class="sb-points">
+        <li>Private cloud deployment</li>
+        <li>Custom skill development</li>
+        <li>Security configuration and hardening</li>
+        <li>Integration with your existing stack</li>
+        <li>Persistent memory architecture</li>
+        <li>Ongoing monitoring and optimization</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<section class="cta-section">
+  <div class="cta-grid-bg"></div>
+  <div class="cta-inner">
+    <h2 class="cta-headline">LET'S BUILD<br>SOMETHING <span>SMARTR.</span></h2>
+    <p class="cta-sub">30 minutes. No fluff. Clear next step.</p>
+    <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-primary">Book a Free Consultation</a>
   </div>
 </section>
 
-<!-- SERVICES GRID -->
-<section class="section" style="padding-top:2rem;">
-  <div class="container">
-
-    <!-- 2-col service cards -->
-    <div class="services-full-grid">
-
-      <div class="service-full-card fade-up">
-        <div class="sfcard-icon">⚙️</div>
-        <h3 class="sfcard-title">Custom AI Automation Workflows</h3>
-        <p class="sfcard-desc">We map your existing processes, identify every bottleneck, and engineer fully automated pipelines that handle the work — faster and more accurately than any manual process.</p>
-        <ul class="sfcard-list">
-          <li>End-to-end workflow discovery and design</li>
-          <li>Lead capture, qualification, and nurturing automation</li>
-          <li>Client onboarding and offboarding pipelines</li>
-          <li>Invoice generation, billing, and follow-up workflows</li>
-          <li>Internal ops: approvals, reporting, and task routing</li>
-          <li>Trigger-based multi-step automation sequences</li>
-        </ul>
-      </div>
-
-      <div class="service-full-card fade-up fade-up-delay-1">
-        <div class="sfcard-icon">🤖</div>
-        <h3 class="sfcard-title">Customized AI Agents</h3>
-        <p class="sfcard-desc">Beyond chatbots, we build agents that reason, plan, and take action. Custom-built for your use case — handling complex multi-step tasks without human oversight.</p>
-        <ul class="sfcard-list">
-          <li>Customer service and support agents</li>
-          <li>Sales outreach and qualification agents</li>
-          <li>Research and competitive intelligence agents</li>
-          <li>Internal knowledge base and HR agents</li>
-          <li>Scheduling, booking, and calendar management agents</li>
-          <li>Multi-agent orchestration for complex workflows</li>
-        </ul>
-      </div>
-
-      <div class="service-full-card fade-up">
-        <div class="sfcard-icon">🔗</div>
-        <h3 class="sfcard-title">Easy Integrations</h3>
-        <p class="sfcard-desc">AI is only as powerful as the ecosystem it operates in. We connect intelligent workflows to every tool in your stack — seamlessly, without disrupting what's already working.</p>
-        <ul class="sfcard-list">
-          <li>CRM integrations (HubSpot, Salesforce, Pipedrive, etc.)</li>
-          <li>Email & calendar (Gmail, Outlook, Google Calendar)</li>
-          <li>Communication tools (Slack, Teams, WhatsApp)</li>
-          <li>Project management (Monday, Asana, Linear, Notion)</li>
-          <li>E-commerce, billing, and payment platforms</li>
-          <li>Custom API and webhook integrations</li>
-        </ul>
-      </div>
-
-      <div class="service-full-card fade-up fade-up-delay-1">
-        <div class="sfcard-icon">🧠</div>
-        <h3 class="sfcard-title">Fine-Tuned Models</h3>
-        <p class="sfcard-desc">Generic AI gives generic results. We train custom models on your proprietary data — your industry, your terminology, your standards — for accuracy that off-the-shelf models simply can't match.</p>
-        <ul class="sfcard-list">
-          <li>Domain-specific model training on your data</li>
-          <li>Industry-tuned language and classification models</li>
-          <li>Document understanding and extraction models</li>
-          <li>Sentiment analysis tuned to your customer base</li>
-          <li>Continuous model evaluation and improvement</li>
-          <li>Private, secure model hosting</li>
-        </ul>
-      </div>
-
-      <div class="service-full-card fade-up">
-        <div class="sfcard-icon">📱</div>
-        <h3 class="sfcard-title">AI Apps</h3>
-        <p class="sfcard-desc">When an off-the-shelf tool won't cut it, we build purpose-built AI-powered applications designed around your exact workflows, your team, and your customers.</p>
-        <ul class="sfcard-list">
-          <li>Internal AI tools and dashboards</li>
-          <li>Client-facing AI-powered portals</li>
-          <li>AI document generation and processing apps</li>
-          <li>Reporting and analytics applications</li>
-          <li>Industry-specific AI applications</li>
-          <li>Mobile-ready, scalable architecture</li>
-        </ul>
-      </div>
-
-      <!-- Process Callout -->
-      <div class="service-full-card fade-up fade-up-delay-1" style="background: linear-gradient(135deg, rgba(0,40,80,0.5), rgba(0,20,50,0.7)); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; min-height:320px;">
-        <div style="font-size:3rem; margin-bottom:1.25rem;">🚀</div>
-        <h3 class="sfcard-title" style="margin-bottom:0.75rem;">Not Sure Where to Start?</h3>
-        <p style="font-size:0.975rem; max-width:300px; margin-bottom:1.75rem;">Book a free consultation and we'll identify your highest-value AI opportunities in 30 minutes or less.</p>
-        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-          Book Free Consultation <i class="fa-solid fa-arrow-right"></i>
-        </a>
-      </div>
-
-    </div>
-
-    <!-- OpenClaw — compact featured card -->
-    <div class="service-full-card featured fade-up" style="margin-top:1.75rem;">
-      <div class="openclaw-badge" style="margin-bottom:1.25rem;">
-        <i class="fa-solid fa-bolt"></i> Featured Service — Special Offering
-      </div>
-      <div class="featured-inner">
-        <div>
-          <div class="sfcard-icon">⚡</div>
-          <h3 class="sfcard-title" style="font-size:1.6rem; margin-bottom:0.75rem;">OpenClaw Implementation</h3>
-          <p class="sfcard-desc">OpenClaw is the world's fastest-growing open-source AI agent — 310K+ GitHub stars, named by Nvidia's Jensen Huang as one of the most important software releases ever. It doesn't just advise. It <em style="color:var(--text-primary); font-style:normal; font-weight:600;">acts</em>: sending emails, updating your CRM, managing files, and running entire workflows autonomously, 24/7.</p>
-          <p class="sfcard-desc">We handle the full implementation — secure private cloud deployment, custom skill development, integration with your existing tools, and ongoing management — so you capture all the power without any of the complexity or risk.</p>
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary" style="margin-top:0.5rem;">
-            Deploy OpenClaw for My Business <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-        <div>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
-            <div class="oc-stat"><span class="num">310K+</span><span class="lbl">GitHub Stars</span></div>
-            <div class="oc-stat"><span class="num">#1</span><span class="lbl">AI Agent Platform</span></div>
-            <div class="oc-stat"><span class="num">1 Week</span><span class="lbl">Average Go-Live</span></div>
-            <div class="oc-stat"><span class="num">24/7</span><span class="lbl">Autonomous Action</span></div>
-          </div>
-          <ul class="sfcard-list">
-            <li>Secure, hardened deployment on your private cloud</li>
-            <li>Custom skill development for your specific business tools</li>
-            <li>Integration with CRM, email, Slack, WhatsApp & more</li>
-            <li>Autonomous email triage, onboarding, reporting & scheduling</li>
-            <li>Multi-agent setups for complex, coordinated workflows</li>
-            <li>Prompt injection defenses and enterprise security hardening</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- HOW WE WORK -->
-<section class="section" style="background: var(--bg-secondary);">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="section-label">Our Process</span>
-      <h2 class="section-title">How We Work</h2>
-      <p class="section-sub" style="margin:0 auto;">A proven process that takes you from bottleneck to breakthrough — fast.</p>
-    </div>
-    <div class="approach-steps" style="max-width:780px; margin:0 auto;">
-      <div class="step fade-up">
-        <div class="step-num">01</div>
-        <div class="step-content">
-          <h4>Discovery & Audit</h4>
-          <p>We map your current workflows, identify inefficiencies, and pinpoint exactly where AI can deliver the fastest, highest-impact results for your business.</p>
-        </div>
-      </div>
-      <div class="step fade-up fade-up-delay-1">
-        <div class="step-num">02</div>
-        <div class="step-content">
-          <h4>Strategy & Design</h4>
-          <p>We architect the right solution — whether that's an automation workflow, a custom agent, a fine-tuned model, or a full AI app — built around your goals and your stack.</p>
-        </div>
-      </div>
-      <div class="step fade-up fade-up-delay-2">
-        <div class="step-num">03</div>
-        <div class="step-content">
-          <h4>Build & Integrate</h4>
-          <p>We build, test, and integrate everything — connecting seamlessly to your existing tools without disrupting your day-to-day operations.</p>
-        </div>
-      </div>
-      <div class="step fade-up fade-up-delay-3">
-        <div class="step-num">04</div>
-        <div class="step-content">
-          <h4>Launch & Optimize</h4>
-          <p>We go live, monitor performance, and continuously optimize — so your AI systems keep improving and delivering measurable results over time.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="section cta-section">
-  <div class="container">
-    <div class="cta-box fade-up">
-      <span class="section-label">Let's Build Together</span>
-      <h2>The Right AI Solution<br/>for Your Business Exists.</h2>
-      <p>Let's find it together. Book your free consultation and leave with a clear roadmap for what's possible.</p>
-      <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-        Book a Free Consultation <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="AI Smartr" />
-        <p>Full-service AI automation for professionals, small businesses, and mid-market companies. We save you time, money, and headaches.</p>
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>Full-service AI automation company.</p>
       </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="services.html">AI Automation Workflows</a></li>
-          <li><a href="services.html">Customized AI Agents</a></li>
-          <li><a href="services.html">Easy Integrations</a></li>
-          <li><a href="services.html">Fine-Tuned Models</a></li>
-          <li><a href="services.html">AI Apps</a></li>
-          <li><a href="services.html">OpenClaw Implementation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Get Started</h5>
-        <ul>
-          <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li>
-          <li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li>
-          <li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li><li><a href="services.html">OpenClaw</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AI Smartr. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:derek@aismartr.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
   </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

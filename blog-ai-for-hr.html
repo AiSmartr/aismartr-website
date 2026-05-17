@@ -1,209 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="apple-touch-icon" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Automation for HR Departments: Hire, Onboard, Retain — AI Smartr Blog</title>
-  <meta name="description" content="Learn how HR teams use AI automation to streamline recruiting, onboarding, performance reviews, and employee retention—cutting admin time by 30% or more." />
-  <meta name="keywords" content="AI for HR, HR automation, AI recruiting, employee onboarding automation, HR technology, workforce AI, talent retention AI, human resources automation" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://aismartr.com/blog-ai-for-hr.html" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://aismartr.com/blog-ai-for-hr.html" />
-  <meta property="og:site_name" content="AI Smartr" />
-  <meta property="og:title" content="AI Automation for HR Departments: Hire, Onboard, Retain" />
-  <meta property="og:description" content="Learn how HR teams use AI automation to streamline recruiting, onboarding, performance reviews, and employee retention—cutting admin time by 30% or more." />
-  <meta property="og:image" content="https://aismartr.com/assets/logo.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AI Automation for HR Departments: Hire, Onboard, Retain" />
-  <meta name="twitter:description" content="Learn how HR teams use AI automation to streamline recruiting, onboarding, performance reviews, and employee retention—cutting admin time by 30% or more." />
-  <meta name="twitter:image" content="https://aismartr.com/assets/logo.png" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "AI Automation for HR Departments: Hire, Onboard, Retain",
-    "description": "Learn how HR teams use AI automation to streamline recruiting, onboarding, performance reviews, and employee retention—cutting admin time by 30% or more.",
-    "datePublished": "2026-04-15",
-    "dateModified": "2026-04-15",
-    "author": {"@type": "Organization", "name": "AI Smartr", "url": "https://aismartr.com"},
-    "publisher": {"@type": "Organization", "name": "AI Smartr", "url": "https://aismartr.com", "logo": {"@type": "ImageObject", "url": "https://aismartr.com/assets/logo.png"}},
-    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://aismartr.com/blog-ai-for-hr.html"},
-    "keywords": "AI for HR, HR automation, AI recruiting, employee onboarding automation, HR technology, workforce AI, talent retention AI, human resources automation"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type":"ListItem","position":1,"name":"Home","item":"https://aismartr.com/"},
-      {"@type":"ListItem","position":2,"name":"Blog","item":"https://aismartr.com/blog.html"},
-      {"@type":"ListItem","position":3,"name":"AI Automation for HR Departments: Hire, Onboard, Retain","item":"https://aismartr.com/blog-ai-for-hr.html"}
-    ]
-  }
-  </script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="description" content="HR teams spend 35% of their time on tasks AI can handle. Here's how to automate recruiting, onboarding, and retention without losing the human touch." />
+  <link rel="icon" type="image/png" href="logo-A.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#0A0A0A;--burg:#6B1428;--gold:#C4982B;--cream:#F5F0E8;--gray:#999;--gold-mid:#A8821F;--gold-dark:#7a5e14;--gold-lite:#EDD070;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{scroll-behavior:smooth;}
+    body{background:var(--black);color:#e8e8e8;font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65;}a{color:inherit;text-decoration:none;}img{display:block;max-width:100%;}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--black);border-bottom:1px solid #1a1a1a;display:flex;align-items:center;}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:32px;}
+    .nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+    .nav-logo-wrap{background:var(--burg);border-radius:4px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .nav-logo-wrap img{width:48px;height:48px;object-fit:cover;}
+    .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.04em;text-transform:uppercase;color:#fff;}
+    .nav-wordmark span{color:var(--gold);}
+    .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none;}
+    .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .btn-nav{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:8px 20px;border-radius:2px;background:transparent;color:var(--gold);border:1px solid var(--gold);cursor:pointer;}
+    .btn-nav:hover{background:var(--gold);color:var(--black);}
+    .nav-mobile-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;margin-left:auto;}
+    .nav-mobile-btn span{display:block;width:22px;height:2px;background:#fff;}
+    .btn-primary{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 32px;border-radius:2px;background:var(--gold);color:var(--black);border:none;cursor:pointer;transition:background 0.2s;}
+    .btn-primary:hover{background:var(--gold-mid);}
+    .stripe{height:6px;background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-lite),var(--gold),var(--gold-dark));}
+    .post-hero{background:var(--burg);padding:100px 24px 64px;position:relative;overflow:hidden;}
+    .post-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .post-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .post-eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:20px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);}
+    .post-date,.post-read{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);line-height:0.95;text-transform:uppercase;color:#fff;max-width:900px;margin-bottom:24px;}
+    .post-lead{font-size:18px;color:rgba(255,255,255,0.8);max-width:700px;line-height:1.6;}
+    .post-section{background:var(--black);padding:64px 24px 80px;}
+    .post-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .post-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3vw,38px);text-transform:uppercase;color:#fff;margin-top:48px;margin-bottom:16px;line-height:1.05;}
+    .post-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--gold);margin-top:32px;margin-bottom:12px;}
+    .post-body p{font-size:16px;color:#ccc;line-height:1.75;margin-bottom:20px;}
+    .post-body ul{margin:0 0 20px 20px;}
+    .post-body li{font-size:15px;color:#ccc;line-height:1.7;margin-bottom:8px;}
+    .post-body strong{color:#e8e8e8;font-weight:500;}
+    .post-stat-box{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:32px;margin:40px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .stat-item{text-align:center;}
+    .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .stat-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .post-callout{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:24px 28px;margin:32px 0;}
+    .post-callout p{margin-bottom:0;color:#ddd;}
+    .post-highlight{background:#111;border:1px solid #1a1a1a;padding:28px 32px;margin:32px 0;}
+    .post-highlight h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box{background:var(--burg);padding:40px;margin:48px 0 0;text-align:center;}
+    .post-cta-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px;}
+    .post-sidebar{position:sticky;top:80px;}
+    .sidebar-card{background:#111;border:1px solid #1a1a1a;padding:28px;margin-bottom:20px;}
+    .sidebar-card h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .toc-link{display:block;font-size:13px;color:var(--gray);padding:6px 0;border-bottom:1px solid #1a1a1a;transition:color 0.2s;}
+    .toc-link:last-child{border-bottom:none;}
+    .toc-link:hover{color:var(--gold);}
+    .related-link{display:block;padding:12px 0;border-bottom:1px solid #1a1a1a;}
+    .related-link:last-child{border-bottom:none;}
+    .related-cat{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .related-title{font-size:13px;color:#ccc;margin-top:4px;line-height:1.4;}
+    .related-link:hover .related-title{color:#fff;}
+    .sidebar-cta{background:var(--burg)!important;border:none!important;}
+    .sidebar-cta p{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+    .footer{background:#050505;padding:60px 24px 0;}
+    .footer-inner{max-width:1200px;margin:0 auto;}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #1a1a1a;}
+    .footer-brand-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;letter-spacing:0.04em;margin-bottom:12px;}
+    .footer-brand-wordmark span{color:var(--gold);}
+    .footer-tagline{font-size:14px;color:var(--gray);line-height:1.6;}
+    .footer-col h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{font-size:14px;color:var(--gray);transition:color 0.2s;}
+    .footer-col ul li a:hover{color:#fff;}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:24px 0;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:11px;color:#555;}
+    @media(max-width:768px){
+      .post-layout{grid-template-columns:1fr;gap:40px;}
+      .post-sidebar{position:static;}
+      .post-stat-box{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;}
+      .nav-links{display:none;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:var(--black);padding:20px 24px;border-bottom:1px solid #1a1a1a;gap:16px;}
+      .nav-links.open{display:flex;}
+      .nav-mobile-btn{display:flex;}
+    }
+    @media(max-width:640px){.footer-grid{grid-template-columns:1fr;gap:32px;}.post-stat-box{grid-template-columns:1fr;}}
+  </style>
 </head>
 <body>
-
 <nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="AI Smartr" /></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="blog.html" class="nav-link active">Blog</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-        <li class="nav-cta"><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">Book a Consultation <i class="fa-solid fa-arrow-right"></i></a></li>
-      </ul>
-      <button class="nav-mobile-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    </div>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" class="btn-nav" target="_blank">Book a Call</a></li>
+    </ul>
   </div>
 </nav>
 
 <section class="post-hero">
   <div class="post-hero-grid"></div>
-  <div class="container">
-    <div class="post-hero-content">
-      <div class="post-meta">
-        <span class="post-category">Industry Spotlight</span>
-        <span class="post-date"><i class="fa-regular fa-calendar"></i> April 15, 2026</span>
-        <span class="post-read-time"><i class="fa-regular fa-clock"></i> 8 min read</span>
-      </div>
-      <h1>AI Automation for HR Departments: Hire, Onboard, Retain</h1>
-      <p class="lead">HR teams spend the bulk of their working hours on logistics — scheduling interviews, chasing paperwork, sorting resumes, and preparing the same onboarding packets over and over. These aren't high-judgment tasks; they're high-volume tasks, and AI automation is purpose-built for exactly this pattern. The HR teams adopting AI now aren't replacing their people — they're finally giving those people room to do work that actually shapes culture and performance.</p>
+  <div class="post-hero-inner">
+    <div class="post-eyebrow">
+      <span class="post-cat">Industry Spotlight</span>
+      <span class="post-date">April 15, 2026</span>
+      <span class="post-read">7 min read</span>
     </div>
+    <h1 class="post-title">AI Automation for HR Departments: Hire, Onboard, Retain</h1>
+    <p class="post-lead">HR teams spend about 35% of their time on tasks a machine could handle. Here's how to win that time back, starting with the work that matters least.</p>
   </div>
 </section>
+<div class="stripe"></div>
 
-<section style="background:var(--bg-primary);">
-  <div class="container">
-    <div class="post-layout">
-      <article class="post-body">
+<section class="post-section">
+  <div class="post-layout">
+    <article class="post-body">
 
-        <h2 id="the-admin-burden">The Admin Burden Burying HR</h2>
-        <p>A mid-size company with 150 employees and a two-person HR team isn't unusual. What is unusual is any expectation that those two people can recruit effectively, onboard new hires thoroughly, run performance cycles on schedule, and still have time left for compensation strategy, culture initiatives, or workforce planning. They can't — because administrative tasks eat the calendar first.</p>
-        <p>Research from SHRM shows HR professionals spend an average of 14 hours per week on tasks that could be automated: scheduling, status emails, document collection, form routing, and data entry into HRIS systems. That's 35% of a 40-hour week consumed by process work rather than people work.</p>
-        <p>The downstream effects are predictable. Recruiting slows because screening backlogs. Onboarding gets inconsistent because there's no time to customize it. Performance reviews happen late — or not at all — because the logistics of collecting peer feedback and calibrating ratings manually is genuinely overwhelming at scale. And retention suffers because HR is too busy putting out fires to notice the early signals that an employee is disengaging.</p>
-        <p>None of this is the fault of the HR professionals involved. It's a workflow design problem. And it's one that AI automation solves directly.</p>
+      <p>The irony of HR is painful. The people responsible for making employees feel valued often don't have time to do it. They're buried in screening resumes, chasing onboarding paperwork, scheduling interviews, and sending the same reminder emails over and over.</p>
 
-        <div class="post-stat-grid">
-          <div class="post-stat"><span class="num">35%</span><span class="lbl">of HR time spent on tasks that could be automated</span></div>
-          <div class="post-stat"><span class="num">$4,700</span><span class="lbl">average cost to manually onboard a single new employee</span></div>
-          <div class="post-stat"><span class="num">2.5x</span><span class="lbl">faster time-to-hire for companies using AI recruiting tools</span></div>
+      <p>It's not that HR teams are slow. It's that the volume of administrative work is genuinely unreasonable. A typical HR professional loses 14 hours a week to tasks that don't require human judgment. That's more than a third of the workweek.</p>
+
+      <p>AI can't replace the human in human resources. But it can absorb the load that keeps HR professionals from doing their actual job.</p>
+
+      <div class="post-stat-box">
+        <div class="stat-item">
+          <div class="stat-num">35%</div>
+          <div class="stat-lbl">of HR time on automatable tasks</div>
         </div>
-
-        <h2 id="ai-recruiting">AI for Recruiting: Screen Faster, Hire Better</h2>
-        <p>The average corporate job posting receives 250 resumes. A human recruiter can thoroughly review maybe 30–40 of them per hour. That math means most candidates get a six-second skim at best — and talented people with non-traditional backgrounds get filtered out by fatigue, not by fit.</p>
-        <p>AI resume screening changes the math entirely. A well-configured AI screening layer can process all 250 applications in under two minutes, ranking candidates against the specific criteria that matter for the role: relevant experience, skill keywords, tenure patterns, and any role-specific qualifications the team has defined. The output isn't a yes/no decision — it's a prioritized shortlist with reasoning surfaced, so recruiters can focus review time on the candidates most worth a closer look.</p>
-        <p>Beyond screening, AI handles the interview logistics that burn hours every week. When a candidate reaches the phone screen stage, an AI scheduling agent sends availability options, collects the candidate's preferences, books the slot on the recruiter's calendar, sends confirmations to both parties, and delivers a reminder 24 hours before the call — all without a human touching it. For a company making 10 hires per quarter, this alone saves 3–5 hours of scheduling coordination per hire.</p>
-        <p>AI can also draft job postings from a simple brief, generate structured interview question sets tailored to the role, and send personalized rejection emails to candidates who weren't selected — maintaining a professional candidate experience even at high volume.</p>
-
-        <div class="post-callout"><p><strong>Important guardrail:</strong> AI recruiting tools must be configured and audited to avoid encoding historical bias into screening criteria. If your previous "successful" hires skewed toward a narrow demographic, an AI trained on that data will perpetuate it. Build explicit diversity criteria into your screening model and audit results quarterly to catch drift early.</p></div>
-
-        <h2 id="onboarding-automation">Onboarding Automation: From Three Days to Three Hours</h2>
-        <p>Traditional onboarding is a logistical relay race. IT has to provision access. Payroll needs tax forms. The manager needs to assign equipment. Compliance needs e-signatures on a dozen documents. HR needs to schedule orientation sessions. And the new hire — already anxious about starting a new job — ends up waiting in a conference room while someone tries to figure out why the laptop won't connect to the VPN.</p>
-        <p>AI-powered onboarding workflows coordinate all of these moving parts automatically. When an offer is signed, the system triggers a cascade: an automated provisioning request goes to IT with role-specific access requirements; a document packet is sent to the new hire with e-signature links and a completion deadline; the manager receives a day-one readiness checklist; compliance documents route to the appropriate parties; and the new hire's 30-60-90 day schedule is generated and populated into their calendar before their first day.</p>
-        <p>The result is an onboarding experience that feels organized and intentional rather than chaotic and improvised — and it requires about 30 minutes of HR setup per hire instead of three days of coordination. For companies with high-volume seasonal hiring, this difference is the gap between a scalable operation and an annual crisis.</p>
-        <p>Beyond logistics, AI can deliver personalized onboarding content based on the new hire's role, department, and location. A new sales rep in Chicago gets a different orientation sequence than a new engineer in Austin, even though both are managed through the same automated system. That level of tailoring used to require significant HR bandwidth; now it's a configuration setting.</p>
-
-        <h2 id="performance-reviews">Performance Reviews Without the Paperwork</h2>
-        <p>Annual performance reviews are widely acknowledged as broken. Research from Deloitte found that a company with 10,000 employees spends approximately 2 million manager-hours per year on performance reviews — the vast majority of it on coordination, form-filling, and chasing submissions rather than on the conversations that actually help people grow.</p>
-        <p>AI doesn't fix the fundamental design flaw of annual reviews — that's a management culture problem — but it dramatically reduces the administrative cost of running any performance cycle, whether annual, quarterly, or continuous.</p>
-        <p>Automated performance workflows handle the mechanics: sending self-assessment forms on schedule, routing peer feedback requests to the right colleagues, aggregating responses into structured summaries, sending manager calibration prompts, and tracking completion rates with escalation reminders for overdue submissions. What used to require an HR team member actively managing 50 email threads now runs on a single workflow trigger.</p>
-        <p>More sophisticated implementations use AI to analyze qualitative feedback and surface patterns — flagging language that suggests a high-flight-risk employee, or identifying consistent development themes across a team that the manager might not notice when reading individual reviews. This shifts HR from data collector to strategic interpreter, which is where the real value has always been.</p>
-
-        <div class="post-highlight-box">
-          <h4>High-Impact HR Automation Use Cases</h4>
-          <ul>
-            <li><strong>Resume screening and candidate ranking</strong> — AI-scored shortlists from high-volume applicant pools</li>
-            <li><strong>Interview scheduling</strong> — automated calendar coordination with confirmations and reminders</li>
-            <li><strong>Offer letter and document generation</strong> — role-specific templates with variable data auto-populated</li>
-            <li><strong>New hire onboarding workflows</strong> — provisioning triggers, document routing, orientation scheduling</li>
-            <li><strong>Performance review coordination</strong> — self-assessments, peer feedback, manager calibration, completion tracking</li>
-            <li><strong>PTO and leave request routing</strong> — automated approvals based on team coverage rules</li>
-            <li><strong>Employee survey analysis</strong> — AI-summarized engagement data with sentiment trends highlighted</li>
-            <li><strong>Offboarding checklists</strong> — triggered access revocation, equipment retrieval, exit interview scheduling</li>
-          </ul>
+        <div class="stat-item">
+          <div class="stat-num">$4,700</div>
+          <div class="stat-lbl">average cost to onboard one hire</div>
         </div>
-
-        <h2 id="retention-signals">Retention: Catching Disengagement Before It Becomes a Resignation</h2>
-        <p>Voluntary turnover costs between 50% and 200% of an employee's annual salary once you account for recruiting costs, productivity loss during the vacancy, onboarding the replacement, and the time it takes a new hire to reach full output. For a $75,000-per-year employee, that's $37,500 to $150,000 in replacement cost — per departure.</p>
-        <p>The challenge is that disengagement rarely announces itself. An employee rarely tells their manager "I'm starting to check out." The signals are subtler: declining participation in meetings, shorter responses, reduced output quality, increasing PTO use, a sudden spike in professional development activity. By the time a resignation letter arrives, the decision was made weeks or months ago.</p>
-        <p>AI retention analytics change the timeline. By analyzing patterns across HRIS data, performance metrics, calendar participation, and engagement survey responses, AI models can surface early warning signals at the individual level — not as a surveillance mechanism, but as a prompt for HR and managers to have a conversation before the window closes.</p>
-        <p>The intervention doesn't have to be dramatic. Often a direct check-in, a career development conversation, or a shift in responsibilities is enough to re-engage someone who's drifting. But that conversation needs to happen while there's still something to salvage — and AI is what tells you when the clock is ticking.</p>
-
-        <h2 id="implementation">Where to Start: A Sequenced Approach</h2>
-        <p>HR teams that fail at AI adoption typically try to automate everything simultaneously, which creates change-management chaos and usually results in partial implementations that deliver no measurable results. The teams that succeed pick one high-volume, high-friction process, prove the ROI, and expand from there.</p>
-        <p>For most HR teams, the fastest win is interview scheduling. It's entirely logistical, both candidates and managers immediately notice the improvement, and it's easy to measure: track time-to-schedule before and after, and the case for expanding to the next workflow writes itself.</p>
-        <p>The second layer is typically onboarding automation, because it has the highest visibility. A new hire's first-day experience directly shapes their engagement trajectory, and a visibly organized onboarding process signals to the entire organization that HR is operating at a higher level.</p>
-        <p>From there, resume screening, performance review automation, and retention analytics can be added incrementally as the team's comfort with AI-driven workflows grows. A realistic timeline for a full-stack HR automation build is three to six months, with measurable time savings visible within the first 30 days of each new module going live.</p>
-
-        <h2 id="the-roi-case">The ROI Case for HR Automation</h2>
-        <p>HR automation ROI is measurable across three dimensions: time recovered, cost reduced, and outcomes improved.</p>
-        <p>On time: automating scheduling, document routing, and performance coordination typically recovers 10–15 hours per week per HR professional. For a two-person HR team, that's the equivalent of adding a full-time coordinator without adding headcount.</p>
-        <p>On cost: AI screening and faster time-to-hire reduce average cost-per-hire by 30–50% by shortening the vacancy window and reducing reliance on external recruiting agencies. Onboarding automation cuts per-hire setup cost from roughly $4,700 (manual) to under $1,500 (automated).</p>
-        <p>On outcomes: companies with structured, automated onboarding programs report 82% higher new-hire retention at 12 months compared to companies with ad hoc onboarding, according to Brandon Hall Group research. Better retention means less money spent on the replacement cycle — for a 150-person company with 15% annual turnover, that can represent hundreds of thousands of dollars in avoided costs per year.</p>
-        <p>The case for HR automation isn't speculative. It's measurable from month one, and the compounding effect of retained employees, faster recruiting cycles, and better manager bandwidth shows up clearly in year-end numbers.</p>
-
-        <div class="post-cta-box">
-          <h3>Ready to Give Your HR Team Their Time Back?</h3>
-          <p>We design and deploy AI automation workflows for HR teams at companies of all sizes — from 20-person startups to 500-person mid-market firms. Book a free 30-minute consultation and we'll map exactly where your team is losing hours and what an automation build would look like for your specific workflows.</p>
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">Book a Free Consultation <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="stat-item">
+          <div class="stat-num">2.5x</div>
+          <div class="stat-lbl">faster time-to-hire with AI screening</div>
         </div>
+      </div>
 
-      </article>
+      <h2 id="recruiting">AI-Assisted Recruiting</h2>
+      <p>Recruiting is where AI makes the fastest impact, and where the admin burden is worst. When a role opens, a company might receive 250 applications. Reading every one takes days. Most HR teams skim, which means good candidates get missed and unqualified ones make it through.</p>
 
-      <aside class="post-sidebar">
-        <div class="sidebar-card">
-          <h5>In This Article</h5>
-          <nav class="toc-list">
-            <a href="#the-admin-burden">The Admin Burden Burying HR</a>
-            <a href="#ai-recruiting">AI for Recruiting</a>
-            <a href="#onboarding-automation">Onboarding Automation</a>
-            <a href="#performance-reviews">Performance Reviews</a>
-            <a href="#retention-signals">Retention Signals</a>
-            <a href="#implementation">Where to Start</a>
-            <a href="#the-roi-case">The ROI Case</a>
-          </nav>
-        </div>
-        <div class="sidebar-card">
-          <h5>Related Articles</h5>
-          <div class="related-post"><a href="blog-roi-of-ai-automation.html"><span class="rp-cat">ROI &amp; Business</span><h6>How to Measure the ROI of AI Automation</h6><span class="rp-time">7 min read</span></a></div>
-          <div class="related-post"><a href="blog-5-workflows-to-automate.html"><span class="rp-cat">AI Automation</span><h6>5 Business Workflows You Should Automate This Quarter</h6><span class="rp-time">6 min read</span></a></div>
-          <div class="related-post"><a href="blog-ai-adoption-midmarket.html"><span class="rp-cat">Strategy</span><h6>AI Adoption for Mid-Market Companies</h6><span class="rp-time">7 min read</span></a></div>
-        </div>
-        <div class="sidebar-card" style="background:linear-gradient(135deg,rgba(0,20,50,0.9),rgba(0,10,30,0.95));border-color:rgba(0,180,255,0.25);">
-          <h5>Get Started</h5>
-          <p style="font-size:0.875rem;color:var(--text-secondary);margin-bottom:1rem;">Book a free 30-minute consultation and walk away with a clear AI roadmap for your business.</p>
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.85rem;padding:0.75rem 1rem;">Book Free Consultation</a>
-        </div>
-      </aside>
-    </div>
+      <p>AI changes the math. You define what a strong candidate looks like. The system screens every application against that profile, ranks them, and surfaces the top 10 to 20 percent. You start every hiring cycle with a shortlist, not a pile.</p>
+
+      <p>The same applies to scheduling. Instead of three rounds of back-and-forth emails to find 30 minutes, the candidate picks a time from a live calendar and the interview is confirmed automatically. Hiring managers get a prep brief pulled together the night before.</p>
+
+      <p>The result isn't just faster. It's more consistent. When the same criteria are applied to every applicant, bias from fatigue and rushed judgment shrinks.</p>
+
+      <h2 id="onboarding">Onboarding Automation</h2>
+      <p>The average company spends $4,700 to onboard a single new hire. A significant chunk of that is wasted on logistics: sending forms, chasing signatures, scheduling orientation, reminding managers to set up equipment.</p>
+
+      <p>A well-built onboarding automation triggers the moment an offer is signed. The new hire gets a welcome email with a checklist. HR gets notified to initiate background checks. IT gets a ticket to set up equipment. The manager gets a first-week schedule. All of it happens before anyone has to remember to do it.</p>
+
+      <div class="post-callout">
+        <p><strong>The goal isn't to automate the welcome.</strong> It's to automate every task that keeps HR from delivering a great one. The system handles the paperwork so the people can handle the relationship.</p>
+      </div>
+
+      <p>Week one can include an automated check-in sequence. Short messages to the new hire asking how it's going. Automated reminders for required training. A 30-60-90 plan delivered at the right moment. None of this replaces the manager conversation. It makes sure the context is there when the conversation happens.</p>
+
+      <h3>What typically triggers onboarding automation</h3>
+      <ul>
+        <li>Offer letter signed in your ATS</li>
+        <li>Background check completed</li>
+        <li>Start date confirmed</li>
+        <li>First login to company systems</li>
+        <li>30-day mark reached</li>
+      </ul>
+
+      <h2 id="performance">Performance Reviews</h2>
+      <p>Performance review cycles are brutal. Managers fill out the same forms for every direct report. HR chases them down. Everything is late. The data sits in spreadsheets that nobody reads after the cycle ends.</p>
+
+      <p>AI doesn't write reviews for managers. But it does handle all the mechanics around them. Reminders go out on schedule. Self-assessments are collected automatically. Forms are pre-populated with data from the previous cycle. Completion rates go up. The process doesn't slip.</p>
+
+      <p>After the cycle, AI can help identify patterns. Which teams are struggling on engagement questions? Which managers consistently get lower feedback? That information used to take a week to compile. Now it surfaces in minutes.</p>
+
+      <h2 id="retention">Retention Analytics</h2>
+      <p>The hardest thing in HR is seeing turnover coming. By the time someone resigns, you've already lost them. The signals were there weeks or months earlier. They just weren't visible.</p>
+
+      <p>AI-powered retention tools look at behavioral data: engagement survey scores, performance trends, tenure patterns, absenteeism. They surface early warning indicators so HR can intervene before it's too late.</p>
+
+      <div class="post-highlight">
+        <h4>What Early Warning Looks Like</h4>
+        <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:0;">An employee who scored 4.2 on last quarter's engagement survey drops to 3.1 this quarter. They've had two absences this month. Their tenure puts them at the 18-month mark, which is historically a high-risk window. The system flags them for a check-in conversation. The manager reaches out. The conversation happens. Sometimes the person stays.</p>
+      </div>
+
+      <p>This isn't surveillance. It's pattern recognition applied to data HR already has. The goal is to catch the conversations that should have happened earlier.</p>
+
+      <p>Companies that implement retention analytics report 82% higher retention rates among new hires in their first year. The cost of that check-in conversation is almost nothing. The cost of replacing someone is typically 50 to 200 percent of their annual salary.</p>
+
+      <h2 id="getting-started">Where to Start</h2>
+      <p>Most HR teams try to automate everything at once and automate nothing well. Start with the highest-volume, lowest-judgment task you have right now. For most teams, that's resume screening or onboarding logistics.</p>
+
+      <p>Get one workflow running cleanly. Measure the time it saves. Then add the next one. HR automation compounds the same way any operational improvement does. Each hour recovered can go toward the work that actually needs a human.</p>
+
+      <p>The goal isn't to replace the HR function. It's to make sure HR professionals spend their time on the work only they can do.</p>
+
+      <div class="post-cta-box">
+        <h3>Ready to reclaim your HR team's time?</h3>
+        <p>We'll show you exactly which workflows to automate first and what the ROI looks like for your headcount.</p>
+        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" class="btn-primary" target="_blank">Book a Free Call</a>
+      </div>
+
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <h5>In This Article</h5>
+        <a href="#recruiting" class="toc-link">AI-Assisted Recruiting</a>
+        <a href="#onboarding" class="toc-link">Onboarding Automation</a>
+        <a href="#performance" class="toc-link">Performance Reviews</a>
+        <a href="#retention" class="toc-link">Retention Analytics</a>
+        <a href="#getting-started" class="toc-link">Where to Start</a>
+      </div>
+      <div class="sidebar-card">
+        <h5>Related Articles</h5>
+        <a href="blog-5-workflows-to-automate.html" class="related-link">
+          <div class="related-cat">AI Automation</div>
+          <div class="related-title">5 Business Workflows You Should Automate First</div>
+        </a>
+        <a href="blog-roi-of-ai-automation.html" class="related-link">
+          <div class="related-cat">ROI</div>
+          <div class="related-title">How to Calculate the ROI of AI Automation</div>
+        </a>
+        <a href="blog-solo-professional-ai-guide.html" class="related-link">
+          <div class="related-cat">AI Automation</div>
+          <div class="related-title">The Solo Professional's Guide to AI Automation</div>
+        </a>
+      </div>
+      <div class="sidebar-card sidebar-cta">
+        <h5>Talk to Us</h5>
+        <p>We help HR teams automate the admin so they can focus on the people.</p>
+        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" class="btn-primary" target="_blank" style="width:100%;text-align:center;display:block;">Book a Free Call</a>
+      </div>
+    </aside>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand"><img src="assets/logo.png" alt="AI Smartr" /><p>Full-service AI automation for professionals, small businesses, and mid-market companies. We save you time, money, and headaches.</p></div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">AI Automation Workflows</a></li><li><a href="services.html">Customized AI Agents</a></li><li><a href="services.html">Fine-Tuned Models</a></li><li><a href="services.html">OpenClaw Implementation</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We build AI systems that work for your business. Not demos. Not hype. Real automation that saves time and drives revenue.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Workflow Automation</a></li>
+          <li><a href="services.html">AI Agents</a></li>
+          <li><a href="services.html">Integrations</a></li>
+          <li><a href="services.html">Fine-Tuned Models</a></li>
+          <li><a href="services.html">AI Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get Started</h5>
+        <ul>
+          <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Call</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><p>&copy; 2026 AI Smartr. All rights reserved.</p><div class="social-links"><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a><a href="mailto:derek@aismartr.com" class="social-link"><i class="fa-solid fa-envelope"></i></a></div></div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span>
+    </div>
   </div>
 </footer>
-
-<script src="script.js"></script>
 </body>
 </html>

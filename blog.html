@@ -2,374 +2,331 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="apple-touch-icon" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blog — AI Smartr</title>
-  <meta name="description" content="Insights, guides, and practical AI strategies from the AI Smartr team — built for professionals and growing businesses." />
-  <meta name="keywords" content="AI blog, AI automation tips, OpenClaw guide, AI for small business, AI workflow strategies, business AI insights" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://aismartr.com/blog.html" />
+  <meta name="description" content="Practical guides, real-world strategies, and the latest AI developments. Written for people who want results, not theory." />
+  <link rel="icon" type="image/png" href="logo-A.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#0A0A0A;--burg:#6B1428;--gold:#C4982B;--cream:#F5F0E8;--gray:#999;--dgray:#333;--gold-mid:#A8821F;--gold-dark:#7a5e14;--gold-lite:#EDD070;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--black);color:#e8e8e8;font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--black);border-bottom:1px solid #1a1a1a;display:flex;align-items:center;}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:32px;}
+    .nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+    .nav-logo-wrap{background:var(--burg);border-radius:4px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .nav-logo-wrap img{width:48px;height:48px;object-fit:cover;}
+    .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.04em;text-transform:uppercase;color:#fff;}
+    .nav-wordmark span{color:var(--gold);}
+    .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none;}
+    .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .btn-nav{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:8px 20px;border-radius:2px;background:transparent;color:var(--gold);border:1px solid var(--gold);cursor:pointer;transition:background 0.2s,color 0.2s;}
+    .btn-nav:hover{background:var(--gold);color:var(--black);}
+    .nav-mobile-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;margin-left:auto;}
+    .nav-mobile-btn span{display:block;width:22px;height:2px;background:#fff;}
+    .btn-primary{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 32px;border-radius:2px;background:var(--gold);color:var(--black);border:none;cursor:pointer;transition:background 0.2s;}
+    .btn-primary:hover{background:var(--gold-mid);}
+    .stripe{height:6px;background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-lite),var(--gold),var(--gold-dark));}
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://aismartr.com/blog.html" />
-  <meta property="og:site_name"   content="AI Smartr" />
-  <meta property="og:title"       content="Blog — AI Smartr | AI Insights & Business Automation Strategies" />
-  <meta property="og:description" content="Practical guides, real-world AI strategies, and the latest developments — written for professionals and business owners who want results, not theory." />
-  <meta property="og:image"       content="https://aismartr.com/assets/logo.png" />
+    .page-hero{background:var(--burg);padding:120px 24px 80px;position:relative;overflow:hidden;}
+    .page-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .page-eyebrow{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);margin-bottom:16px;}
+    .page-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:0.9;text-transform:uppercase;color:#fff;}
+    .page-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-top:24px;max-width:600px;}
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Blog — AI Smartr | AI Insights & Business Automation Strategies" />
-  <meta name="twitter:description" content="Practical AI guides and strategies for professionals and growing businesses. No fluff — just results." />
-  <meta name="twitter:image"       content="https://aismartr.com/assets/logo.png" />
+    .blog-section{background:var(--black);padding:80px 24px;}
+    .blog-inner{max-width:1200px;margin:0 auto;}
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "url": "https://aismartr.com/blog.html",
-    "name": "AI Smartr Blog",
-    "description": "Practical AI insights, automation strategies, and business guides for professionals and growing companies.",
-    "publisher": {"@type": "Organization", "name": "AI Smartr", "url": "https://aismartr.com", "logo": "https://aismartr.com/assets/logo.png"}
-  }
-  </script>
+    .blog-post-row{display:grid;grid-template-columns:140px 1fr;gap:32px;align-items:start;padding:36px 0;border-top:1px solid #1a1a1a;transition:background 0.15s;}
+    .blog-post-row:last-child{border-bottom:1px solid #1a1a1a;}
+    .blog-post-row:hover{background:#0a0a0a;}
+    .post-meta-col{display:flex;flex-direction:column;gap:8px;padding-top:4px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .post-date{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.08em;color:#555;}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(22px,2.5vw,30px);text-transform:uppercase;color:#fff;margin-bottom:10px;line-height:1.05;transition:color 0.2s;}
+    .blog-post-row:hover .post-title{color:var(--gold);}
+    .post-excerpt{font-size:14px;color:var(--gray);line-height:1.65;max-width:640px;}
+    .post-link-arrow{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-top:12px;display:inline-block;}
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    .cta-section{background:var(--burg);padding:80px 24px;position:relative;overflow:hidden;text-align:center;}
+    .cta-grid-bg{position:absolute;inset:0;opacity:0.05;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px);}
+    .cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
+    .cta-headline{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:0.9;text-transform:uppercase;color:#fff;margin-bottom:24px;}
+    .cta-headline span{color:var(--gold);}
+    .cta-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-bottom:40px;}
+
+    .footer{background:#050505;padding:60px 24px 0;}
+    .footer-inner{max-width:1200px;margin:0 auto;}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #1a1a1a;}
+    .footer-brand-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;letter-spacing:0.04em;margin-bottom:12px;}
+    .footer-brand-wordmark span{color:var(--gold);}
+    .footer-tagline{font-size:14px;color:var(--gray);line-height:1.6;}
+    .footer-col h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{font-size:14px;color:var(--gray);transition:color 0.2s;}
+    .footer-col ul li a:hover{color:#fff;}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:11px;color:#555;letter-spacing:0.08em;}
+
+    @media(max-width:768px){
+      .blog-post-row{grid-template-columns:1fr;}
+      .post-meta-col{flex-direction:row;gap:16px;}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+    }
+    @media(max-width:640px){
+      .nav-links{display:none;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}
+      .nav-mobile-btn{display:flex;}
+      .footer-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo.png" alt="AI Smartr" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html"    class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="about.html"    class="nav-link">About</a></li>
-        <li><a href="blog.html"     class="nav-link">Blog</a></li>
-        <li><a href="contact.html"  class="nav-link">Contact</a></li>
-        <li class="nav-cta">
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-            Book a Consultation <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </li>
-      </ul>
-      <button class="nav-mobile-btn" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr logo" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-grid"></div>
-  <div class="container">
-    <div class="page-hero-content">
-      <span class="section-label">Insights & Strategies</span>
-      <h1>AI That <span class="text-blue">Drives Business.</span><br/>Not Just Buzz.</h1>
-      <p>Practical guides, real-world strategies, and the latest AI developments — written for professionals and business owners who want results, not theory.</p>
-    </div>
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">The AI Smartr Blog</p>
+    <h1 class="page-title">AI THAT DRIVES<br>BUSINESS. NOT BUZZ.</h1>
+    <p class="page-sub">Practical guides, real-world strategies, and the latest AI developments. Written for people who want results, not theory.</p>
   </div>
 </section>
 
-<!-- FEATURED POST -->
-<section class="section" style="padding-top:3rem; padding-bottom:2rem;">
-  <div class="container">
-    <div class="fade-up" style="background: linear-gradient(135deg, rgba(0,20,50,0.9), rgba(0,10,30,0.95)); border:1px solid rgba(0,180,255,0.25); border-radius:var(--radius-xl); overflow:hidden; display:grid; grid-template-columns:1fr 1fr; min-height:340px; position:relative;">
-      <div style="position:absolute; top:0; left:0; right:0; height:2px; background: linear-gradient(90deg, transparent, var(--blue), transparent);"></div>
-      <div style="display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#0D1B30,#07090F); font-size:5rem; position:relative; overflow:hidden; min-height:280px;">
-        <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(0,180,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,180,255,0.05) 1px,transparent 1px);background-size:30px 30px;"></div>
-        <span style="position:relative;z-index:1;">⚡</span>
+<div class="stripe"></div>
+
+<section class="blog-section">
+  <div class="blog-inner">
+
+    <a href="blog-openclaw-what-is-it.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Agents</span>
+        <span class="post-date">Mar 15, 2026</span>
       </div>
-      <div style="padding:3rem;">
-        <div style="display:flex; gap:0.75rem; align-items:center; margin-bottom:1rem;">
-          <span style="font-size:0.72rem; font-family:var(--font-head); letter-spacing:0.12em; text-transform:uppercase; color:#FFB347; background:rgba(255,140,0,0.1); border:1px solid rgba(255,140,0,0.25); border-radius:100px; padding:0.25rem 0.65rem;">Featured</span>
-          <span style="font-size:0.72rem; font-family:var(--font-head); letter-spacing:0.12em; text-transform:uppercase; color:var(--blue);">AI Agents</span>
-        </div>
-        <h2 style="font-size:1.75rem; margin-bottom:0.75rem; color:var(--text-primary); line-height:1.25;">What Is OpenClaw — And Why Every Business Should Be Paying Attention</h2>
-        <p style="font-size:0.975rem; line-height:1.75; margin-bottom:1.5rem;">In under 60 days, OpenClaw became the fastest-growing open-source project in GitHub history. Here's what it actually does, why Nvidia's CEO called it "the most important software release ever," and what it means for your business.</p>
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> March 15, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-          <a href="blog-openclaw-what-is-it.html" class="btn btn-outline" style="padding:0.6rem 1.25rem; font-size:0.85rem;">Read Article <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
+      <div>
+        <div class="post-title">What Is OpenClaw — And Why Every Business Should Be Paying Attention</div>
+        <p class="post-excerpt">In less than 60 days, OpenClaw became the fastest-growing open-source project in GitHub history. Here's what it does, why it matters, and how to deploy it the right way.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
       </div>
-    </div>
+    </a>
+
+    <a href="blog-agents-vs-chatbots.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Agents</span>
+        <span class="post-date">Feb 12, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Agents vs. Chatbots: What's Actually the Difference?</div>
+        <p class="post-excerpt">A chatbot answers. An agent acts. That distinction determines whether AI saves your team hours every week or just adds a smarter FAQ page to your website.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-5-workflows-to-automate.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Automation</span>
+        <span class="post-date">Mar 20, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">5 Workflows Every Small Business Should Automate First</div>
+        <p class="post-excerpt">From lead follow-up to client onboarding, these five wins deliver the fastest ROI. Start here and build forward.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-for-ecommerce.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Industry Spotlight</span>
+        <span class="post-date">May 15, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Automation for E-Commerce: Strategies That Actually Work</div>
+        <p class="post-excerpt">Personalized recommendations, inventory forecasting, AI support agents, and cart abandonment recovery. The stores winning in 2026 have automated better operations.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-for-accounting.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Industry Spotlight</span>
+        <span class="post-date">Apr 22, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Automation for Accounting Teams: Close Faster, Audit Smarter</div>
+        <p class="post-excerpt">Finance teams lose 520 hours a year to manual data entry. Here's how AI changes that, starting with invoice processing and bank reconciliation.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-for-hr.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Industry Spotlight</span>
+        <span class="post-date">Apr 15, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Automation for HR Departments: Hire, Onboard, Retain</div>
+        <p class="post-excerpt">HR professionals spend 35% of their week on work that could be automated. Here's how to give them that time back, starting with recruiting and onboarding.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-for-law-firms.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Industry Spotlight</span>
+        <span class="post-date">Apr 9, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Automation for Law Firms: Cut Admin Time by 40%</div>
+        <p class="post-excerpt">Attorneys spend 48% of their time on non-billable admin work. AI doesn't replace attorneys. It removes the administrative burden so they can do the work clients actually pay for.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-for-real-estate.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Industry Spotlight</span>
+        <span class="post-date">Apr 9, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">How Real Estate Agents Are Using AI to Close More Deals in 2026</div>
+        <p class="post-excerpt">78% of buyers choose the first agent who responds. AI makes every agent fast. Here's how to build the lead response and follow-up system that wins listings.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-generic-ai-vs-fine-tuned.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Models</span>
+        <span class="post-date">Mar 14, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">Generic AI vs. Fine-Tuned Models: What's the Real Difference?</div>
+        <p class="post-excerpt">ChatGPT can write an email. A fine-tuned model can write your email. The gap between those two outcomes is the difference between a tool and a competitive advantage.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-roi-of-ai-automation.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">ROI</span>
+        <span class="post-date">Mar 8, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">How to Calculate the ROI of AI Automation for Your Business</div>
+        <p class="post-excerpt">Most businesses underestimate the return because they measure the wrong things. Here's a three-part framework with real numbers for calculating what automation is actually worth.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-ready-tech-stack.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Integrations</span>
+        <span class="post-date">Mar 3, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">The AI-Ready Tech Stack: Tools That Play Well With Automation</div>
+        <p class="post-excerpt">Some platforms open every door. Others will quietly kill your automation ambitions. Here's the definitive breakdown for 2026, by category.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-adoption-midmarket.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Strategy</span>
+        <span class="post-date">Feb 25, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Adoption for Mid-Market Companies: A Practical Roadmap</div>
+        <p class="post-excerpt">Mid-market companies have more to gain from AI than almost anyone. Most aren't moving fast enough. Here's the 90-day roadmap that works.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-ai-security-2026.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">Security</span>
+        <span class="post-date">Feb 18, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">AI Security in 2026: What Every Business Needs to Know</div>
+        <p class="post-excerpt">Your AI agent has access to your email, your CRM, and your client files. Here's what the risks actually look like, and how to build it right from the start.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-automate-sales-pipeline.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Automation</span>
+        <span class="post-date">Feb 5, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">How to Automate Your Sales Pipeline Without Losing the Human Touch</div>
+        <p class="post-excerpt">Sales reps spend only 36% of their time actually selling. Here's a stage-by-stage walkthrough of a pipeline that qualifies, nurtures, and closes leads while your team sells.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
+    <a href="blog-solo-professional-ai-guide.html" class="blog-post-row">
+      <div class="post-meta-col">
+        <span class="post-cat">AI Automation</span>
+        <span class="post-date">Jan 28, 2026</span>
+      </div>
+      <div>
+        <div class="post-title">The Solo Professional's Guide to AI Automation</div>
+        <p class="post-excerpt">A week-by-week plan for consultants, attorneys, and independent operators to reclaim 16 to 20 hours per week through AI automation. Practical. No fluff.</p>
+        <span class="post-link-arrow">Read Article &rarr;</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
-<!-- BLOG GRID -->
-<section class="section" style="padding-top:2rem;">
-  <div class="container">
-    <div class="blog-grid">
-
-      <a href="blog-ai-for-ecommerce.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🛒</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Industry Spotlight</span>
-          <h3>AI Automation for E-Commerce: Strategies That Actually Work</h3>
-          <p>Personalized recommendations, inventory forecasting, automated support, and cart recovery — the AI automation playbook that turns operational drag into competitive advantage.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> May 15, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-for-accounting.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">📊</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Industry Spotlight</span>
-          <h3>AI Automation for Accounting Teams: Close Faster, Audit Smarter</h3>
-          <p>Invoice processing, bank reconciliation, expense audits, and financial reporting — AI automates the repetitive layer so your accountants can focus on analysis that actually moves the business.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> April 22, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-for-hr.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">👥</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Industry Spotlight</span>
-          <h3>AI Automation for HR Departments: Hire, Onboard, Retain</h3>
-          <p>HR teams spend 35% of their week on tasks that could run themselves. AI handles recruiting logistics, onboarding workflows, and early retention signals so HR can focus on people — not paperwork.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> April 15, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-for-law-firms.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">⚖️</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Industry Spotlight</span>
-          <h3>AI Automation for Law Firms: Cut Admin Time by 40%</h3>
-          <p>Attorneys lose nearly half their day to non-billable admin work. AI automation fixes that — without replacing lawyers or overhauling your practice management system.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> April 9, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-for-real-estate.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🏡</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Industry Spotlight</span>
-          <h3>How Real Estate Agents Are Using AI to Close More Deals in 2026</h3>
-          <p>The agents winning the most listings respond fastest and follow up most consistently — without hiring a single assistant. Here's how AI makes it possible.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Apr 9, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-5-workflows-to-automate.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🤖</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">AI Automation</span>
-          <h3>5 Workflows Every Small Business Should Automate First</h3>
-          <p>From lead follow-up to client onboarding, these five automation wins deliver the fastest ROI — and you can have them running in days, not months.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Mar 20, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-generic-ai-vs-fine-tuned.html" class="blog-card fade-up fade-up-delay-1" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🧠</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">AI Models</span>
-          <h3>Generic AI vs. Fine-Tuned Models: What's the Real Difference?</h3>
-          <p>ChatGPT can write an email. A fine-tuned model trained on your data can write your email, in your voice, for your customer. Here's when the upgrade is worth it.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Mar 14, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 7 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-roi-of-ai-automation.html" class="blog-card fade-up fade-up-delay-2" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">💰</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">ROI</span>
-          <h3>How to Calculate the ROI of AI Automation for Your Business</h3>
-          <p>A practical framework for measuring time saved, costs reduced, and revenue gained — so you can justify the investment and track real results.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Mar 8, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 5 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-ready-tech-stack.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🔗</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Integrations</span>
-          <h3>The AI-Ready Tech Stack: Tools That Play Well With Automation</h3>
-          <p>Not all business tools are created equal when it comes to AI integration. Here's our breakdown of the platforms that unlock the most automation potential.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Mar 3, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 9 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-adoption-midmarket.html" class="blog-card fade-up fade-up-delay-1" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🏢</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Strategy</span>
-          <h3>AI Adoption for Mid-Market Companies: A Practical Roadmap</h3>
-          <p>Mid-market businesses have a unique AI opportunity — more complexity than SMBs, more agility than enterprise. Here's how to execute a smart rollout.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Feb 25, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 10 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-ai-security-2026.html" class="blog-card fade-up fade-up-delay-2" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">🔒</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Security</span>
-          <h3>AI Security Basics Every Business Owner Should Know in 2026</h3>
-          <p>As AI takes on more sensitive tasks, security isn't optional. We break down the risks, the red flags, and how to ensure your AI deployment stays protected.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Feb 18, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 7 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-agents-vs-chatbots.html" class="blog-card fade-up" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">⚙️</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">AI Agents</span>
-          <h3>AI Agents vs. Chatbots: Understanding the Difference</h3>
-          <p>A chatbot answers. An agent acts. The distinction matters enormously for what your business can actually accomplish with AI. Here's the full breakdown.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Feb 12, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 6 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-automate-sales-pipeline.html" class="blog-card fade-up fade-up-delay-1" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">📊</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Operations</span>
-          <h3>Automating Your Sales Pipeline: From Lead to Close Without Lifting a Finger</h3>
-          <p>A walkthrough of a fully automated sales workflow — prospecting, qualification, outreach, follow-up, and CRM updates — all running on autopilot.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Feb 5, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 8 min read</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="blog-solo-professional-ai-guide.html" class="blog-card fade-up fade-up-delay-2" style="display:block; text-decoration:none; color:inherit;">
-        <div class="blog-card-img">👤</div>
-        <div class="blog-card-body">
-          <span class="blog-tag">Professionals</span>
-          <h3>The Solo Professional's Guide to AI: Automate Your Practice in 30 Days</h3>
-          <p>For consultants, lawyers, advisors, and independent operators — a 30-day plan to implement AI automation and reclaim 15+ hours per week.</p>
-          <div class="blog-meta">
-            <span><i class="fa-regular fa-calendar"></i> Jan 28, 2026</span>
-            <span><i class="fa-regular fa-clock"></i> 11 min read</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- Pagination placeholder -->
-    <div style="display:flex; justify-content:center; gap:0.5rem; margin-top:3rem;">
-      <button class="btn btn-primary" style="padding:0.7rem 1.5rem; font-size:0.875rem;">1</button>
-      <button class="btn btn-ghost" style="padding:0.7rem 1.5rem; font-size:0.875rem;">2</button>
-      <button class="btn btn-ghost" style="padding:0.7rem 1.5rem; font-size:0.875rem;">3</button>
-      <button class="btn btn-ghost" style="padding:0.7rem 1.5rem; font-size:0.875rem;">Next <i class="fa-solid fa-arrow-right"></i></button>
-    </div>
+<section class="cta-section">
+  <div class="cta-grid-bg"></div>
+  <div class="cta-inner">
+    <h2 class="cta-headline">LET'S BUILD<br>SOMETHING <span>SMARTR.</span></h2>
+    <p class="cta-sub">30 minutes. No fluff. Clear next step.</p>
+    <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-primary">Book a Free Consultation</a>
   </div>
 </section>
 
-<!-- NEWSLETTER / CTA -->
-<section class="section cta-section">
-  <div class="container">
-    <div class="cta-box fade-up">
-      <span class="section-label">Stay Ahead of the Curve</span>
-      <h2>AI Is Moving Fast.<br/>So Should Your Business.</h2>
-      <p>Ready to stop reading about AI and start putting it to work? Book a free consultation and let's build something that drives real results.</p>
-      <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-        Book a Free Consultation <i class="fa-solid fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="AI Smartr" />
-        <p>Full-service AI automation for professionals, small businesses, and mid-market companies. We save you time, money, and headaches.</p>
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>Full-service AI automation company.</p>
       </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="services.html">AI Automation Workflows</a></li>
-          <li><a href="services.html">Customized AI Agents</a></li>
-          <li><a href="services.html">Easy Integrations</a></li>
-          <li><a href="services.html">Fine-Tuned Models</a></li>
-          <li><a href="services.html">AI Apps</a></li>
-          <li><a href="services.html">OpenClaw Implementation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Get Started</h5>
-        <ul>
-          <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li>
-          <li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li>
-          <li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li><li><a href="services.html">OpenClaw</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AI Smartr. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:derek@aismartr.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
   </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>

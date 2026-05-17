@@ -2,364 +2,238 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="assets/logo.png" />
-  <link rel="apple-touch-icon" href="assets/logo.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — AI Smartr</title>
-  <meta name="description" content="Get in touch with AI Smartr. Book a free consultation or send us a message — let's talk about what AI can do for your business." />
-  <meta name="keywords" content="contact AI Smartr, book AI consultation, AI automation consultation, hire AI company, AI services inquiry" />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://aismartr.com/contact.html" />
+  <meta name="description" content="Book a free 30-minute consultation with AI Smartr. No fluff, no pressure. Walk away with a clear picture of what AI automation can do for your business." />
+  <link rel="icon" type="image/png" href="logo-A.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#0A0A0A;--burg:#6B1428;--gold:#C4982B;--cream:#F5F0E8;--gray:#999;--dgray:#333;--gold-mid:#A8821F;--gold-dark:#7a5e14;--gold-lite:#EDD070;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{background:var(--black);color:#e8e8e8;font-family:'Outfit',sans-serif;font-weight:300;line-height:1.65;}
+    a{color:inherit;text-decoration:none;}
+    img{display:block;max-width:100%;}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;background:var(--black);border-bottom:1px solid #1a1a1a;display:flex;align-items:center;}
+    .nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;gap:32px;}
+    .nav-brand{display:flex;align-items:center;gap:12px;flex-shrink:0;}
+    .nav-logo-wrap{background:var(--burg);border-radius:4px;width:48px;height:48px;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+    .nav-logo-wrap img{width:48px;height:48px;object-fit:cover;}
+    .nav-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:20px;letter-spacing:0.04em;text-transform:uppercase;color:#fff;}
+    .nav-wordmark span{color:var(--gold);}
+    .nav-links{display:flex;align-items:center;gap:28px;margin-left:auto;list-style:none;}
+    .nav-links a{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gray);transition:color 0.2s;}
+    .nav-links a:hover,.nav-links a.active{color:#fff;}
+    .btn-nav{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:8px 20px;border-radius:2px;background:transparent;color:var(--gold);border:1px solid var(--gold);cursor:pointer;transition:background 0.2s,color 0.2s;}
+    .btn-nav:hover{background:var(--gold);color:var(--black);}
+    .nav-mobile-btn{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;margin-left:auto;}
+    .nav-mobile-btn span{display:block;width:22px;height:2px;background:#fff;}
+    .btn-primary{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 32px;border-radius:2px;background:var(--gold);color:var(--black);border:none;cursor:pointer;transition:background 0.2s;}
+    .btn-primary:hover{background:var(--gold-mid);}
+    .stripe{height:6px;background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-lite),var(--gold),var(--gold-dark));}
 
-  <!-- Open Graph -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://aismartr.com/contact.html" />
-  <meta property="og:site_name"   content="AI Smartr" />
-  <meta property="og:title"       content="Contact AI Smartr — Book a Free AI Consultation" />
-  <meta property="og:description" content="Book a free consultation with AI Smartr. In 30 minutes we'll identify your highest-value AI opportunities and build a clear roadmap for your business." />
-  <meta property="og:image"       content="https://aismartr.com/assets/logo.png" />
+    .page-hero{background:var(--burg);padding:120px 24px 80px;position:relative;overflow:hidden;}
+    .page-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .page-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .page-eyebrow{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);margin-bottom:16px;}
+    .page-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:0.9;text-transform:uppercase;color:#fff;}
+    .page-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-top:24px;max-width:560px;}
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="Contact AI Smartr — Book a Free AI Consultation" />
-  <meta name="twitter:description" content="30 minutes. Zero pressure. Walk away with a clear AI roadmap for your business." />
-  <meta name="twitter:image"       content="https://aismartr.com/assets/logo.png" />
+    .contact-section{background:var(--black);padding:80px 24px;}
+    .contact-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+    .contact-left{}
+    .section-eyebrow{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
 
-  <!-- Schema.org JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "url": "https://aismartr.com/contact.html",
-    "name": "Contact AI Smartr",
-    "description": "Get in touch with AI Smartr to book a free consultation or inquire about AI automation services.",
-    "publisher": {"@type": "Organization", "name": "AI Smartr", "url": "https://aismartr.com", "email": "derek@aismartr.com", "sameAs": ["https://www.linkedin.com/company/ai-smartr/"]}
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "How long does AI implementation take with AI Smartr?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most solutions go live within one to two weeks. Complex multi-department buildouts may take longer, but AI Smartr prioritizes getting clients to value as fast as possible."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need technical expertise to use what AI Smartr builds?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. AI Smartr builds for non-technical users. Everything delivered is designed to be simple to use through the tools you already use every day."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my data secure with AI Smartr?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Security is built into everything AI Smartr does — from architecture choices to deployment configuration. Enterprise-grade security practices are followed for every client, regardless of company size."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What if I don't know what AI services I need?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "That's exactly what the free consultation is for. AI Smartr helps translate a general sense that AI could help into a concrete plan with real priorities and realistic expectations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does AI Smartr offer ongoing support after launch?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. AI Smartr offers ongoing monitoring, optimization, and support to ensure AI systems keep performing and improving over time."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What types of businesses does AI Smartr work with?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "AI Smartr works with independent professionals (lawyers, consultants, advisors), small businesses (1–50 employees), and mid-market companies (51–500 employees)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is OpenClaw and does AI Smartr implement it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "OpenClaw is the world's fastest-growing open-source AI agent platform with over 310,000 GitHub stars. It takes autonomous action across business systems — sending emails, updating CRMs, managing files, and running entire workflows. AI Smartr handles the full implementation including secure deployment, custom skill development, integrations with existing tools, and ongoing management."
-        }
-      }
-    ]
-  }
-  </script>
+    .contact-methods{display:flex;flex-direction:column;gap:20px;margin:32px 0;}
+    .contact-method{display:flex;align-items:center;gap:16px;padding:20px;background:#111;border:1px solid #1a1a1a;}
+    .contact-method-icon{width:40px;height:40px;background:var(--burg);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:16px;color:var(--gold);flex-shrink:0;}
+    .contact-method-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+    .contact-method-value{font-size:15px;color:#fff;}
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    .expect-section{background:#0a0a0a;padding:80px 24px;}
+    .expect-inner{max-width:1200px;margin:0 auto;}
+    .expect-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;}
+    .expect-card{background:#111;border:1px solid #1a1a1a;padding:32px;}
+    .expect-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;margin-bottom:12px;}
+    .expect-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:8px;}
+    .expect-desc{font-size:14px;color:var(--gray);line-height:1.6;}
+
+    .faq-section{background:var(--black);padding:80px 24px;}
+    .faq-inner{max-width:800px;margin:0 auto;}
+    .faq-list{margin-top:40px;}
+    .faq-item{border-top:1px solid #1a1a1a;padding:28px 0;}
+    .faq-item:last-child{border-bottom:1px solid #1a1a1a;}
+    .faq-q{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .faq-a{font-size:15px;color:var(--gray);line-height:1.65;}
+
+    .footer{background:#050505;padding:60px 24px 0;}
+    .footer-inner{max-width:1200px;margin:0 auto;}
+    .footer-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid #1a1a1a;}
+    .footer-brand-wordmark{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:24px;text-transform:uppercase;color:#fff;letter-spacing:0.04em;margin-bottom:12px;}
+    .footer-brand-wordmark span{color:var(--gold);}
+    .footer-tagline{font-size:14px;color:var(--gray);line-height:1.6;}
+    .footer-col h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{font-size:14px;color:var(--gray);transition:color 0.2s;}
+    .footer-col ul li a:hover{color:#fff;}
+    .footer-bottom{display:flex;align-items:center;justify-content:space-between;padding:20px 0;}
+    .footer-copy{font-family:'DM Mono',monospace;font-size:11px;color:#555;letter-spacing:0.08em;}
+
+    @media(max-width:768px){
+      .contact-inner{grid-template-columns:1fr;}
+      .expect-grid{grid-template-columns:repeat(2,1fr);}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+    }
+    @media(max-width:640px){
+      .nav-links{display:none;}
+      .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}
+      .nav-mobile-btn{display:flex;}
+      .expect-grid{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr;}
+    }
+  </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav class="nav">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo.png" alt="AI Smartr" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html"    class="nav-link">Home</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="about.html"    class="nav-link">About</a></li>
-        <li><a href="blog.html"     class="nav-link">Blog</a></li>
-        <li><a href="contact.html"  class="nav-link">Contact</a></li>
-        <li class="nav-cta">
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary">
-            Book a Consultation <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </li>
-      </ul>
-      <button class="nav-mobile-btn" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr logo" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
-<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-grid"></div>
-  <div class="container">
-    <div class="page-hero-content">
-      <span class="section-label">Get In Touch</span>
-      <h1>Let's Talk About<br/><span class="text-blue">What's Possible.</span></h1>
-      <p>Whether you have a specific project in mind or you're just exploring what AI can do for your business — we'd love to hear from you.</p>
+  <div class="page-hero-inner">
+    <p class="page-eyebrow">Let's Talk</p>
+    <h1 class="page-title">LET'S TALK ABOUT<br>WHAT'S POSSIBLE.</h1>
+    <p class="page-sub">Whether you have a specific project in mind or you're just exploring what AI can do for your business, we'd love to hear from you.</p>
+  </div>
+</section>
+
+<div class="stripe"></div>
+
+<section class="contact-section">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="section-eyebrow">Get In Touch</p>
+      <p style="font-size:16px;color:#ccc;line-height:1.7;margin-top:12px;">The fastest way to start is the free 30-minute consultation. No pressure, no sales pitch. We'll listen to where your business is, identify the biggest automation opportunities, and give you a clear picture of what we'd build and what it would cost.</p>
+      <div class="contact-methods">
+        <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="contact-method">
+          <div class="contact-method-icon">CAL</div>
+          <div>
+            <div class="contact-method-label">Book a Call</div>
+            <div class="contact-method-value">Book a Free Consultation &rarr;</div>
+          </div>
+        </a>
+        <a href="mailto:derek@aismartr.com" class="contact-method">
+          <div class="contact-method-icon">@</div>
+          <div>
+            <div class="contact-method-label">Email</div>
+            <div class="contact-method-value">derek@aismartr.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="contact-method">
+          <div class="contact-method-icon">in</div>
+          <div>
+            <div class="contact-method-label">LinkedIn</div>
+            <div class="contact-method-value">AI Smartr on LinkedIn</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div>
+      <p class="section-eyebrow">No Obligation</p>
+      <p style="font-size:16px;color:#ccc;line-height:1.7;margin-top:12px;margin-bottom:32px;">You don't need to know exactly what you want. Most clients come to us with a general sense that they're spending too much time on things that should be automated. That's enough to start. We'll figure out the specifics together.</p>
+      <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn-primary">Book a Free Consultation</a>
     </div>
   </div>
 </section>
 
-<!-- CONTACT SECTION -->
-<section class="section" style="padding-top:3rem;">
-  <div class="container">
-    <div class="contact-grid">
-
-      <!-- Left: Info -->
-      <div class="fade-up">
-        <h3>Start the Conversation</h3>
-        <p>The fastest path to transformation starts with a 30-minute conversation. Book a free consultation and walk away with a clear picture of how AI can save your business time, money, and headaches.</p>
-
-        <div style="margin:2rem 0;">
-          <a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center; padding:1rem; font-size:1rem;">
-            <i class="fa-regular fa-calendar"></i> Book a Free Consultation
-          </a>
-        </div>
-
-        <div class="contact-details">
-          <a href="mailto:derek@aismartr.com" class="contact-item">
-            <div class="contact-item-icon">
-              <i class="fa-solid fa-envelope" style="color:var(--blue);"></i>
-            </div>
-            <div class="contact-item-text">
-              <span>Email Us</span>
-              <strong>derek@aismartr.com</strong>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="contact-item">
-            <div class="contact-item-icon">
-              <i class="fa-brands fa-linkedin-in" style="color:var(--blue);"></i>
-            </div>
-            <div class="contact-item-text">
-              <span>Connect on LinkedIn</span>
-              <strong>AI Smartr</strong>
-            </div>
-          </a>
-        </div>
-
-        <!-- What to expect -->
-        <div style="margin-top:2.5rem; padding:1.75rem; background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-lg);">
-          <h4 style="color:var(--text-primary); margin-bottom:1.25rem; font-size:1.1rem;">What to Expect on Your Consultation</h4>
-          <ul style="display:flex; flex-direction:column; gap:0.85rem;">
-            <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9rem; color:var(--text-secondary);">
-              <span style="color:var(--blue); margin-top:2px; flex-shrink:0;"><i class="fa-solid fa-check"></i></span>
-              <span><strong style="color:var(--text-primary);">30 minutes, zero fluff.</strong> We get straight to your business and your goals.</span>
-            </li>
-            <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9rem; color:var(--text-secondary);">
-              <span style="color:var(--blue); margin-top:2px; flex-shrink:0;"><i class="fa-solid fa-check"></i></span>
-              <span><strong style="color:var(--text-primary);">Identify your top opportunities.</strong> We'll map out where AI can deliver the fastest ROI.</span>
-            </li>
-            <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9rem; color:var(--text-secondary);">
-              <span style="color:var(--blue); margin-top:2px; flex-shrink:0;"><i class="fa-solid fa-check"></i></span>
-              <span><strong style="color:var(--text-primary);">A clear next step.</strong> You'll leave with a concrete plan — not a sales pitch.</span>
-            </li>
-            <li style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.9rem; color:var(--text-secondary);">
-              <span style="color:var(--blue); margin-top:2px; flex-shrink:0;"><i class="fa-solid fa-check"></i></span>
-              <span><strong style="color:var(--text-primary);">No obligation.</strong> If it's not the right fit, we'll tell you honestly.</span>
-            </li>
-          </ul>
-        </div>
+<section class="expect-section">
+  <div class="expect-inner">
+    <p class="section-eyebrow" style="font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">What to Expect</p>
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,64px);line-height:0.92;text-transform:uppercase;color:#fff;">Your 30 Minutes.<br>Well Spent.</h2>
+    <div class="expect-grid">
+      <div class="expect-card">
+        <div class="expect-num">30</div>
+        <div class="expect-title">Minutes</div>
+        <p class="expect-desc">That's all we need. We respect your time and come prepared.</p>
       </div>
-
-      <!-- Right: Form -->
-      <div class="contact-form-box fade-up fade-up-delay-1">
-        <h3 style="color:var(--text-primary); margin-bottom:0.5rem; font-size:1.5rem;">Send Us a Message</h3>
-        <p style="font-size:0.9rem; margin-bottom:2rem;">Prefer to reach out directly? Fill out the form and we'll get back to you within one business day.</p>
-
-        <form id="contact-form" action="mailto:derek@aismartr.com" method="POST" enctype="text/plain">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" placeholder="John" required />
-            </div>
-            <div class="form-group">
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" placeholder="Smith" required />
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="john@yourcompany.com" required />
-          </div>
-
-          <div class="form-group">
-            <label for="company">Company / Organization</label>
-            <input type="text" id="company" name="company" placeholder="Acme Inc." />
-          </div>
-
-          <div class="form-group">
-            <label for="business-type">Business Type</label>
-            <select id="business-type" name="business-type">
-              <option value="" disabled selected>Select your business type</option>
-              <option value="professional">Independent Professional / Consultant</option>
-              <option value="small-business">Small Business (1–50 employees)</option>
-              <option value="mid-market">Mid-Market Company (51–500 employees)</option>
-              <option value="enterprise">Enterprise (500+ employees)</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="service">Service of Interest</label>
-            <select id="service" name="service">
-              <option value="" disabled selected>What can we help you with?</option>
-              <option value="automation">Custom AI Automation Workflows</option>
-              <option value="agents">Customized AI Agents</option>
-              <option value="integrations">Easy Integrations</option>
-              <option value="models">Fine-Tuned Models</option>
-              <option value="apps">AI Apps</option>
-              <option value="openclaw">OpenClaw Implementation</option>
-              <option value="unsure">Not sure yet — let's talk</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="message">Tell Us About Your Business</label>
-            <textarea id="message" name="message" placeholder="What does your business do? What bottlenecks or challenges are you facing? What would you like AI to help you accomplish?"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:1rem; font-size:1rem;">
-            Send Message <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </form>
+      <div class="expect-card">
+        <div class="expect-num">0</div>
+        <div class="expect-title">Fluff</div>
+        <p class="expect-desc">No slides, no vague promises. We identify your top automation opportunities and tell you what they're worth.</p>
       </div>
-
+      <div class="expect-card">
+        <div class="expect-num">1</div>
+        <div class="expect-title">Clear Next Step</div>
+        <p class="expect-desc">You leave with a specific, concrete next step. Even if that step is "not yet."</p>
+      </div>
+      <div class="expect-card">
+        <div class="expect-num">0</div>
+        <div class="expect-title">Obligation</div>
+        <p class="expect-desc">We earn your business by being useful, not by pressuring you. No hard sell, ever.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="section" style="background:var(--bg-secondary); padding:5rem 0;">
-  <div class="container">
-    <div class="section-header text-center">
-      <span class="section-label">Common Questions</span>
-      <h2 class="section-title">Quick Answers</h2>
-    </div>
-    <div style="max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;">
-
-      <div class="fade-up" style="background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-md); padding:1.75rem;">
-        <h4 style="color:var(--text-primary); margin-bottom:0.6rem; font-size:1.1rem;">How long does implementation take?</h4>
-        <p style="font-size:0.925rem;">Most solutions go live within one to two weeks. Complex multi-department buildouts may take longer, but we always prioritize getting you to value as fast as possible.</p>
+<section class="faq-section">
+  <div class="faq-inner">
+    <p style="font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Common Questions</p>
+    <h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,64px);line-height:0.92;text-transform:uppercase;color:#fff;">FAQ.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">How long does implementation take?</div>
+        <p class="faq-a">Most single workflows are live within one to two weeks. More complex builds with multiple integrations or custom AI agents typically take three to six weeks. We scope everything upfront so there are no surprises on timeline.</p>
       </div>
-
-      <div class="fade-up fade-up-delay-1" style="background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-md); padding:1.75rem;">
-        <h4 style="color:var(--text-primary); margin-bottom:0.6rem; font-size:1.1rem;">Do I need technical expertise to use what you build?</h4>
-        <p style="font-size:0.925rem;">No. We build for non-technical users. Everything we deliver is designed to be simple to use — you interact with it through the tools you already use every day.</p>
+      <div class="faq-item">
+        <div class="faq-q">Do I need technical expertise?</div>
+        <p class="faq-a">No. You need to understand your business processes. We handle everything technical. We'll ask you a lot of questions about how things work and what you need, but none of those questions require you to know anything about code or infrastructure.</p>
       </div>
-
-      <div class="fade-up fade-up-delay-2" style="background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-md); padding:1.75rem;">
-        <h4 style="color:var(--text-primary); margin-bottom:0.6rem; font-size:1.1rem;">Is my data secure?</h4>
-        <p style="font-size:0.925rem;">Absolutely. Security is built into everything we do — from architecture choices to deployment configuration. We follow enterprise-grade security practices for every client, regardless of company size.</p>
+      <div class="faq-item">
+        <div class="faq-q">Is my data secure?</div>
+        <p class="faq-a">Yes. Security is a design requirement for everything we build, not an add-on. Every integration uses scoped, least-privilege access. Sensitive data can be processed on-premise or through enterprise API agreements with appropriate data handling terms. We'll walk you through the security model for your specific build.</p>
       </div>
-
-      <div class="fade-up" style="background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-md); padding:1.75rem;">
-        <h4 style="color:var(--text-primary); margin-bottom:0.6rem; font-size:1.1rem;">What if I don't know what I need?</h4>
-        <p style="font-size:0.925rem;">That's exactly what the free consultation is for. Most clients come in with a vague sense that AI could help — we help you translate that into a concrete plan with real priorities and realistic expectations.</p>
+      <div class="faq-item">
+        <div class="faq-q">What if I don't know what I need?</div>
+        <p class="faq-a">That's exactly what the consultation is for. Most clients come in with a vague sense of "we're spending too much time on X" and leave with a clear picture of what to automate first and what the return would look like. You don't need to have it figured out before we talk.</p>
       </div>
-
-      <div class="fade-up fade-up-delay-1" style="background:var(--bg-card); border:1px solid rgba(0,180,255,0.1); border-radius:var(--radius-md); padding:1.75rem;">
-        <h4 style="color:var(--text-primary); margin-bottom:0.6rem; font-size:1.1rem;">Do you offer ongoing support after launch?</h4>
-        <p style="font-size:0.925rem;">Yes. We offer ongoing monitoring, optimization, and support to ensure your AI systems keep performing — and improving — over time. We're partners, not one-time vendors.</p>
+      <div class="faq-item">
+        <div class="faq-q">Do you offer ongoing support?</div>
+        <p class="faq-a">Yes. We offer ongoing monitoring, optimization, and expansion packages for clients who want a long-term partner. Most clients find that once the first automation is running, they immediately want to build the second. We can support that roadmap on an ongoing basis.</p>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
+  <div class="footer-inner">
     <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="AI Smartr" />
-        <p>Full-service AI automation for professionals, small businesses, and mid-market companies. We save you time, money, and headaches.</p>
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>Full-service AI automation company.</p>
       </div>
-      <div class="footer-col">
-        <h5>Services</h5>
-        <ul>
-          <li><a href="services.html">AI Automation Workflows</a></li>
-          <li><a href="services.html">Customized AI Agents</a></li>
-          <li><a href="services.html">Easy Integrations</a></li>
-          <li><a href="services.html">Fine-Tuned Models</a></li>
-          <li><a href="services.html">AI Apps</a></li>
-          <li><a href="services.html">OpenClaw Implementation</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Company</h5>
-        <ul>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Get Started</h5>
-        <ul>
-          <li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li>
-          <li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li>
-          <li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li>
-        </ul>
-      </div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li><li><a href="services.html">OpenClaw</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="https://calendar.app.google/eQSTnenHkVhCMrnY6" target="_blank">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 AI Smartr. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/company/ai-smartr/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="mailto:derek@aismartr.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
-      </div>
-    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
   </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
