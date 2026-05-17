@@ -47,7 +47,7 @@ img { display: block; max-width: 100%; }
 .section-header { margin-bottom: 56px; }
 
 /* PAGE HERO (inner pages) */
-.page-hero { background: var(--burg); padding: 140px 24px 100px; position: relative; overflow: hidden; }
+.page-hero { background: var(--burg); padding: 140px 48px 100px; position: relative; overflow: hidden; }
 .page-hero-grid { position: absolute; inset: 0; opacity: 0.04; background-image: repeating-linear-gradient(0deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px), repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px); }
 .page-hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
 .page-eyebrow { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-lite); margin-bottom: 16px; }
