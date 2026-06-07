@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Job Search — 100 Matched Jobs + Tailored CVs in 48 Hours | AI Smartr</title>
+  <meta name="description" content="We run AI against 100+ job listings, score every one for your fit, and deliver personalized CVs ready to submit. You get results in 48 hours. $297." />
+  <link rel="icon" type="image/png" href="logo-A.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: var(--burg);
+      display: flex; align-items: center;
+      padding-top: 60px;
+      position: relative; overflow: hidden;
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(0deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px);
+    }
+    .hero-inner {
+      max-width: 860px; margin: 0 auto; padding: 100px 24px 80px;
+      position: relative; z-index: 1; text-align: center;
+    }
+    .hero-eyebrow {
+      font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-lite);
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+      font-size: clamp(52px, 8vw, 108px); line-height: 0.88;
+      text-transform: uppercase; color: #fff; margin-bottom: 28px;
+    }
+    .hero-title span { color: var(--gold); }
+    .hero-sub {
+      font-size: 18px; color: rgba(255,255,255,0.78); line-height: 1.6;
+      max-width: 620px; margin: 0 auto 40px;
+    }
+    .hero-badges {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+    .badge {
+      font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 6px 14px; border: 1px solid rgba(196,152,43,0.4);
+      color: var(--gold-lite); border-radius: 2px;
+    }
+    .hero-ctas { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* SOCIAL PROOF BAR */
+    .proof-bar {
+      background: #0f0f0f; border-top: 1px solid #1a1a1a; border-bottom: 1px solid #1a1a1a;
+      padding: 24px;
+    }
+    .proof-bar-inner {
+      max-width: 860px; margin: 0 auto;
+      display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+    }
+    .proof-stat { text-align: center; }
+    .proof-num {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 32px;
+      color: var(--gold); line-height: 1;
+    }
+    .proof-label {
+      font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--gray);
+      margin-top: 4px;
+    }
+
+    /* WHAT YOU GET */
+    .section { padding: 100px 24px; }
+    .section-inner { max-width: 860px; margin: 0 auto; }
+    .deliverables {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2px; margin-top: 48px; border: 1px solid #1e1e1e;
+    }
+    .deliverable {
+      background: #111; padding: 32px 28px;
+      border-right: 1px solid #1e1e1e;
+    }
+    .deliverable:last-child { border-right: none; }
+    .deliverable-num {
+      font-family: 'DM Mono', monospace; font-size: 11px; color: var(--gold);
+      letter-spacing: 0.16em; margin-bottom: 16px;
+    }
+    .deliverable-title {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+      font-size: 22px; text-transform: uppercase; color: #fff; margin-bottom: 10px;
+    }
+    .deliverable-desc { font-size: 14px; color: var(--gray); line-height: 1.6; }
+
+    /* HOW IT WORKS */
+    .how { background: #080808; padding: 100px 24px; }
+    .how-inner { max-width: 860px; margin: 0 auto; }
+    .steps { margin-top: 48px; display: flex; flex-direction: column; gap: 0; }
+    .step {
+      display: grid; grid-template-columns: 64px 1fr;
+      gap: 24px; align-items: start;
+      padding: 32px 0; border-bottom: 1px solid #1a1a1a;
+    }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+      font-size: 48px; color: var(--gold); line-height: 1; opacity: 0.4;
+    }
+    .step-content {}
+    .step-title {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+      font-size: 24px; text-transform: uppercase; color: #fff; margin-bottom: 8px;
+    }
+    .step-desc { font-size: 15px; color: var(--gray); line-height: 1.6; }
+    .step-tag {
+      display: inline-block; margin-top: 10px;
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 4px 10px; background: rgba(196,152,43,0.1);
+      color: var(--gold); border-radius: 2px;
+    }
+
+    /* PRICING */
+    .pricing { padding: 100px 24px; }
+    .pricing-inner { max-width: 860px; margin: 0 auto; }
+    .plans {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 2px; margin-top: 48px;
+    }
+    @media (max-width: 600px) { .plans { grid-template-columns: 1fr; } }
+    .plan {
+      background: #111; padding: 40px 32px;
+      border: 1px solid #1e1e1e; position: relative;
+    }
+    .plan.featured { border-color: var(--gold); background: #130f04; }
+    .plan-tag {
+      position: absolute; top: -1px; right: 24px;
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.14em; text-transform: uppercase;
+      padding: 4px 12px; background: var(--gold); color: var(--black);
+    }
+    .plan-name {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--gray); margin-bottom: 16px;
+    }
+    .plan-price {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+      font-size: 56px; color: #fff; line-height: 1; margin-bottom: 8px;
+    }
+    .plan-price-note {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: var(--gray); margin-bottom: 28px; letter-spacing: 0.1em;
+    }
+    .plan-features { list-style: none; margin-bottom: 32px; }
+    .plan-features li {
+      font-size: 14px; color: #ccc; padding: 8px 0;
+      border-bottom: 1px solid #1a1a1a;
+      display: flex; gap: 10px; align-items: flex-start;
+    }
+    .plan-features li:last-child { border-bottom: none; }
+    .plan-features li::before {
+      content: '→'; color: var(--gold); flex-shrink: 0; margin-top: 1px;
+    }
+    .plan-features li.muted::before { content: '—'; color: #333; }
+    .plan-features li.muted { color: #444; }
+
+    /* FREE FORM */
+    .free-section { background: #080808; padding: 100px 24px; }
+    .free-inner { max-width: 600px; margin: 0 auto; text-align: center; }
+    .intake-form {
+      background: #111; border: 1px solid #1e1e1e;
+      padding: 40px 36px; margin-top: 40px; text-align: left;
+    }
+    .form-row { margin-bottom: 20px; }
+    .form-label {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--gold); display: block; margin-bottom: 8px;
+    }
+    .form-input {
+      width: 100%; background: #0a0a0a; border: 1px solid #2a2a2a;
+      color: #e8e8e8; font-family: 'Outfit', sans-serif; font-size: 14px;
+      padding: 12px 14px; border-radius: 2px; outline: none;
+      transition: border-color 0.2s;
+    }
+    .form-input:focus { border-color: var(--gold); }
+    textarea.form-input { resize: vertical; min-height: 100px; }
+    .form-note { font-size: 12px; color: var(--gray); margin-top: 6px; }
+    .form-submit {
+      width: 100%; margin-top: 8px;
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 800;
+      font-size: 15px; letter-spacing: 0.16em; text-transform: uppercase;
+      padding: 16px; border-radius: 2px; background: var(--gold);
+      color: var(--black); border: none; cursor: pointer;
+      transition: background 0.2s;
+    }
+    .form-submit:hover { background: var(--gold-mid); }
+
+    /* FAQ */
+    .faq { padding: 100px 24px; }
+    .faq-inner { max-width: 860px; margin: 0 auto; }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 0; }
+    .faq-item { border-bottom: 1px solid #1a1a1a; padding: 28px 0; }
+    .faq-q {
+      font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+      font-size: 22px; text-transform: uppercase; color: #fff; margin-bottom: 12px;
+    }
+    .faq-a { font-size: 15px; color: var(--gray); line-height: 1.7; }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: var(--burg); padding: 100px 24px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .final-cta-grid {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        repeating-linear-gradient(0deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px),
+        repeating-linear-gradient(90deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 60px);
+    }
+    .final-cta-inner { max-width: 640px; margin: 0 auto; position: relative; z-index: 1; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr" /></div>
+      <span class="nav-wordmark">AI <span>Smartr</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact.html" class="btn-nav">Book a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">AI-Powered Job Search · Done For You</p>
+    <h1 class="hero-title">100 Jobs.<br><span>Tailored CVs.</span><br>48 Hours.</h1>
+    <p class="hero-sub">
+      We run AI against 100+ job listings, score every one for your fit, and deliver
+      personalized CVs ready to submit — in 48 hours. You close the interviews. We find them.
+    </p>
+    <div class="hero-badges">
+      <span class="badge">740+ jobs evaluated</span>
+      <span class="badge">100+ CVs generated</span>
+      <span class="badge">1 Head of AI role landed</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="#pricing" class="btn-primary">Get Started — $297</a>
+      <a href="#free" class="btn-ghost">Try Free — 20 Jobs</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <div class="proof-stat">
+      <div class="proof-num">740+</div>
+      <div class="proof-label">Jobs Evaluated</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">100+</div>
+      <div class="proof-label">CVs Generated</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">48h</div>
+      <div class="proof-label">Turnaround</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">A–F</div>
+      <div class="proof-label">Fit Scoring</div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT YOU GET -->
+<section class="section">
+  <div class="section-inner">
+    <p class="section-eyebrow">What You Get</p>
+    <h2 class="section-title">Your full pipeline.<br>In two days.</h2>
+    <div class="deliverables">
+      <div class="deliverable">
+        <div class="deliverable-num">01</div>
+        <div class="deliverable-title">100 Matched Jobs</div>
+        <div class="deliverable-desc">AI scans 100+ live listings across Greenhouse, Ashby, Lever, and company pages — filtered to your role, level, location, and salary.</div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-num">02</div>
+        <div class="deliverable-title">A–F Fit Scores</div>
+        <div class="deliverable-desc">Every job scored across 10 dimensions — role fit, compensation, culture, growth, remote policy. You see exactly why each job did or didn't make the cut.</div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-num">03</div>
+        <div class="deliverable-title">10 Tailored CVs</div>
+        <div class="deliverable-desc">For your top 10 matches, AI adapts your resume to each JD — keywords, framing, proof points. ATS-optimized PDFs, ready to upload.</div>
+      </div>
+      <div class="deliverable">
+        <div class="deliverable-num">04</div>
+        <div class="deliverable-title">Pipeline Tracker</div>
+        <div class="deliverable-desc">Everything in one spreadsheet — company, role, score, status, notes, next action. Your entire search organized from day one.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="how-inner">
+    <p class="section-eyebrow">How It Works</p>
+    <h2 class="section-title">Simple.<br>Fast. Done.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">You Fill Out One Form</div>
+          <div class="step-desc">Tell us your target role, location, salary range, and paste your resume. Takes 5 minutes. No call needed.</div>
+          <span class="step-tag">5 minutes</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">AI Scans & Scores Your Market</div>
+          <div class="step-desc">Our system scans 100+ live job listings, evaluates every one against your profile, and surfaces the best fits — eliminating the ones that would waste your time.</div>
+          <span class="step-tag">AI runs overnight</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">We Deliver Your CVs & Pipeline</div>
+          <div class="step-desc">Within 48 hours you receive: your scored job list, 10 tailored CV PDFs ready to submit, and a pipeline tracker to manage your search.</div>
+          <span class="step-tag">Delivered via Google Drive</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">You Apply. You Interview. You Close.</div>
+          <div class="step-desc">You submit the applications (takes 20 minutes with pre-built CVs). We've done the research. You do the talking.</div>
+          <span class="step-tag">You're in control</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="pricing-inner">
+    <p class="section-eyebrow">Pricing</p>
+    <h2 class="section-title">No subscriptions.<br>No surprises.</h2>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-name">Free Evaluation</div>
+        <div class="plan-price">$0</div>
+        <div class="plan-price-note">No credit card. No catch.</div>
+        <ul class="plan-features">
+          <li>20 job listings scanned</li>
+          <li>A–F fit scores for each</li>
+          <li>Delivered in 24 hours</li>
+          <li class="muted">CV generation not included</li>
+          <li class="muted">Pipeline tracker not included</li>
+        </ul>
+        <a href="#free" class="btn-ghost" style="width:100%;text-align:center;">Start Free</a>
+      </div>
+      <div class="plan featured">
+        <div class="plan-tag">Most Popular</div>
+        <div class="plan-name">Full Pipeline</div>
+        <div class="plan-price">$297</div>
+        <div class="plan-price-note">One-time. Yours forever.</div>
+        <ul class="plan-features">
+          <li>100+ job listings scanned</li>
+          <li>A–F fit scores with reasoning</li>
+          <li>10 tailored CV PDFs (ATS-optimized)</li>
+          <li>Full pipeline tracker spreadsheet</li>
+          <li>Delivered in 48 hours</li>
+        </ul>
+        <a href="https://buy.stripe.com/REPLACE_WITH_STRIPE_LINK" class="btn-primary" style="width:100%;text-align:center;">Get Started — $297</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE FORM -->
+<section class="free-section" id="free">
+  <div class="free-inner">
+    <p class="section-eyebrow">Free Evaluation</p>
+    <h2 class="section-title" style="font-size:clamp(36px,5vw,60px);">See what's out there.<br>Before you commit.</h2>
+    <p style="color:var(--gray);font-size:15px;margin-top:16px;line-height:1.7;">
+      Fill this out. We'll scan 20 jobs, score them for your fit, and email you the results within 24 hours. Free. No card.
+    </p>
+    <form class="intake-form" name="free-eval" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID">
+      <div class="form-row">
+        <label class="form-label" for="name">Full Name</label>
+        <input class="form-input" id="name" name="name" type="text" placeholder="Jane Smith" required />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" id="email" name="email" type="email" placeholder="jane@example.com" required />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="role">Target Role</label>
+        <input class="form-input" id="role" name="target_role" type="text" placeholder="Senior AI Engineer, Solutions Engineer, etc." required />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="location">Location / Remote?</label>
+        <input class="form-input" id="location" name="location" type="text" placeholder="Remote only, NYC, Open to hybrid, etc." required />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="salary">Salary Target</label>
+        <input class="form-input" id="salary" name="salary" type="text" placeholder="$120K–$160K, open, etc." />
+      </div>
+      <div class="form-row">
+        <label class="form-label" for="resume">Paste Your Resume</label>
+        <textarea class="form-input" id="resume" name="resume" placeholder="Paste your resume here (plain text is fine)" required></textarea>
+        <p class="form-note">Plain text, LinkedIn summary, or any format — we'll handle the rest.</p>
+      </div>
+      <button type="submit" class="form-submit">Send Me My Free Evaluation →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <p class="section-eyebrow">Questions</p>
+    <h2 class="section-title">Straight answers.</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Do you submit applications for me?</div>
+        <div class="faq-a">No — and that's intentional. We find the jobs and tailor your CV for each one. You submit. This keeps you in control, your accounts safe, and the applications genuinely yours. With pre-built CVs, each submission takes about 2 minutes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What if the jobs don't match what I'm looking for?</div>
+        <div class="faq-a">That's rare, but if your results don't include at least 10 genuinely relevant roles, we'll rerun the scan against adjusted criteria at no charge. We want you to have a usable pipeline, not a list of noise.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What roles and industries do you cover?</div>
+        <div class="faq-a">We focus on tech, AI, SaaS, fintech, and professional services. We cover roles from IC to Director level — engineering, product, sales engineering, operations, and AI/ML. If you're in a niche industry, tell us upfront and we'll confirm coverage before you pay.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How do you tailor the CVs?</div>
+        <div class="faq-a">The AI reads your resume and the job description side by side — it identifies which of your experiences are most relevant, adjusts your summary, reorders bullets, and injects the right keywords for ATS. It's not a template swap. Each CV is reasoning about your fit for that specific role.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is my resume data private?</div>
+        <div class="faq-a">Yes. We use your resume only to run your evaluation. We don't store, share, or use it for anything else. Your data is processed and then deleted within 7 days of delivery.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-grid"></div>
+  <div class="final-cta-inner">
+    <p class="section-eyebrow" style="color:var(--gold-lite);">Ready?</p>
+    <h2 class="section-title" style="font-size:clamp(48px,7vw,88px);margin-bottom:24px;">
+      Stop applying blind.
+    </h2>
+    <p style="font-size:17px;color:rgba(255,255,255,0.75);margin-bottom:40px;line-height:1.65;">
+      100 scored jobs. 10 tailored CVs. 48 hours. One payment.
+    </p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="https://buy.stripe.com/REPLACE_WITH_STRIPE_LINK" class="btn-primary">Get Started — $297</a>
+      <a href="#free" class="btn-ghost">Try Free First</a>
+    </div>
+  </div>
+</section>
+
+<div class="stripe"></div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div style="padding:32px 0;text-align:center;border-top:1px solid #1a1a1a;margin-top:0;">
+      <p style="font-family:'DM Mono',monospace;font-size:11px;color:#444;letter-spacing:0.12em;">
+        © 2026 AI Smartr · <a href="index.html" style="color:#444;">Home</a> · <a href="contact.html" style="color:#444;">Contact</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
