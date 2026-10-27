@@ -4,7 +4,7 @@
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog</title>
+  <title>Model Prices Just Dropped 80%. Is Your Automation Built to Use It? | AI Smartr Blog</title>
   <meta name="description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
   <link rel="icon" type="image/png" href="logo-A.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,7 +63,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="AI Smartr" />
-  <meta property="og:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog" />
+  <meta property="og:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? | AI Smartr Blog" />
   <meta property="og:description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
   <meta property="og:url" content="https://aismartr.com/blog-model-agnostic-ai-automation.html" />
   <meta property="og:image" content="https://aismartr.com/logo-A.png" />
@@ -71,7 +71,7 @@
   <meta property="og:image:height" content="1024" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog" />
+  <meta name="twitter:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? | AI Smartr Blog" />
   <meta name="twitter:description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
   <meta name="twitter:image" content="https://aismartr.com/logo-A.png" />
   <!-- Canonical -->
@@ -139,11 +139,13 @@
 <section class="post-section">
   <div class="post-layout">
     <article class="post-body">
+
       <p>On July 30, OpenAI announced that GPT-5.6 Luna would cost 80% less and GPT-5.6 Terra 20% less. The new API pricing: $2 per million input tokens and $12 per million output tokens for Terra, and $0.20 and $1.20 for Luna.</p>
 
       <p>That's one provider on one day. This summer also brought GPT-5.6 in three tiers (Sol, Terra, and Luna), Anthropic's Claude Opus 5, and Meta's Muse Code for background coding agents. The leaderboard keeps changing, and so does the price list.</p>
 
-      <p>Which raises a question every business running AI automation should be able to answer: if a better or cheaper model shipped tomorrow, how long would it take you to switch?</p>
+      <p>So here's the question every business running AI automation should be able to answer: if a better or cheaper model shipped tomorrow, how long would it take you to switch?</p>
+
       <div class="post-stat-box">
         <div class="stat-item">
           <div class="stat-num">80%</div>
@@ -158,51 +160,63 @@
           <div class="stat-lbl">tiers in the GPT-5.6 family: Sol, Terra, Luna</div>
         </div>
       </div>
-      <h2 id="lock-in-cost">What Lock-In Actually Costs</h2>
-      <p>When your prompts, tools, and workflow logic are written around one model's quirks, every change becomes a project. You can't capture a price cut. You can't move a hard task to a stronger model. And an outage or policy change at one vendor becomes an outage in your business.</p>
 
-      <p>The expensive part is rarely the swap itself. It's not knowing whether the new model is good enough, because nobody wrote down what "good" looks like.</p>
+      <h2 id="lock-in-cost">What Lock-In Actually Costs</h2>
+
+      <p>When your prompts, tools, and workflow logic are written around one model's quirks, every change becomes a project. You can't capture a price cut.</p>
+
+      <p>You can't move a hard task to a stronger model. And an outage or policy change at one vendor becomes an outage in your business.</p>
+
+      <p>The swap itself rarely costs much. The expensive part is not knowing whether the new model is good enough, because "good" never got written down.</p>
 
       <div class="post-callout">
-        <p><strong>Lock-in usually isn't a contract problem. It's a testing problem.</strong> If you can't prove a cheaper model handles the job, you keep paying for the expensive one.</p>
+        <p><strong>Lock-in is mostly a testing problem.</strong> If you can't prove a cheaper model handles the job, you keep paying for the expensive one.</p>
       </div>
 
       <h2 id="model-agnostic-layer">Build a Model-Agnostic Layer</h2>
-      <p>Model-agnostic doesn't mean complicated. It means your workflow logic (triggers, data, guardrails, approvals) lives separately from the model doing the thinking, so the model becomes a setting instead of a foundation.</p>
+
+      <p>Model-agnostic is simple. Your workflow logic (triggers, data, guardrails, approvals) lives separately from the model doing the thinking, so the model becomes a setting instead of a foundation.</p>
 
       <h3>What that layer includes</h3>
+
       <ul>
         <li>One place where the model is chosen, so a swap is a config change</li>
-        <li>Prompts stored as versioned assets you own, not buried inside a vendor tool</li>
+        <li>Prompts stored as versioned assets you own, outside any vendor tool</li>
         <li>A small test set per workflow: 20 to 50 real examples with known-good outputs</li>
         <li>Logging of inputs, outputs, cost, and failures so you can compare models on real traffic</li>
         <li>A fallback to a second provider when the first is down</li>
       </ul>
 
       <h2 id="match-tier-to-task">Match the Model to the Task</h2>
-      <p>Frontier pricing is tiered for a reason. Not every step in a workflow needs the most capable model, and paying flagship rates for sorting email is waste.</p>
+
+      <p>Frontier pricing is tiered for a reason. Plenty of steps in a workflow don't need the most capable model, and paying flagship rates for sorting email is waste.</p>
 
       <ul>
-        <li><strong>Volume work</strong> (classifying email, tagging tickets, extracting invoice fields): the cheapest, fastest tier</li>
-        <li><strong>Everyday drafting and routing:</strong> a balanced tier</li>
-        <li><strong>Hard reasoning</strong> (contract analysis, multi-step planning, edge-case handling): the flagship, only where it earns its cost</li>
+        <li>Volume work (classifying email, tagging tickets, extracting invoice fields): the cheapest, fastest tier</li>
+        <li>Everyday drafting and routing: a balanced tier</li>
+        <li>Hard reasoning (contract analysis, multi-step planning, edge cases): the flagship, only where it earns its cost</li>
       </ul>
 
       <div class="post-highlight">
         <h4>Illustrative Math</h4>
-        <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:0;">A workflow that reads 5,000 emails a month at roughly 1,000 input tokens each is 5 million input tokens. At Luna's $0.20 per million, that's about $1 in input cost. At Terra's $2 per million, about $10. Output tokens add to both. The amounts are small at this scale, but the ratio holds as volume grows, and it's the reason tier selection is worth getting right early. Prices as announced July 30, 2026; check current rates before budgeting.</p>
+        <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:12px;">A workflow that reads 5,000 emails a month at roughly 1,000 input tokens each is 5 million input tokens. At Luna's $0.20 per million, that's about $1 in input cost. At Terra's $2 per million, about $10. Output tokens add to both.</p>
+        <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:0px;">The amounts are small at this scale, but the ratio holds as volume grows, which is why tier selection is worth getting right early. Prices as announced July 30, 2026; check current rates before budgeting.</p>
       </div>
 
       <h2 id="getting-started">Where to Start</h2>
+
       <p>Audit each workflow for two things: which model it's hard-wired to, and whether anyone has tested an alternative. Pick your highest-volume workflow, write the test set, and run it against a cheaper tier. If it passes, you just cut that workflow's cost without touching the outcome.</p>
 
-      <p>Do that once and the next price drop or model release stops being a project. It becomes a test run.</p>
+      <p>Do that once and the next price drop or model release is just a test run.</p>
+
       <div class="post-cta-box">
         <h3>Is your automation locked to one model?</h3>
         <p>We'll audit your workflows, build the test sets, and set up routing so you capture price drops and new models as they ship.</p>
         <a href="contact.html" class="btn-primary">Book a Free Call</a>
       </div>
+
       <p style="font-size:13px;color:var(--gray);margin-top:32px;">Source for pricing: <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/" target="_blank" rel="noopener" style="color:var(--gold);">OpenAI, July 30, 2026</a>, as reported in industry news roundups.</p>
+
     </article>
 
     <aside class="post-sidebar">
@@ -242,7 +256,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
-        <p class="footer-tagline">We build AI systems that work for your business. Not demos. Not hype. Real automation that saves time and drives revenue.</p>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>Full-service AI automation company.</p>
       </div>
       <div class="footer-col">
         <h5>Services</h5>
