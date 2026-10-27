@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog</title>
+  <meta name="description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
+  <link rel="icon" type="image/png" href="logo-A.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .post-hero{background:var(--burg);padding:100px 24px 64px;position:relative;overflow:hidden;}
+    .post-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .post-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .post-eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:20px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);}
+    .post-date,.post-read{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);line-height:0.95;text-transform:uppercase;color:#fff;max-width:900px;margin-bottom:24px;}
+    .post-lead{font-size:18px;color:rgba(255,255,255,0.8);max-width:700px;line-height:1.6;}
+    .post-section{background:var(--black);padding:64px 24px 80px;}
+    .post-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .post-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3vw,38px);text-transform:uppercase;color:#fff;margin-top:48px;margin-bottom:16px;line-height:1.05;}
+    .post-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--gold);margin-top:32px;margin-bottom:12px;}
+    .post-body p{font-size:16px;color:#ccc;line-height:1.75;margin-bottom:20px;}
+    .post-body ul{margin:0 0 20px 20px;}
+    .post-body li{font-size:15px;color:#ccc;line-height:1.7;margin-bottom:8px;}
+    .post-body strong{color:#e8e8e8;font-weight:500;}
+    .post-stat-box{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:32px;margin:40px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .stat-item{text-align:center;}
+    .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .stat-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .post-callout{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:24px 28px;margin:32px 0;}
+    .post-callout p{margin-bottom:0;color:#ddd;}
+    .post-highlight{background:#111;border:1px solid #1a1a1a;padding:28px 32px;margin:32px 0;}
+    .post-highlight h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box{background:var(--burg);padding:40px;margin:48px 0 0;text-align:center;}
+    .post-cta-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px;}
+    .post-sidebar{position:sticky;top:80px;}
+    .sidebar-card{background:#111;border:1px solid #1a1a1a;padding:28px;margin-bottom:20px;}
+    .sidebar-card h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .toc-link{display:block;font-size:13px;color:var(--gray);padding:6px 0;border-bottom:1px solid #1a1a1a;transition:color 0.2s;}
+    .toc-link:last-child{border-bottom:none;}
+    .toc-link:hover{color:var(--gold);}
+    .related-link{display:block;padding:12px 0;border-bottom:1px solid #1a1a1a;}
+    .related-link:last-child{border-bottom:none;}
+    .related-cat{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .related-title{font-size:13px;color:#ccc;margin-top:4px;line-height:1.4;}
+    .related-link:hover .related-title{color:#fff;}
+    .sidebar-cta{background:var(--burg)!important;border:none!important;}
+    .sidebar-cta p{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+
+    @media(max-width:768px){
+      .post-layout{grid-template-columns:1fr;gap:40px;}
+      .post-sidebar{position:static;}
+      .post-stat-box{grid-template-columns:1fr;}
+      .nav-links.open{display:flex;}
+    }
+    @media(max-width:640px){.post-stat-box{grid-template-columns:1fr;}}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AI Smartr" />
+  <meta property="og:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog" />
+  <meta property="og:description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
+  <meta property="og:url" content="https://aismartr.com/blog-model-agnostic-ai-automation.html" />
+  <meta property="og:image" content="https://aismartr.com/logo-A.png" />
+  <meta property="og:image:width" content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Model Prices Just Dropped 80%. Is Your Automation Built to Use It? — AI Smartr Blog" />
+  <meta name="twitter:description" content="OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here&#x27;s how to build yours that way." />
+  <meta name="twitter:image" content="https://aismartr.com/logo-A.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aismartr.com/blog-model-agnostic-ai-automation.html" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Model Prices Just Dropped 80%. Is Your Automation Built to Use It?",
+  "description": "OpenAI cut GPT-5.6 Luna pricing 80% and Terra 20% on July 30. Automation built to swap models captures savings instantly. Here's how to build yours that way.",
+  "image": "https://aismartr.com/logo-A.png",
+  "url": "https://aismartr.com/blog-model-agnostic-ai-automation.html",
+  "datePublished": "2026-08-20",
+  "dateModified": "2026-08-20",
+  "author": {
+    "@type": "Organization",
+    "name": "AI Smartr"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI Smartr",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://aismartr.com/logo-A.png"
+    }
+  }
+}
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-A.png" alt="AI Smartr" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn-nav">Book a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="post-hero">
+  <div class="post-hero-grid"></div>
+  <div class="post-hero-inner">
+    <div class="post-eyebrow">
+      <span class="post-cat">AI Models</span>
+      <span class="post-date">August 20, 2026</span>
+      <span class="post-read">6 min read</span>
+    </div>
+    <h1 class="post-title">Model Prices Just Dropped 80%. Is Your Automation Built to Use It?</h1>
+    <p class="post-lead">One announcement cut a frontier-model tier by 80%. Teams hard-wired to one model had to scramble. Teams with a model-agnostic layer changed a setting.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+
+<section class="post-section">
+  <div class="post-layout">
+    <article class="post-body">
+      <p>On July 30, OpenAI announced that GPT-5.6 Luna would cost 80% less and GPT-5.6 Terra 20% less. The new API pricing: $2 per million input tokens and $12 per million output tokens for Terra, and $0.20 and $1.20 for Luna.</p>
+
+      <p>That's one provider on one day. This summer also brought GPT-5.6 in three tiers (Sol, Terra, and Luna), Anthropic's Claude Opus 5, and Meta's Muse Code for background coding agents. The leaderboard keeps changing, and so does the price list.</p>
+
+      <p>Which raises a question every business running AI automation should be able to answer: if a better or cheaper model shipped tomorrow, how long would it take you to switch?</p>
+      <div class="post-stat-box">
+        <div class="stat-item">
+          <div class="stat-num">80%</div>
+          <div class="stat-lbl">price cut to GPT-5.6 Luna on July 30</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20%</div>
+          <div class="stat-lbl">price cut to GPT-5.6 Terra the same day</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3</div>
+          <div class="stat-lbl">tiers in the GPT-5.6 family: Sol, Terra, Luna</div>
+        </div>
+      </div>
+      <h2 id="lock-in-cost">What Lock-In Actually Costs</h2>
+      <p>When your prompts, tools, and workflow logic are written around one model's quirks, every change becomes a project. You can't capture a price cut. You can't move a hard task to a stronger model. And an outage or policy change at one vendor becomes an outage in your business.</p>
+
+      <p>The expensive part is rarely the swap itself. It's not knowing whether the new model is good enough, because nobody wrote down what "good" looks like.</p>
+
+      <div class="post-callout">
+        <p><strong>Lock-in usually isn't a contract problem. It's a testing problem.</strong> If you can't prove a cheaper model handles the job, you keep paying for the expensive one.</p>
+      </div>
+
+      <h2 id="model-agnostic-layer">Build a Model-Agnostic Layer</h2>
+      <p>Model-agnostic doesn't mean complicated. It means your workflow logic (triggers, data, guardrails, approvals) lives separately from the model doing the thinking, so the model becomes a setting instead of a foundation.</p>
+
+      <h3>What that layer includes</h3>
+      <ul>
+        <li>One place where the model is chosen, so a swap is a config change</li>
+        <li>Prompts stored as versioned assets you own, not buried inside a vendor tool</li>
+        <li>A small test set per workflow: 20 to 50 real examples with known-good outputs</li>
+        <li>Logging of inputs, outputs, cost, and failures so you can compare models on real traffic</li>
+        <li>A fallback to a second provider when the first is down</li>
+      </ul>
+
+      <h2 id="match-tier-to-task">Match the Model to the Task</h2>
+      <p>Frontier pricing is tiered for a reason. Not every step in a workflow needs the most capable model, and paying flagship rates for sorting email is waste.</p>
+
+      <ul>
+        <li><strong>Volume work</strong> (classifying email, tagging tickets, extracting invoice fields): the cheapest, fastest tier</li>
+        <li><strong>Everyday drafting and routing:</strong> a balanced tier</li>
+        <li><strong>Hard reasoning</strong> (contract analysis, multi-step planning, edge-case handling): the flagship, only where it earns its cost</li>
+      </ul>
+
+      <div class="post-highlight">
+        <h4>Illustrative Math</h4>
+        <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:0;">A workflow that reads 5,000 emails a month at roughly 1,000 input tokens each is 5 million input tokens. At Luna's $0.20 per million, that's about $1 in input cost. At Terra's $2 per million, about $10. Output tokens add to both. The amounts are small at this scale, but the ratio holds as volume grows, and it's the reason tier selection is worth getting right early. Prices as announced July 30, 2026; check current rates before budgeting.</p>
+      </div>
+
+      <h2 id="getting-started">Where to Start</h2>
+      <p>Audit each workflow for two things: which model it's hard-wired to, and whether anyone has tested an alternative. Pick your highest-volume workflow, write the test set, and run it against a cheaper tier. If it passes, you just cut that workflow's cost without touching the outcome.</p>
+
+      <p>Do that once and the next price drop or model release stops being a project. It becomes a test run.</p>
+      <div class="post-cta-box">
+        <h3>Is your automation locked to one model?</h3>
+        <p>We'll audit your workflows, build the test sets, and set up routing so you capture price drops and new models as they ship.</p>
+        <a href="contact.html" class="btn-primary">Book a Free Call</a>
+      </div>
+      <p style="font-size:13px;color:var(--gray);margin-top:32px;">Source for pricing: <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/" target="_blank" rel="noopener" style="color:var(--gold);">OpenAI, July 30, 2026</a>, as reported in industry news roundups.</p>
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <h5>In This Article</h5>
+        <a href="#lock-in-cost" class="toc-link">What Lock-In Costs</a>
+        <a href="#model-agnostic-layer" class="toc-link">A Model-Agnostic Layer</a>
+        <a href="#match-tier-to-task" class="toc-link">Match Model to Task</a>
+        <a href="#getting-started" class="toc-link">Where to Start</a>
+      </div>
+      <div class="sidebar-card">
+        <h5>Related Articles</h5>
+        <a href="blog-generic-ai-vs-fine-tuned.html" class="related-link">
+          <div class="related-cat">AI Models</div>
+          <div class="related-title">Generic AI vs. Fine-Tuned Models: What's the Real Difference?</div>
+        </a>
+        <a href="blog-build-vs-buy-ai-tools.html" class="related-link">
+          <div class="related-cat">AI Automation</div>
+          <div class="related-title">Build vs. Buy: When Off-the-Shelf AI Tools Stop Being Enough</div>
+        </a>
+        <a href="blog-roi-of-ai-automation.html" class="related-link">
+          <div class="related-cat">ROI</div>
+          <div class="related-title">How to Calculate the ROI of AI Automation for Your Business</div>
+        </a>
+      </div>
+      <div class="sidebar-card sidebar-cta">
+        <h5>Talk to Us</h5>
+        <p>We build automation that isn't tied to any one model, so you get every price cut and upgrade.</p>
+        <a href="contact.html" class="btn-primary" style="width:100%;text-align:center;display:block;">Book a Free Call</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We build AI systems that work for your business. Not demos. Not hype. Real automation that saves time and drives revenue.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Workflow Automation</a></li>
+          <li><a href="services.html">AI Agents</a></li>
+          <li><a href="services.html">Integrations</a></li>
+          <li><a href="services.html">Fine-Tuned Models</a></li>
+          <li><a href="services.html">AI Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get Started</h5>
+        <ul>
+          <li><a href="contact.html">Book a Call</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
