@@ -22,16 +22,6 @@ Website: https://aismartr.com
 
 - **Fine-Tuned Models**: Models trained on your data for domain-specific accuracy. Document understanding, sentiment analysis, classification, and industry-specific language.
 
-## Pricing
-
-All prices in USD. Full details at https://aismartr.com/pricing.html
-
-- Starter Build: $2,500. One workflow automation, live in about 2 weeks.
-- Growth Build: $7,500. Three workflows and one AI agent, live in about 4 weeks.
-- Retainer, Maintain: $1,500 per month. Monitoring, optimization, and 1 small build or change per month.
-- Retainer, Scale: $3,500 per month. 2 builds or changes per month, agent operations, and monthly ROI reporting.
-- White Glove: custom scope and price for multi-department rollouts, set on a call.
-
 ## What Clients Get
 
 - Time: clients typically reclaim 10 to 30+ hours per week
@@ -56,7 +46,6 @@ All prices in USD. Full details at https://aismartr.com/pricing.html
 
 - [Home](https://aismartr.com/): Overview of services
 - [Services](https://aismartr.com/services.html): Detailed breakdown of each AI service
-- [Pricing](https://aismartr.com/pricing.html): Fixed-price builds, retainers, and the white glove option
 - [About](https://aismartr.com/about.html): Mission, values, and how we work
 - [Blog](https://aismartr.com/blog.html): Practical AI guides and strategies for businesses
 - [Contact](https://aismartr.com/contact.html): Book a free 30-minute consultation
