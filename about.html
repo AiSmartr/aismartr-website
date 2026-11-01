@@ -19,6 +19,11 @@
     .story{background:var(--black);}
     .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
     .story-body p+p{margin-top:20px;}
+    .story-lessons{list-style:none;margin-top:12px;}
+    .story-lessons li{padding:16px 0;border-top:1px solid #1a1a1a;font-size:15px;color:var(--gray);line-height:1.65;}
+    .story-lessons li:last-child{border-bottom:1px solid #1a1a1a;}
+    .story-lessons li strong{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;letter-spacing:0.04em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;}
+    .story-pullquote{position:sticky;top:100px;}
     .story-pullquote{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:clamp(24px,3vw,36px);line-height:1.1;text-transform:uppercase;color:var(--gold);border-left:3px solid var(--gold);padding-left:24px;}
 
     /* VALUES */
@@ -52,6 +57,7 @@
 
     @media(max-width:768px){
       .story-grid{grid-template-columns:1fr;}
+      .story-pullquote{position:static;}
       .values-grid{grid-template-columns:1fr;}
 
     }
@@ -133,13 +139,21 @@
     <div class="story-grid">
       <div class="story-body">
         <p class="section-eyebrow">Our Story</p>
-        <p>We built AI Smartr because the best AI tools were locked behind budgets most businesses couldn't touch. That felt wrong. So we built a company that makes enterprise-grade AI automation actually accessible.</p>
-        <p>The technology exists. The knowledge to deploy it correctly is what's been scarce.</p>
-
-        <p>Our job is to close that gap. To take the tools that Fortune 500 companies have been using for years and make them work for the law firm with eight attorneys, the e-commerce brand doing $3M, the consulting firm that's too busy to find time to fix how busy it is.</p>
-        <p>We build things. Workflows that run. Agents that act.</p>
-
-        <p>Systems that give hours back to your week from the first day they're live.</p>
+        <p>I started out as a computer science student, and I paid my way through school in sales.</p>
+        <p>When I finished, I loved talking to and meeting people from all walks of life in New York. That pulled me into real estate sales.</p>
+        <p>I was using software the whole time. I recommended tools to colleagues and helped us get more efficient and productive.</p>
+        <p>I stayed in real estate for about 10 years. During COVID I took time to think about my passions, and two things stood out: I really enjoyed software, and I had strong sales skills.</p>
+        <p>So I moved into software sales, where I've spent the last 5 years. I've sold at Fortune 100 companies, talked with technical and non-technical stakeholders, and translated the value of the tools in plain English.</p>
+        <p>Then I had the ChatGPT moment, and I decided to get technical again. Around 2024 I went back to developing, building agentic AI and putting it into production.</p>
+        <p><strong>AI Smartr is what those three careers add up to.</strong></p>
+        <p class="section-eyebrow" style="margin-top:36px;">What the Road Taught Me</p>
+        <ul class="story-lessons">
+          <li><strong>Listen first.</strong> Sales taught me that every account starts with what hurts.</li>
+          <li><strong>Translate plainly.</strong> Software sales put me in rooms with technical and non-technical people, and my job was making the value clear to both.</li>
+          <li><strong>Ship it.</strong> A demo is a promise. An agent in production is the proof.</li>
+        </ul>
+        <p style="margin-top:28px;">The technology exists, and the knowledge to deploy it correctly is what's been scarce. That's the gap I built AI Smartr to close.</p>
+        <p>We make it work for the law firm with eight attorneys, the e-commerce brand doing $3M, and the consulting firm too busy to fix how busy it is.</p>
       </div>
       <div class="story-pullquote">
         We build AI agents for every department of your business: sales, marketing, finance, and more, each with approval gates and a human on the hard calls.
