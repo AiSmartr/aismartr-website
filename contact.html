@@ -390,6 +390,8 @@ Cal("inline", {
   layout: "month_view"
 });
 
+window.addEventListener("load",function(){ if (window.aiBindCal) window.aiBindCal(); });
+
 Cal("ui", {
   theme: "dark",
   hideEventTypeDetails: true,

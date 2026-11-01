@@ -174,3 +174,11 @@ img { display: block; max-width: 100%; }
   .page-hero.has-mascot .ph-copy{padding-bottom:24px;}
   .page-hero.has-mascot .ph-mascot{height:440px;object-position:bottom center;margin:0 auto;}
 }
+
+/* sources list on blog posts */
+.post-sources{margin-top:56px;padding-top:8px;border-top:1px solid #1a1a1a;}
+.post-sources h2{margin-top:32px;}
+.post-sources ol{margin:0 0 16px 20px;}
+.post-sources li{font-size:13.5px;color:var(--gray);line-height:1.6;margin-bottom:8px;}
+.post-sources a{color:var(--gold-lite);text-decoration:underline;text-underline-offset:2px;}
+.post-sources p{font-size:13px;color:var(--gray);font-style:italic;}
