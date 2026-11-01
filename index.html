@@ -75,6 +75,16 @@
     .service-arrow { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); opacity: 0; transition: opacity 0.2s; }
     .service-row:hover .service-arrow { opacity: 1; }
 
+
+    /* PRICING TEASER */
+    .price-teaser { background: var(--black); padding: 80px 24px; }
+    .price-teaser-inner { max-width: 1200px; margin: 0 auto; }
+    .price-chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+    .price-chip { background: #111; border: 1px solid #1a1a1a; padding: 28px; }
+    .price-chip-name { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gray); margin-bottom: 10px; }
+    .price-chip-price { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 44px; line-height: 1; color: var(--gold); }
+    .price-chip-price small { font-size: 16px; color: var(--gray); font-weight: 600; }
+
     /* CTA SECTION */
     .cta-section {
       background: var(--burg); padding: 100px 24px;
@@ -95,6 +105,10 @@
     .cta-sub { font-size: 18px; color: rgba(255,255,255,0.75); margin-bottom: 40px; }
 
     @media (max-width: 768px) {
+      .price-chips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .price-chip { padding: 18px; }
+      .price-chip-price { font-size: 32px; }
+      .price-chip-price small { font-size: 13px; }
       .hero-inner { grid-template-columns: 1fr; gap: 40px; text-align: left; }
       .hero-logo { justify-content: flex-start; order: -1; }
       .hero-logo img { max-width: 260px; }
@@ -152,6 +166,7 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="services.html">Services</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -236,6 +251,22 @@
   </div>
 </section>
 
+<section class="price-teaser">
+  <div class="price-teaser-inner">
+    <div class="section-header">
+      <p class="section-eyebrow">Pricing</p>
+      <h2 class="section-title">Fixed Prices.<br>Clear Scope.</h2>
+    </div>
+    <div class="price-chips">
+      <div class="price-chip"><div class="price-chip-name">Strategy Session</div><div class="price-chip-price">$495</div></div>
+      <div class="price-chip"><div class="price-chip-name">Starter Build</div><div class="price-chip-price">$2,500</div></div>
+      <div class="price-chip"><div class="price-chip-name">Growth Build</div><div class="price-chip-price">$7,500</div></div>
+      <div class="price-chip"><div class="price-chip-name">Retainers</div><div class="price-chip-price">$1,500<small>/mo</small></div></div>
+    </div>
+    <a href="pricing.html" class="btn-primary">See All Pricing</a>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="cta-grid-bg"></div>
   <div class="cta-inner">
@@ -263,7 +294,7 @@
       </div>
       <div class="footer-col">
         <h5>Company</h5>
-        <ul>
+        <ul><li><a href="pricing.html">Pricing</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
