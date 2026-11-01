@@ -13,11 +13,14 @@
   <link rel="stylesheet" href="shared.css" />
   <style>
     /* STATS BAR */
-    .stats-bar{background:#0f0f0f;padding:48px 48px;border-bottom:1px solid #1a1a1a;}
-    .stats-bar-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-    .sbar-item{text-align:center;}
-    .sbar-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
-    .sbar-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .bench{background:linear-gradient(90deg,#C4782B,#F2A93B 30%,#FFD36B 50%,#F2A93B 70%,#C4782B);border-top:2px solid rgba(255,240,190,.6);color:#3a0610;padding:22px 48px 18px;}
+    .bench-inner{max-width:1200px;margin:0 auto;}
+    .bench-head{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;margin-bottom:14px;opacity:.8;}
+    .bench-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px 28px;}
+    .bench-item{display:flex;align-items:baseline;gap:10px;min-width:0;}
+    .bench-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:34px;line-height:1;white-space:nowrap;}
+    .bench-label{font-size:12px;line-height:1.25;font-weight:600;}
+    .bench-note{font-size:11px;margin-top:14px;opacity:.75;}
 
     /* SERVICE BLOCKS */
     .service-block{padding:80px 48px;border-bottom:1px solid #1a1a1a;}
@@ -54,14 +57,16 @@
       .step{grid-template-columns:1fr;}
       .how.section{padding:64px 24px;}
 
-      .stats-bar-inner{grid-template-columns:repeat(2,1fr);}
+      .bench{padding:20px 24px 16px;}
+      .bench-grid{grid-template-columns:repeat(2,1fr);gap:12px 18px;}
+      .bench-item{flex-direction:column;gap:2px;}
+      .bench-num{font-size:30px;}
 
     }
     @media(max-width:640px){
 
       .nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}
 
-      .stats-bar-inner{grid-template-columns:1fr 1fr;}
 
     }
   </style>
@@ -133,24 +138,20 @@
 
 <div class="stripe"></div>
 
-<section class="stats-bar">
-  <div class="stats-bar-inner">
-    <div class="sbar-item">
-      <div class="sbar-num">20–40</div>
-      <div class="sbar-label">Hours Saved Per Week</div>
+<section class="bench" aria-label="Industry benchmarks for production AI agents">
+  <div class="bench-inner">
+    <p class="bench-head">Industry benchmarks for production AI agents</p>
+    <div class="bench-grid">
+      <div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div>
+      <div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div>
+      <div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div>
+      <div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div>
+      <div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div>
+      <div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div>
+      <div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div>
+      <div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div>
     </div>
-    <div class="sbar-item">
-      <div class="sbar-num">30–60%</div>
-      <div class="sbar-label">Ops Cost Reduction</div>
-    </div>
-    <div class="sbar-item">
-      <div class="sbar-num">5–10x</div>
-      <div class="sbar-label">First-Year ROI</div>
-    </div>
-    <div class="sbar-item">
-      <div class="sbar-num">&lt;60 Days</div>
-      <div class="sbar-label">Average Break-Even</div>
-    </div>
+    <p class="bench-note">Reported ranges across production deployments. Results vary by business and scope.</p>
   </div>
 </section>
 
