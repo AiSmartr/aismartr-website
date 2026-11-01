@@ -26,7 +26,6 @@ Website: https://aismartr.com
 
 All prices in USD. Full details at https://aismartr.com/pricing.html
 
-- Strategy Session: $495. 90-minute workflow audit and written roadmap, credited toward a build booked within 30 days.
 - Starter Build: $2,500. One workflow automation, live in about 2 weeks.
 - Growth Build: $7,500. Three workflows and one AI agent, live in about 4 weeks.
 - Retainer, Maintain: $1,500 per month. Monitoring, optimization, and 1 small build or change per month.
