@@ -89,16 +89,82 @@
   <link rel="canonical" href="https://aismartr.com/about.html" />
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AI Smartr",
-  "url": "https://aismartr.com",
-  "logo": "https://aismartr.com/logo-512.png",
-  "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
-  "email": "derek@aismartr.com",
-  "sameAs": [
-    "https://www.linkedin.com/company/ai-smartr/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "AboutPage",
+      "url": "https://aismartr.com/about.html",
+      "name": "About AI Smartr",
+      "description": "AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Here's who we are and what we believe.",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      },
+      "about": {
+        "@id": "https://aismartr.com/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://aismartr.com/about.html"
+        }
+      ]
+    }
   ]
 }
   </script>

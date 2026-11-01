@@ -84,16 +84,140 @@
   <link rel="canonical" href="https://aismartr.com/contact.html" />
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AI Smartr",
-  "url": "https://aismartr.com",
-  "logo": "https://aismartr.com/logo-512.png",
-  "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
-  "email": "derek@aismartr.com",
-  "sameAs": [
-    "https://www.linkedin.com/company/ai-smartr/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ContactPage",
+      "url": "https://aismartr.com/contact.html",
+      "name": "Contact AI Smartr",
+      "description": "Book a free 30-minute consultation with AI Smartr. No nonsense. Find out which team an AI agent can help first, and what it would cost.",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who do you build agents for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Real estate, finance, legal, and professional services firms. The most common work is customer support, sales and marketing, finance and back office, and IT operations. If a team spends its day moving information between tools, an agent can probably take a big share of that work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does implementation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most single workflows are live within one to two weeks. More complex builds with multiple integrations or custom AI agents typically take three to six weeks. We scope everything upfront so there are no surprises on timeline."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on scope. Book the free 30-minute call and we'll give you a clear price for the work before you commit to anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need technical expertise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You need to understand your business processes. We handle everything technical. We'll ask you a lot of questions about how things work and what you need, but none of those questions require you to know anything about code or infrastructure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Security is a design requirement for everything we build. Every integration uses scoped, least-privilege access. Sensitive data can be processed on-premise or through enterprise API agreements with appropriate data handling terms. We'll walk you through the security model for your specific build."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I don't know what I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "That's exactly what the consultation is for. Most clients come in with a vague sense of \"we're spending too much time on X\" and leave with a clear picture of what to automate first and what the return would look like. You don't need to have it figured out before we talk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer ongoing support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer ongoing monitoring, optimization, and expansion packages for clients who want a long-term partner. Most clients find that once the first automation is running, they immediately want to build the second. We can support that roadmap on an ongoing basis."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact",
+          "item": "https://aismartr.com/contact.html"
+        }
+      ]
+    }
   ]
 }
   </script>

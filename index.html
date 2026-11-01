@@ -105,16 +105,120 @@
   <link rel="canonical" href="https://aismartr.com/" />
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AI Smartr",
-  "url": "https://aismartr.com",
-  "logo": "https://aismartr.com/logo-512.png",
-  "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
-  "email": "derek@aismartr.com",
-  "sameAs": [
-    "https://www.linkedin.com/company/ai-smartr/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://aismartr.com/#webpage",
+      "url": "https://aismartr.com/",
+      "name": "AI Agents for Real Estate, Finance, Legal | AI Smartr",
+      "description": "AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Book a free 30-minute consultation and find your first agent.",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      },
+      "about": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "primaryImageOfPage": "https://aismartr.com/mascot.webp"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What do you build?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI agents for customer support, sales and marketing, finance and back office, and IT operations, plus the workflows, integrations, and custom apps that connect them to the tools you already use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who do you build for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Real estate, finance, legal, and professional services firms, from independent practices to mid-market companies."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a first build take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most first builds go live in a few weeks. We scope the work up front, so you know the plan and the timeline before anything gets built."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fixed-price builds scoped up front, plus flat monthly retainers to keep everything running and growing. You get a clear price on the free call before you commit to anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need technical expertise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You need to understand your business processes. We handle the technical work and explain what the technology does in plain English."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is my data secure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Security is part of the design. Each agent gets scoped, least-privilege access, approval gates on sensitive actions, and a log of everything it does."
+          }
+        }
+      ]
+    }
   ]
 }
   </script>
