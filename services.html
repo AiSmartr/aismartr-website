@@ -34,6 +34,15 @@
     .sb-points li::before{content:'+';color:var(--gold);flex-shrink:0;}
 
     /* CTA */
+    .how{background:var(--black);}
+    .how.section{padding:80px 48px;}
+    .how .section-inner{max-width:1200px;margin:0 auto;}
+    .steps{display:flex;flex-direction:column;gap:0;}
+    .step{display:grid;grid-template-columns:80px 1fr;gap:32px;padding:36px 0;border-top:1px solid #1a1a1a;}
+    .step:last-child{border-bottom:1px solid #1a1a1a;}
+    .step-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:48px;color:var(--gold);line-height:1;}
+    .step-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:#fff;margin-bottom:8px;}
+    .step-desc{font-size:15px;color:var(--gray);line-height:1.65;}
     .cta-section{background:var(--burg);padding:100px 48px;position:relative;overflow:hidden;text-align:center;}
     .cta-grid-bg{position:absolute;inset:0;opacity:0.05;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px);}
     .cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}
@@ -42,6 +51,9 @@
     .cta-sub{font-size:18px;color:rgba(255,255,255,0.75);margin-bottom:40px;}
 
     @media(max-width:768px){
+      .step{grid-template-columns:1fr;}
+      .how.section{padding:64px 24px;}
+
       .stats-bar-inner{grid-template-columns:repeat(2,1fr);}
 
     }
@@ -273,6 +285,43 @@
   </div>
 </div>
 
+
+<section class="section how">
+  <div class="section-inner">
+    <p class="section-eyebrow">How It Works</p>
+    <h2 class="section-title">Four Steps.<br>One Goal.</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-title">Discovery</div>
+          <p class="step-desc">We map your current workflows, identify the highest-value automation targets, and understand your tech stack. This is the 30-minute consultation, and it's genuinely free. You walk away with clarity whether or not we work together.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title">Strategy</div>
+          <p class="step-desc">We propose a prioritized build plan. What to automate first, what to add next, and what the ROI case looks like. Specific and honest.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title">Build</div>
+          <p class="step-desc">We build, test, and iterate in close collaboration with your team. You see the work in progress. You test it against real scenarios. You sign off before anything goes live.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div>
+          <div class="step-title">Launch and Optimize</div>
+          <p class="step-desc">We go live, monitor closely, and optimize based on real-world behavior. Most systems improve meaningfully in the first 30 days as we catch edge cases and tune the logic.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="cta-section">
   <div class="cta-grid-bg"></div>
