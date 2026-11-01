@@ -1,10 +1,10 @@
 # AI Smartr
 
-> AI Smartr is a full-service AI automation company. We build AI agents for every department of your business (sales, marketing, finance, and more), plus custom workflows, integrations, AI apps, and fine-tuned models for professionals, small businesses, and mid-market companies. We save businesses time, money, and headaches by replacing manual bottlenecks with automated systems.
+> AI Smartr is a full-service AI automation company. We build AI agents for real estate, finance, legal, and professional services firms (customer support, sales and marketing, finance and back office, IT operations), plus custom workflows, integrations, AI apps, and fine-tuned models for professionals, small businesses, and mid-market companies. We save businesses time, money, and headaches by replacing manual bottlenecks with automated systems.
 
 ## Who We Are
 
-AI Smartr serves independent professionals (lawyers, consultants, advisors), small businesses (1 to 50 employees), and mid-market companies (51 to 500 employees). We design, build, deploy, and manage AI solutions end to end, so you get one partner instead of a one-time vendor.
+AI Smartr builds for real estate, finance, legal, and professional services firms, from independent practices and small businesses (1 to 50 employees) to mid-market companies (51 to 500 employees). We design, build, deploy, and manage AI solutions end to end, so you get one partner instead of a one-time vendor.
 
 Contact: derek@aismartr.com
 LinkedIn: https://www.linkedin.com/company/ai-smartr/
@@ -14,13 +14,17 @@ Website: https://aismartr.com
 
 - **Workflow Automation**: Pipelines built around your specific processes. Lead follow-up, client onboarding, billing, reporting, approvals, and task routing.
 
-- **AI Agents**: Always-on agents for any department. Sales, marketing, finance, HR, customer support, and operations, plus multi-agent systems with approval gates and audit logging.
+- **AI Agents**: Always-on agents for customer support, sales and marketing, finance and back office, and IT operations, plus multi-agent systems with approval gates and audit logging.
 
 - **Integrations**: AI connected to the tools you already use. CRMs (HubSpot, Salesforce, Pipedrive), email (Gmail, Outlook), chat (Slack, Teams, WhatsApp), project management (Monday, Asana, Notion, Linear), and custom APIs.
 
 - **AI Apps**: Purpose-built applications. Internal tools, client portals, document processors, and reporting dashboards.
 
 - **Fine-Tuned Models**: Models trained on your data for domain-specific accuracy. Document understanding, sentiment analysis, classification, and industry-specific language.
+
+## Industry Benchmarks
+
+Reported ranges for production AI agents: ~171% average ROI (~192% in US enterprise benchmarks), 4 to 8 weeks to deploy packaged agents, 70 to 85% touchless support resolution, 50 to 70% lower support costs, 4 to 7x outbound and qualification volume, 60 to 80% less content and research time, 75 to 80% of invoice and PO intake automated, 60 to 75% faster approval and audit cycles, 40 to 55% faster IT resolution, and 20 to 35% of developer capacity reclaimed.
 
 ## What Clients Get
 
@@ -31,9 +35,10 @@ Website: https://aismartr.com
 
 ## Who Should Use AI Smartr
 
-- Independent professionals who want client intake, scheduling, document drafting, and follow-up handled
-- Small businesses that need sales automation, customer service agents, and operational workflows
-- Mid-market companies rolling AI out across departments with custom apps and fine-tuned models
+- Real estate firms that want lead follow-up, showings, and transaction paperwork handled
+- Finance teams that want invoice and PO intake, reconciliation, and faster approval and audit cycles
+- Legal practices that want client intake, document review, and deadline tracking handled
+- Professional services firms that want sales automation, support agents, and operational workflows
 
 ## Process
 
