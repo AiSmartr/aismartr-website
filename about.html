@@ -29,7 +29,8 @@
     /* VALUES */
     .origin{background:#0a0a0a;}
     .origin .story-body p{font-size:17px;line-height:1.7;}
-    .expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:64px;}
+    .expertise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:64px;}
+    @media(max-width:1000px){.expertise-grid{grid-template-columns:repeat(2,1fr);}}
     .values{background:#0a0a0a;}
     .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:8px;}
     .value-card{background:#111;padding:40px;border:1px solid #1a1a1a;}
@@ -147,7 +148,7 @@
         <p class="section-eyebrow">Where We Come From</p>
         <h2 class="section-title" style="margin-bottom:28px;">Started in New York.<br>Built for Teams That Never Clock Out.</h2>
         <p>We started AI Smartr in New York City, surrounded by organizations that run around the clock. Finance teams closing the books. Legal teams racing a deadline. Sales teams chasing the quarter. The work piles up at 2 a.m. the same way it does at 2 p.m.</p>
-        <p>We know what that pace demands. Our backgrounds are technical, and we've built real depth in three places where the stakes are high: finance, legal, and go-to-market.</p>
+        <p>We know what that pace demands. Our backgrounds are technical, and we've built real depth in four places where the stakes are high: finance, legal, real estate, and go-to-market.</p>
         <p>We love to learn, and every client teaches us a new corner of how business runs. We'd rather spend an hour asking good questions than a month guessing. Then we serve you however the work needs it: a small fix, a full build, or an honest talk about what's worth automating.</p>
       </div>
       <div class="story-pullquote">
@@ -162,6 +163,10 @@
       <div class="value-card">
         <div class="value-title">Legal</div>
         <p class="value-desc">Intake, document review, deadlines, and the confidentiality that comes with client work.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-title">Real Estate</div>
+        <p class="value-desc">Lead follow-up, showings and scheduling, transaction paperwork, and keeping every deal moving to close.</p>
       </div>
       <div class="value-card">
         <div class="value-title">Go-to-Market</div>
