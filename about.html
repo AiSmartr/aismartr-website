@@ -29,8 +29,13 @@
     /* VALUES */
     .origin{background:#0a0a0a;}
     .origin .story-body p{font-size:17px;line-height:1.7;}
-    .expertise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:64px;}
-    @media(max-width:1000px){.expertise-grid{grid-template-columns:repeat(2,1fr);}}
+    .gold-ticker{overflow:hidden;background:linear-gradient(90deg,#C4782B,#F2A93B 30%,#FFD36B 50%,#F2A93B 70%,#C4782B);border-top:2px solid rgba(255,240,190,.6);}
+    .gold-ticker-track{display:flex;width:max-content;animation:marquee 34s linear infinite;}
+    .gold-ticker span{display:inline-flex;align-items:center;gap:30px;padding:15px 30px 15px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;letter-spacing:.18em;text-transform:uppercase;color:#3a0610;white-space:nowrap;}
+    .gold-ticker span::after{content:'';width:9px;height:9px;background:#3a0610;rotate:45deg;}
+    @keyframes marquee{to{transform:translateX(-50%)}}
+    @media(prefers-reduced-motion:reduce){.gold-ticker-track{animation:none;}}
+    @media(max-width:768px){.gold-ticker span{font-size:18px;padding:12px 24px 12px 0;}}
     .values{background:#0a0a0a;}
     .values-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:8px;}
     .value-card{background:#111;padding:40px;border:1px solid #1a1a1a;}
@@ -55,7 +60,7 @@
     @media(max-width:768px){
       .story-grid{grid-template-columns:1fr;}
       .story-pullquote{position:static;}
-      .values-grid,.expertise-grid{grid-template-columns:1fr;}
+      .values-grid{grid-template-columns:1fr;}
 
     }
     @media(max-width:640px){
@@ -138,42 +143,32 @@
     <div class="story-grid">
       <div class="story-body">
         <p class="section-eyebrow">Where We Come From</p>
-        <h2 class="section-title" style="margin-bottom:28px;">Started in New York.<br>Built for Teams That Never Clock Out.</h2>
+        <h2 class="section-title" style="margin-bottom:28px;">Built for Teams<br>That Never Sleep.</h2>
         <p>We started AI Smartr in New York City, surrounded by organizations that run around the clock. Finance teams closing the books. Legal teams racing a deadline. Sales teams chasing the quarter. The work piles up at 2 a.m. the same way it does at 2 p.m.</p>
         <p>We know what that pace demands. Our backgrounds are technical, and we've built real depth in four places where the stakes are high: finance, legal, real estate, and go-to-market.</p>
         <p>We love to learn, and every client teaches us a new corner of how business runs. We'd rather spend an hour asking good questions than a month guessing. Then we serve you however the work needs it: a small fix, a full build, or an honest talk about what's worth automating.</p>
       </div>
       <div class="story-pullquote">
-        We'd rather ask good questions for an hour than guess for a month.
-      </div>
-    </div>
-    <div class="expertise-grid">
-      <div class="value-card">
-        <div class="value-title">Finance</div>
-        <p class="value-desc">Close cycles, reconciliations, reporting, and the controls that keep auditors comfortable.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-title">Legal</div>
-        <p class="value-desc">Intake, document review, deadlines, and the confidentiality that comes with client work.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-title">Real Estate</div>
-        <p class="value-desc">Lead follow-up, showings and scheduling, transaction paperwork, and keeping every deal moving to close.</p>
-      </div>
-      <div class="value-card">
-        <div class="value-title">Go-to-Market</div>
-        <p class="value-desc">Lead response, pipeline hygiene, outreach, and the handoffs between marketing and sales.</p>
+        We ask the right questions so you get the right answers from your business.
       </div>
     </div>
   </div>
 </section>
+
+<div class="gold-ticker" aria-hidden="true">
+  <div class="gold-ticker-track">
+    <span>Sales</span><span>Marketing</span><span>Finance</span><span>HR</span><span>Customer Support</span><span>Operations</span><span>Legal</span><span>Real Estate</span>
+    <span>Sales</span><span>Marketing</span><span>Finance</span><span>HR</span><span>Customer Support</span><span>Operations</span><span>Legal</span><span>Real Estate</span>
+  </div>
+</div>
+
 
 <section class="section story">
   <div class="section-inner">
     <div class="story-grid">
       <div class="story-body">
         <p class="section-eyebrow">Our Story</p>
-        <p>We build AI agents that run entire processes from start to finish: finance assignments, marketing plans, customer relations.</p>
+        <p>We build AI agents that run entire processes from start to finish.</p>
         <p>Doing that well in production takes three things, and we built the company around them.</p>
         <p class="section-eyebrow" style="margin-top:36px;">What It Takes</p>
         <ul class="story-lessons">
