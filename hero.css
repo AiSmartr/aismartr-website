@@ -19,7 +19,7 @@
 @keyframes shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
 .vh-rot{margin-top:22px;font-family:'Barlow Condensed',sans-serif;font-weight:700;text-transform:uppercase;font-size:clamp(30px,4.2vw,58px);line-height:1;color:#fff7e6;letter-spacing:.01em;}
 .vh-rot .words{display:inline-grid;vertical-align:bottom;}
-.vh-rot .words b{grid-area:1/1;color:var(--sun);opacity:0;transform:translateY(55%);transition:opacity .45s ease,transform .45s ease;border-bottom:4px solid var(--ember);}
+.vh-rot .words b{grid-area:1/1;justify-self:start;white-space:nowrap;color:var(--sun);opacity:0;transform:translateY(55%);transition:opacity .45s ease,transform .45s ease;border-bottom:4px solid var(--ember);}
 .vh-rot .words b.on{opacity:1;transform:none;}
 .vh-sub{margin-top:22px;max-width:520px;font-size:19px;line-height:1.55;color:rgba(255,247,230,.88);}
 .vh-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px;}
