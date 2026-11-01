@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://app.cal.com https://cal.com; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>AI Smartr | Build Smartr. AI Automation for Real Businesses.</title>
-  <meta name="description" content="AI Smartr builds AI agents and automation for real estate, finance, legal, and professional services firms. We save you time, money, and headaches." />
+  <title>AI Agents for Real Estate, Finance, Legal | AI Smartr</title>
+  <meta name="description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Book a free 30-minute consultation and find your first agent." />
   <link rel="preload" as="image" href="mascot.webp" fetchpriority="high" />
   <link rel="icon" type="image/png" href="logo-192.png" />
   <link rel="apple-touch-icon" href="logo-192.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="hero.css" />
+  <link rel="stylesheet" href="industry.css" />
   <style>
     /* STATS */
     /* SERVICES */
@@ -89,16 +90,16 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AI Smartr" />
-  <meta property="og:title" content="AI Smartr | Build Smartr. AI Automation for Real Businesses." />
-  <meta property="og:description" content="AI Smartr builds AI agents and automation for real estate, finance, legal, and professional services firms. We save you time, money, and headaches." />
+  <meta property="og:title" content="AI Agents for Real Estate, Finance, Legal | AI Smartr" />
+  <meta property="og:description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Book a free 30-minute consultation and find your first agent." />
   <meta property="og:url" content="https://aismartr.com/" />
   <meta property="og:image" content="https://aismartr.com/logo-512.png" />
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AI Smartr | Build Smartr. AI Automation for Real Businesses." />
-  <meta name="twitter:description" content="AI Smartr builds AI agents and automation for real estate, finance, legal, and professional services firms. We save you time, money, and headaches." />
+  <meta name="twitter:title" content="AI Agents for Real Estate, Finance, Legal | AI Smartr" />
+  <meta name="twitter:description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Book a free 30-minute consultation and find your first agent." />
   <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
   <!-- Canonical -->
   <link rel="canonical" href="https://aismartr.com/" />
@@ -128,6 +129,7 @@
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -150,7 +152,7 @@
     <p class="vh-rot rise">AI agents for <span class="words" id="words"><b class="on">real estate</b><b>finance</b><b>legal</b><b>professional services</b></span></p>
     <p class="vh-sub rise">We build agents for real estate, finance, legal, and professional services firms. They handle the grind, and your people make the calls that matter.</p>
     <div class="vh-ctas rise">
-      <a href="contact.html" class="btn-go">Book a Free Consultation</a>
+      <a href="#book" class="btn-go">Book a Free Consultation</a>
     </div>
   </div>
 
@@ -164,6 +166,21 @@
 
 <div class="stripe"></div>
 
+<section class="ind-section">
+  <div class="ind-inner">
+    <div class="ind-head">
+      <p class="section-eyebrow">Who We Build For</p>
+      <h2 class="section-title">Built For Four<br>Industries.</h2>
+      <p class="ind-lead">Each industry has its own workflows, systems, and rules. We build for them specifically.</p>
+    </div>
+    <div class="ind-grid four">
+      <a href="ai-agents-for-real-estate.html" class="ind-card"><h3>Real Estate</h3><p>Answer every lead, book every showing, and keep every deal moving to close.</p><span class="ind-link">Learn more &rarr;</span></a>
+      <a href="ai-agents-for-finance.html" class="ind-card"><h3>Finance</h3><p>Invoice and PO intake, matching, approvals, and audit trails, handled.</p><span class="ind-link">Learn more &rarr;</span></a>
+      <a href="ai-agents-for-legal.html" class="ind-card"><h3>Legal</h3><p>Intake, drafting support, deadlines, and billing, with attorneys in control.</p><span class="ind-link">Learn more &rarr;</span></a>
+      <a href="ai-agents-for-professional-services.html" class="ind-card"><h3>Professional Services</h3><p>Proposals, onboarding, time capture, and reporting, so your team bills more.</p><span class="ind-link">Learn more &rarr;</span></a>
+      </div>
+  </div>
+</section>
 
 <section class="services">
   <div class="services-inner">
@@ -175,7 +192,7 @@
       <li class="service-row">
         <span class="service-num">01</span>
         <div>
-          <div class="service-name">Workflow Automation</div>
+          <h3 class="service-name">Workflow Automation</h3>
           <div class="service-desc">We map your process, find the waste, and build pipelines that handle the repetitive work.</div>
         </div>
         <a href="services.html" class="service-arrow">Learn More &rarr;</a>
@@ -183,7 +200,7 @@
       <li class="service-row">
         <span class="service-num">02</span>
         <div>
-          <div class="service-name">AI Agents</div>
+          <h3 class="service-name">AI Agents</h3>
           <div class="service-desc">Agents for support, sales and marketing, finance and back office, and IT operations. Built for real estate, finance, legal, and professional services firms.</div>
         </div>
         <a href="services.html" class="service-arrow">Learn More &rarr;</a>
@@ -191,7 +208,7 @@
       <li class="service-row">
         <span class="service-num">03</span>
         <div>
-          <div class="service-name">Integrations</div>
+          <h3 class="service-name">Integrations</h3>
           <div class="service-desc">HubSpot, Salesforce, Gmail, Slack, Notion, Monday. We connect AI to what you're already using.</div>
         </div>
         <a href="services.html" class="service-arrow">Learn More &rarr;</a>
@@ -199,7 +216,7 @@
       <li class="service-row">
         <span class="service-num">04</span>
         <div>
-          <div class="service-name">AI Apps</div>
+          <h3 class="service-name">AI Apps</h3>
           <div class="service-desc">Internal dashboards, client portals, document generators, reporting tools. We build it.</div>
         </div>
         <a href="services.html" class="service-arrow">Learn More &rarr;</a>
@@ -207,7 +224,7 @@
       <li class="service-row">
         <span class="service-num">05</span>
         <div>
-          <div class="service-name">Fine-Tuned Models</div>
+          <h3 class="service-name">Fine-Tuned Models</h3>
           <div class="service-desc">Generic AI gives generic results. We train models on your data so the output sounds like your business.</div>
         </div>
         <a href="services.html" class="service-arrow">Learn More &rarr;</a>
@@ -216,12 +233,77 @@
   </div>
 </section>
 
+<section class="ind-section alt" id="offers">
+  <div class="ind-inner">
+    <div class="ind-head">
+      <p class="section-eyebrow">Ways To Start</p>
+      <h2 class="section-title">Pick Your<br>Starting Point.</h2>
+      <p class="ind-lead">Fixed-price builds, scoped up front. Flat monthly retainers to keep everything running. You get a clear price on the free call before you commit to anything.</p>
+    </div>
+    <div class="ind-grid four">
+      <div class="ind-card"><h3>Starter Build</h3><p>One workflow, built, tested, and live in about 2 weeks. A clean first win that connects to the tools you already use.</p></div>
+      <div class="ind-card featured"><span class="ind-badge">Most Popular</span><h3>Growth Build</h3><p>Three workflows and one AI agent, live in about 4 weeks. Approval gates and audit logging built in.</p></div>
+      <div class="ind-card"><h3>Retainers</h3><p>Monitoring, optimization, and new builds every month on a flat fee, so your agents keep getting better.</p></div>
+      <div class="ind-card"><h3>White Glove</h3><p>Multi-department rollouts, scoped on a call. We embed with your team and own the result.</p></div>
+    </div>
+    <div class="ind-cta-row"><a href="#book" class="btn-primary">Book a Free Consultation</a></div>
+  </div>
+</section>
+
+<section class="bench" aria-label="Benchmarks for production AI agents">
+  <div class="bench-track"><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div><div class="bench-item"><span class="bench-num">~171%</span><span class="bench-label">Avg ROI, production agents</span></div><div class="bench-item"><span class="bench-num">4–8 wks</span><span class="bench-label">Packaged agents live</span></div><div class="bench-item"><span class="bench-num">70–85%</span><span class="bench-label">Touchless support resolution</span></div><div class="bench-item"><span class="bench-num">50–70%</span><span class="bench-label">Lower support costs</span></div><div class="bench-item"><span class="bench-num">4–7x</span><span class="bench-label">Outbound and qualification volume</span></div><div class="bench-item"><span class="bench-num">60–80%</span><span class="bench-label">Less content and research time</span></div><div class="bench-item"><span class="bench-num">75–80%</span><span class="bench-label">Invoices and POs automated</span></div><div class="bench-item"><span class="bench-num">40–55%</span><span class="bench-label">Faster IT resolution</span></div></div>
+</section>
+
+<section class="ind-section">
+  <div class="ind-inner">
+    <div class="ind-head">
+      <p class="section-eyebrow">How It Works</p>
+      <h2 class="section-title">Four Steps.<br>One Clear Plan.</h2>
+    </div>
+    <div class="ind-steps">
+      <div class="ind-step"><div class="n">1</div><h3>Free call</h3><p>30 minutes. We learn where the hours go and where an agent fits first.</p></div>
+      <div class="ind-step"><div class="n">2</div><h3>Scope</h3><p>You get a clear plan, a timeline, and a price before anything gets built.</p></div>
+      <div class="ind-step"><div class="n">3</div><h3>Build</h3><p>We build and test against your real scenarios. You sign off before launch.</p></div>
+      <div class="ind-step"><div class="n">4</div><h3>Launch and tune</h3><p>We go live, monitor closely, and tune based on real use.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="ind-section alt" id="book">
+  <div class="ind-inner ind-book">
+    <div class="ind-book-copy">
+      <p class="section-eyebrow">Book A Time</p>
+      <h2 class="section-title">Free 30-Minute<br>Consultation.</h2>
+      <p>No pressure, no pitch. Tell us where the busywork piles up and we'll map the biggest opportunities, what an agent would do, and what it would cost.</p>
+      <img class="ind-book-mascot" src="mascot-phone.webp" width="570" height="1000" alt="The AI Smartr mascot on a phone call" loading="lazy" decoding="async">
+    </div>
+    <div id="cal-booking-home" style="min-height:600px;border:1px solid rgba(196,152,43,0.15);border-radius:2px;overflow:hidden;"></div>
+  </div>
+</section>
+
+<section class="ind-section">
+  <div class="ind-inner">
+    <div class="ind-head">
+      <p class="section-eyebrow">Questions</p>
+      <h2 class="section-title">Common<br>Questions.</h2>
+    </div>
+    <div class="ind-faq">
+      <div class="faq-item"><h3>What do you build?</h3><p>AI agents for customer support, sales and marketing, finance and back office, and IT operations, plus the workflows, integrations, and custom apps that connect them to the tools you already use.</p></div>
+      <div class="faq-item"><h3>Who do you build for?</h3><p>Real estate, finance, legal, and professional services firms, from independent practices to mid-market companies.</p></div>
+      <div class="faq-item"><h3>How long does a first build take?</h3><p>Most first builds go live in a few weeks. We scope the work up front, so you know the plan and the timeline before anything gets built.</p></div>
+      <div class="faq-item"><h3>What does it cost?</h3><p>Fixed-price builds scoped up front, plus flat monthly retainers to keep everything running and growing. You get a clear price on the free call before you commit to anything.</p></div>
+      <div class="faq-item"><h3>Do I need technical expertise?</h3><p>No. You need to understand your business processes. We handle the technical work and explain what the technology does in plain English.</p></div>
+      <div class="faq-item"><h3>Is my data secure?</h3><p>Security is part of the design. Each agent gets scoped, least-privilege access, approval gates on sensitive actions, and a log of everything it does.</p></div>
+      </div>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="cta-grid-bg"></div>
   <div class="cta-inner">
     <h2 class="cta-headline">LET'S BUILD<br>SOMETHING <span>SMARTR.</span></h2>
     <p class="cta-sub">30 minutes. No nonsense. Clear next step.</p>
-    <a href="contact.html" class="btn-primary">Book a Free Consultation</a>
+    <a href="#book" class="btn-primary">Book a Free Consultation</a>
   </div>
 </section>
 
@@ -241,6 +323,7 @@
           <li><a href="services.html">Fine-Tuned Models</a></li>
         </ul>
       </div>
+      <div class="footer-col"><h5>Industries</h5><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
       <div class="footer-col">
         <h5>Company</h5>
         <ul>          <li><a href="about.html">About</a></li>
@@ -263,7 +346,31 @@
   </div>
 </footer>
 
+<script type="text/javascript">
+(function(C,A,L){let p=function(a,ar){a.q.push(ar)};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const namespace=ar[1];api.q=api.q||[];typeof namespace==="string"?(cal.ns[namespace]=api)&&p(api,ar):p(cal,ar);return}p(cal,ar)};})(window,"https://app.cal.com/embed/embed.js","init");
+function startCal(){
+  if (window.__calStarted) return; window.__calStarted = true;
+  Cal("init", { origin: "https://cal.com" });
+  Cal("inline", { elementOrSelector: "#cal-booking-home", calLink: "derek-moore-4gqft7/30min", layout: "month_view" });
+  Cal("ui", { theme: "dark", hideEventTypeDetails: true, layout: "month_view", cssVarsPerTheme: { dark: {
+    "cal-bg":"#0A0A0A","cal-bg-muted":"#0f0f0f","cal-bg-emphasis":"#161616","cal-bg-subtle":"#111111","cal-bg-inverted":"#F5F0E8",
+    "cal-border":"rgba(196,152,43,0.12)","cal-border-emphasis":"rgba(196,152,43,0.35)","cal-border-subtle":"rgba(196,152,43,0.07)","cal-border-booker":"rgba(196,152,43,0.12)",
+    "cal-text":"#F5F0E8","cal-text-emphasis":"#FFFFFF","cal-text-subtle":"rgba(245,240,232,0.45)","cal-text-inverted":"#0A0A0A",
+    "cal-brand":"#C4982B","cal-brand-emphasis":"#d4a830","cal-brand-text":"#0A0A0A" } } });
+  if (window.aiBindCal) window.aiBindCal();
+}
+(function(){
+  var el = document.getElementById('cal-booking-home');
+  if (!el) return;
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){ if (es[0].isIntersecting) { io.disconnect(); startCal(); } }, { rootMargin: '600px 0px' });
+    io.observe(el);
+  } else { startCal(); }
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href="#book"]'); if (a) startCal(); });
+})();
+</script>
 <script src="shared.js" defer></script>
+<script src="analytics.js" defer></script>
 <script src="hero.js" defer></script>
 </body>
 </html>

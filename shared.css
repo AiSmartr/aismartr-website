@@ -57,7 +57,7 @@ img { display: block; max-width: 100%; }
 /* FOOTER */
 .footer { background: #050505; padding: 60px 24px 0; }
 .footer-inner { max-width: 1200px; margin: 0 auto; }
-.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid #1a1a1a; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid #1a1a1a; }
 .footer-brand-wordmark { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; color: #fff; letter-spacing: 0.04em; margin-bottom: 12px; }
 .footer-brand-wordmark span { color: var(--gold); }
 .footer-tagline { font-size: 14px; color: var(--gray); line-height: 1.6; }

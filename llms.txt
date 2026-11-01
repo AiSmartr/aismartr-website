@@ -50,6 +50,11 @@ Reported ranges for production AI agents: ~171% average ROI (~192% in US enterpr
 ## Pages
 
 - [Home](https://aismartr.com/): Overview of services
+- [Industries](https://aismartr.com/industries.html): The four industries we build for and the four areas agents work in
+- [AI Agents for Real Estate](https://aismartr.com/ai-agents-for-real-estate.html): Lead response, showings, transaction coordination, maintenance triage
+- [AI Agents for Finance](https://aismartr.com/ai-agents-for-finance.html): Invoice and PO intake, matching, approvals, audit trails
+- [AI Agents for Legal](https://aismartr.com/ai-agents-for-legal.html): Intake, document assembly, deadlines, billing, with attorneys in control
+- [AI Agents for Professional Services](https://aismartr.com/ai-agents-for-professional-services.html): Proposals, onboarding, time capture, reporting
 - [Services](https://aismartr.com/services.html): Detailed breakdown of each AI service
 - [About](https://aismartr.com/about.html): Mission, values, and how we work
 - [Blog](https://aismartr.com/blog.html): Practical AI guides and strategies for businesses
