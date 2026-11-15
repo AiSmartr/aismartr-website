@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>AI Client Intake and Onboarding for Professional Firms | AI Smartr</title>
+  <meta name="description" content="Slow intake and onboarding lose clients before the work starts. See where AI agents fit, where people stay in charge, and a 30-day rollout plan." />
+  <link rel="icon" type="image/png" href="logo-192.png" />
+  <link rel="apple-touch-icon" href="logo-192.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .post-hero{background:var(--burg);padding:100px 24px 64px;position:relative;overflow:hidden;}
+    .post-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .post-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .post-eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:20px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);}
+    .post-date,.post-read{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);line-height:0.95;text-transform:uppercase;color:#fff;max-width:900px;margin-bottom:24px;}
+    .post-lead{font-size:18px;color:rgba(255,255,255,0.8);max-width:700px;line-height:1.6;}
+    .post-section{background:var(--black);padding:64px 24px 80px;}
+    .post-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .post-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3vw,38px);text-transform:uppercase;color:#fff;margin-top:48px;margin-bottom:16px;line-height:1.05;}
+    .post-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--gold);margin-top:32px;margin-bottom:12px;}
+    .post-body p{font-size:16px;color:#ccc;line-height:1.75;margin-bottom:20px;}
+    .post-body ul{margin:0 0 20px 20px;}
+    .post-body li{font-size:15px;color:#ccc;line-height:1.7;margin-bottom:8px;}
+    .post-body strong{color:#e8e8e8;font-weight:500;}
+    .post-stat-box{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:32px;margin:40px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .stat-item{text-align:center;}
+    .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .stat-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .post-callout{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:24px 28px;margin:32px 0;}
+    .post-callout p{margin-bottom:0;color:#ddd;}
+    .post-highlight{background:#111;border:1px solid #1a1a1a;padding:28px 32px;margin:32px 0;}
+    .post-highlight h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box{background:var(--burg);padding:40px;margin:48px 0 0;text-align:center;}
+    .post-cta-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px;}
+    .post-sidebar{position:sticky;top:80px;}
+    .sidebar-card{background:#111;border:1px solid #1a1a1a;padding:28px;margin-bottom:20px;}
+    .sidebar-card h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .toc-link{display:block;font-size:13px;color:var(--gray);padding:6px 0;border-bottom:1px solid #1a1a1a;transition:color 0.2s;}
+    .toc-link:last-child{border-bottom:none;}
+    .toc-link:hover{color:var(--gold);}
+    .related-link{display:block;padding:12px 0;border-bottom:1px solid #1a1a1a;}
+    .related-link:last-child{border-bottom:none;}
+    .related-cat{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .related-title{font-size:13px;color:#ccc;margin-top:4px;line-height:1.4;}
+    .related-link:hover .related-title{color:#fff;}
+    .sidebar-cta{background:var(--burg)!important;border:none!important;}
+    .sidebar-cta p{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+
+    @media(max-width:768px){
+      .post-layout{grid-template-columns:1fr;gap:40px;}
+      .post-sidebar{position:static;}
+      .post-stat-box{grid-template-columns:1fr;}
+      .nav-links.open{display:flex;}
+    }
+    @media(max-width:640px){.post-stat-box{grid-template-columns:1fr;}}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AI Smartr" />
+  <meta property="og:title" content="AI Client Intake and Onboarding for Professional Firms | AI Smartr" />
+  <meta property="og:description" content="Slow intake and onboarding lose clients before the work starts. See where AI agents fit, where people stay in charge, and a 30-day rollout plan." />
+  <meta property="og:url" content="https://aismartr.com/blog-ai-client-intake-onboarding.html" />
+  <meta property="og:image" content="https://aismartr.com/logo-512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AI Client Intake and Onboarding for Professional Firms | AI Smartr" />
+  <meta name="twitter:description" content="Slow intake and onboarding lose clients before the work starts. See where AI agents fit, where people stay in charge, and a 30-day rollout plan." />
+  <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aismartr.com/blog-ai-client-intake-onboarding.html" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://aismartr.com/blog-ai-client-intake-onboarding.html#article",
+      "headline": "Your Firm Loses Clients Before They're Clients. Fix Intake and Onboarding With AI.",
+      "description": "Slow intake and onboarding lose clients before the work starts. See where AI agents fit, where people stay in charge, and a 30-day rollout plan.",
+      "datePublished": "2026-11-15",
+      "dateModified": "2026-11-15",
+      "author": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "mainEntityOfPage": "https://aismartr.com/blog-ai-client-intake-onboarding.html",
+      "image": "https://aismartr.com/logo-512.png",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://aismartr.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Your Firm Loses Clients Before They're Clients. Fix Intake and Onboarding With AI.",
+          "item": "https://aismartr.com/blog-ai-client-intake-onboarding.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-96.webp" alt="AI Smartr" width="48" height="48" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <button class="nav-mobile-btn" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn-nav">Book a Call</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="post-hero">
+  <div class="post-hero-grid"></div>
+  <div class="post-hero-inner">
+    <div class="post-eyebrow">
+      <span class="post-cat">Professional Services</span>
+      <span class="post-date">November 15, 2026</span>
+      <span class="post-read">7 min read</span>
+    </div>
+    <h1 class="post-title">Your Firm Loses Clients Before They're Clients. Fix Intake and Onboarding With AI.</h1>
+    <p class="post-lead">Most firms treat intake and onboarding as paperwork that happens before the real work. Prospects treat it as the audition. The data says a lot of firms are failing it, and the fix is one of the cleanest uses of AI agents available right now.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+
+<section class="post-section">
+  <div class="post-layout">
+    <article class="post-body">
+
+      <div class="post-callout">
+        <p><strong>The short version:</strong> Intake and onboarding are high-volume, rules-based, and time-sensitive, which makes them a strong fit for agents. Let the agent respond, collect, check, and chase. Keep a person on conflicts, engagement terms, risk decisions, and the first real conversation.</p>
+      </div>
+
+      <p>A prospective client fills in your contact form at 6:40 on a Tuesday evening. What happens next decides more revenue than most firms realize. At a lot of firms the answer is "nothing until someone gets to it."</p>
+
+      <p>Clio tested this directly. For its 2024 Legal Trends Report, it hired a third-party research company to contact 500 law firms by email and phone with a client inquiry. The results were not close to good.</p>
+
+      <div class="post-stat-box">
+        <div class="stat-item">
+          <div class="stat-num">48%</div>
+          <div class="stat-lbl">of law firms were unreachable by phone, even after a chance to return messages (Clio)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">33%</div>
+          <div class="stat-lbl">of law firms responded to an emailed client inquiry (Clio)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">70%</div>
+          <div class="stat-lbl">of financial institutions lost clients in the past year to inefficient onboarding (Fenergo)</div>
+        </div>
+      </div>
+
+      <p>The third number comes from the other end of the funnel. Fenergo's 2025 Financial Crime Industry Trends Report surveyed 600 senior decision-makers at banks, asset managers, and fund administrators. Seventy percent said their firm lost clients in the past year because onboarding was slow or inefficient, up from 48% two years earlier. Abandonment during onboarding averaged around 10%.</p>
+
+      <p>Those are two different industries and two different stages, and neither study covers every kind of firm. They point at the same leak, though: people who already decided to hire you, or were close to it, and left because the front door was slow.</p>
+
+      <h2 id="why-it-breaks">Why Intake and Onboarding Break</h2>
+
+      <p>Nobody designs a bad intake process on purpose. It breaks for structural reasons that are the same at a six-person law firm, a wealth advisory practice, a brokerage, and an accounting firm.</p>
+
+      <ul>
+        <li><strong>It belongs to nobody.</strong> Intake sits between marketing, the front desk, and the professionals who do the billable work. Each assumes another one has it.</li>
+        <li><strong>It competes with billable hours.</strong> A reply to a stranger always loses to a deadline for a paying client.</li>
+        <li><strong>It arrives outside office hours.</strong> People look for a lawyer, an advisor, or an agent when their own workday ends.</li>
+        <li><strong>It is repetitive but not identical.</strong> Every matter needs the same ten things, but which ten depends on the matter type, the entity, and the jurisdiction. That is too variable for a static form and too tedious for a senior person.</li>
+        <li><strong>The chasing never ends.</strong> The engagement letter is out for signature. The ID is blurry. The second owner hasn't sent their documents. Someone has to remember all of it.</li>
+      </ul>
+
+      <p>Clio's shoppers also reported that when they did reach a firm, 73% were unlikely to recommend it. Being reachable is the minimum. Being useful on first contact is the actual bar.</p>
+
+      <h2 id="what-agents-do">What an AI Agent Does in This Workflow</h2>
+
+      <p>An intake and onboarding agent is not a chatbot bolted onto the website. It is a worker with access to your inbox, calendar, CRM or practice management system, document storage, and e-signature tool, running a defined process. Here is the work it can own.</p>
+
+      <h3>1. First response in minutes, at any hour</h3>
+      <p>The agent reads the inquiry, identifies the matter or service type, and replies with something specific: what the process looks like, what the consultation covers, and available times to book. Clio found that only 36% of firms reached by phone could explain the process and next steps. An agent can do that on every inquiry because it is reading from your own playbook.</p>
+
+      <h3>2. Qualification against your criteria</h3>
+      <p>You decide what a good-fit client looks like: practice area, geography, matter size, account minimum, timeline. The agent asks the questions needed to place the inquiry, records the answers, and routes it. Good fits get a booking link. Poor fits get a polite decline and, if you want, a referral.</p>
+
+      <h3>3. Document and information collection</h3>
+      <p>Instead of one long form, the agent requests what this specific client needs, checks what comes back, and asks again for anything missing or unreadable. It extracts names, dates, entity details, and account information into structured fields so nobody retypes them.</p>
+
+      <h3>4. Preparing the checks that a person approves</h3>
+      <p>The agent can run a new client's name and related parties against your client list and flag possible conflicts. It can assemble a KYC or due-diligence packet and note what is missing. It does not clear the conflict or accept the risk. It hands a reviewer a prepared file with the open questions at the top.</p>
+
+      <h3>5. Engagement paperwork and system setup</h3>
+      <p>Once a person approves, the agent generates the engagement letter from your template, sends it for signature, follows up until it is signed, then opens the matter or account, creates the folder structure, sets up billing, and schedules the kickoff.</p>
+
+      <h3>6. Status updates nobody has to write</h3>
+      <p>Clients get told where they are in the process and what is still needed. Your team gets a single view of every onboarding in flight and what each one is waiting on.</p>
+
+      <h2 id="where-humans-stay">Where a Person Stays in Charge</h2>
+
+      <p>This is a regulated, trust-based workflow. Getting the division of labor wrong creates real exposure, so draw the line on purpose.</p>
+
+      <div class="post-highlight">
+        <h4>Keep These Decisions Human</h4>
+        <ul>
+          <li><strong>Conflict clearance.</strong> The agent surfaces possible conflicts. A responsible professional decides.</li>
+          <li><strong>Accepting or declining a client</strong> where judgment is involved, including anything touching risk rating or source of funds.</li>
+          <li><strong>Fees and engagement terms</strong> that depart from your standard template.</li>
+          <li><strong>Anything that could be read as advice.</strong> The agent explains your process. It does not assess someone's legal position, tax situation, or investments.</li>
+          <li><strong>The first substantive conversation.</strong> Speed gets the meeting. A person wins the relationship.</li>
+        </ul>
+      </div>
+
+      <p>Two more rules belong in the build from day one. Tell people when they are dealing with an AI assistant, and give them a way to reach a person at every step. And check your own obligations before go-live: professional conduct rules on confidentiality and supervision for law firms, books-and-records and KYC requirements for financial firms, and whatever your regulator or insurer says about automated client communication. Those rules vary by profession and state, so confirm them with whoever owns compliance at your firm.</p>
+
+      <h2 id="what-it-touches">What the Agent Needs Access To</h2>
+
+      <p>Most of the effort in this project is integration, not AI. The agent is only as useful as the systems it can reach.</p>
+
+      <ul>
+        <li><strong>Inbound channels:</strong> web forms, the shared inbox, and ideally missed-call and voicemail transcripts</li>
+        <li><strong>Calendar:</strong> real availability, so it books meetings instead of proposing them</li>
+        <li><strong>System of record:</strong> practice management, CRM, or portfolio system, with write access limited to the fields it needs</li>
+        <li><strong>Documents and e-signature:</strong> your templates, a secure upload link, and signature status</li>
+        <li><strong>Your playbook:</strong> qualification criteria, required documents by matter type, and escalation rules, written down</li>
+      </ul>
+
+      <p>Client intake data is some of the most sensitive information you hold. Scope access tightly, log every action the agent takes, keep client documents inside systems you already trust, and confirm how any AI vendor in the chain handles and retains data.</p>
+
+      <h2 id="rollout">A 30-Day Rollout That Doesn't Bet the Firm</h2>
+
+      <h3>Week 1: Map and measure</h3>
+      <p>Write down the current process for one matter or client type, step by step. Pull the last quarter of inquiries and record how long first response took, how many booked, how many signed, and how long signing to kickoff took. If you can't get those numbers, that is your first finding.</p>
+
+      <h3>Week 2: First response and booking only</h3>
+      <p>Turn on the narrowest useful piece. The agent drafts replies and a person sends them for the first few days. When the drafts stop needing edits, let it send.</p>
+
+      <h3>Week 3: Collection and chasing</h3>
+      <p>Add document requests, completeness checks, and reminders. This is usually where staff feel the difference, because the chasing is the part everyone hates.</p>
+
+      <h3>Week 4: Prepared approvals and setup</h3>
+      <p>Add conflict and due-diligence preparation with a human approval step, then engagement letters and system setup after approval. Review every escalation from the month and adjust the rules.</p>
+
+      <h2 id="what-to-measure">What to Measure</h2>
+
+      <p>Skip vanity metrics. Four numbers tell you whether this is working, and you should compare each against the baseline you took in week one.</p>
+
+      <ul>
+        <li><strong>Time to first response</strong>, measured in minutes, including nights and weekends</li>
+        <li><strong>Inquiry-to-consultation rate</strong>: of the people who contacted you, how many got on the calendar</li>
+        <li><strong>Days from yes to fully onboarded</strong>: signed, documents in, matter or account open</li>
+        <li><strong>Staff hours per new client</strong> spent on intake and setup</li>
+      </ul>
+
+      <p>Track one quality check alongside them: how often a person had to correct something the agent did. That number should fall over the first month. If it doesn't, the playbook is unclear, and no model will fix an unclear playbook.</p>
+
+      <h2 id="where-to-start">Where to Start</h2>
+
+      <p>Run Clio's test on yourself. Have someone outside the firm submit an inquiry by web form at 7 pm and call the main line at lunch. Time the response and read it as a stranger would. If the result bothers you, you have found the highest-return automation project in the building, and it is one where the agent's work is easy to verify and the downside is contained by a human approval step.</p>
+
+      <div class="post-sources" id="sources">
+        <h2>Sources</h2>
+        <ol>
+          <li><a href="https://www.clio.com/guides/client-intake-legal-trends/" rel="noopener" target="_blank">Clio, <em>2024 Legal Trends Report</em>, client intake findings (third-party study contacting 500 law firms by email and phone)</a></li>
+          <li><a href="https://www.fenergo.com/newsroom/global-financial-institutions-struggle-with-rising-client-losses-and-compliance-costs-as-ai-adoption-increases-fenergo" rel="noopener" target="_blank">Fenergo, <em>Financial Crime Industry Trends 2025</em> (survey of 600 senior decision-makers at banks, asset managers, and fund administrators in the UK, US, and Singapore, conducted August 2025)</a></li>
+        </ol>
+      </div>
+
+      <div class="post-cta-box">
+        <h3>Want intake that answers in minutes?</h3>
+        <p>We build intake and onboarding agents that plug into the systems you already use, with approval gates on every decision that needs a professional.</p>
+        <a href="contact.html" class="btn-primary">Book a Free Call</a>
+      </div>
+
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <h5>In This Article</h5>
+        <a href="#why-it-breaks" class="toc-link">Why Intake Breaks</a>
+        <a href="#what-agents-do" class="toc-link">What an Agent Does</a>
+        <a href="#where-humans-stay" class="toc-link">Where a Person Stays</a>
+        <a href="#what-it-touches" class="toc-link">What the Agent Needs</a>
+        <a href="#rollout" class="toc-link">30-Day Rollout</a>
+        <a href="#what-to-measure" class="toc-link">What to Measure</a>
+        <a href="#where-to-start" class="toc-link">Where to Start</a>
+        <a href="#sources" class="toc-link">Sources</a>
+      </div>
+      <div class="sidebar-card">
+        <h5>Related Articles</h5>
+        <a href="blog-human-in-the-loop-ai-agents.html" class="related-link">
+          <div class="related-cat">Legal</div>
+          <div class="related-title">Customers Still Want a Human in the Loop. Design Your AI Agents Around It.</div>
+        </a>
+        <a href="blog-ai-for-law-firms.html" class="related-link">
+          <div class="related-cat">Legal</div>
+          <div class="related-title">AI Automation for Law Firms: Reclaim Admin Time</div>
+        </a>
+        <a href="blog-ai-for-professional-services-firms.html" class="related-link">
+          <div class="related-cat">Professional Services</div>
+          <div class="related-title">AI Automation for Professional Services Firms: Win Back the Billable Hour</div>
+        </a>
+      </div>
+      <div class="sidebar-card sidebar-cta">
+        <h5>Talk to Us</h5>
+        <p>We build intake and onboarding agents with human approval on conflicts, terms, and risk decisions.</p>
+        <a href="contact.html" class="btn-primary" style="width:100%;text-align:center;display:block;">Book a Free Call</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html">Workflow Automation</a></li>
+          <li><a href="services.html">AI Agents</a></li>
+          <li><a href="services.html">Integrations</a></li>
+          <li><a href="services.html">Fine-Tuned Models</a></li>
+          <li><a href="services.html">AI Apps</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h5>Industries</h5><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get Started</h5>
+        <ul>
+          <li><a href="contact.html">Book a Call</a></li>
+          <li><a href="contact.html">Send a Message</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<script src="shared.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>
