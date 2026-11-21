@@ -1,3 +1,14 @@
+/* Self-hosted fonts (OFL): Barlow Condensed, DM Mono, Outfit. Latin subset. */
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/barlow-condensed-600.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/barlow-condensed-700.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/barlow-condensed-800.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:900;font-display:swap;src:url(fonts/barlow-condensed-900.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-mono-400.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/dm-mono-500.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:300;font-display:swap;src:url(fonts/outfit-variable.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/outfit-variable.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Outfit';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/outfit-variable.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+
 /* AI Smartr — shared.css */
 :root {
   --black:    #0A0A0A;
@@ -61,13 +72,13 @@ img { display: block; max-width: 100%; }
 .footer-brand-wordmark { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; font-size: 24px; text-transform: uppercase; color: #fff; letter-spacing: 0.04em; margin-bottom: 12px; }
 .footer-brand-wordmark span { color: var(--gold); }
 .footer-tagline { font-size: 14px; color: var(--gray); line-height: 1.6; }
-.footer-col h5 { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-col h5, .footer-col .fh { font-family: 'DM Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 10px; }
 .footer-col ul li a { font-size: 14px; color: var(--gray); transition: color 0.2s; }
 .footer-col ul li a:hover { color: #fff; }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-.footer-copy { font-family: 'DM Mono', monospace; font-size: 11px; color: #555; letter-spacing: 0.08em; }
+.footer-copy { font-family: 'DM Mono', monospace; font-size: 11px; color: #8c8c8c; letter-spacing: 0.08em; }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -179,3 +190,9 @@ img { display: block; max-width: 100%; }
 .post-sources li{font-size:13.5px;color:var(--gray);line-height:1.6;margin-bottom:8px;}
 .post-sources a{color:var(--gold-lite);text-decoration:underline;text-underline-offset:2px;}
 .post-sources p{font-size:13px;color:var(--gray);font-style:italic;}
+
+/* skip link */
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:999;background:var(--gold);color:var(--black);padding:10px 16px;font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;}
+.skip-link:focus{left:8px;}
+main{display:block;}
+.sidebar-card .sc-h{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}

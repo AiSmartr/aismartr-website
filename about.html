@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>About AI Smartr | Our Story and Values | AI Smartr</title>
+  <title>About AI Smartr | Our Story and Values</title>
   <meta name="description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Meet the company and what we stand for." />
   <link rel="icon" type="image/png" href="logo-192.png" />
-  <link rel="apple-touch-icon" href="logo-192.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
   <link rel="stylesheet" href="shared.css" />
   <style>
     .section{padding:80px 48px;}
@@ -74,7 +75,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="AI Smartr" />
-  <meta property="og:title" content="About AI Smartr | Our Story and Values | AI Smartr" />
+  <meta property="og:title" content="About AI Smartr | Our Story and Values" />
   <meta property="og:description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Meet the company and what we stand for." />
   <meta property="og:url" content="https://aismartr.com/about.html" />
   <meta property="og:image" content="https://aismartr.com/logo-512.png" />
@@ -82,7 +83,7 @@
   <meta property="og:image:height" content="512" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About AI Smartr | Our Story and Values | AI Smartr" />
+  <meta name="twitter:title" content="About AI Smartr | Our Story and Values" />
   <meta name="twitter:description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Meet the company and what we stand for." />
   <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
   <!-- Canonical -->
@@ -170,6 +171,7 @@
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <nav class="nav">
   <div class="nav-inner">
@@ -190,6 +192,7 @@
     </button>
   </div>
 </nav>
+<main id="main">
 
 <section class="page-hero has-mascot">
   <div class="page-hero-grid"></div>
@@ -296,6 +299,7 @@
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -303,10 +307,10 @@
         <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
         <p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p>
       </div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li></ul></div>
-      <div class="footer-col"><h5>Industries</h5><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div class="footer-col"><h5>Get Started</h5><ul><li><a href="contact.html">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Services</p><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Company</p><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Get Started</p><ul><li><a href="contact.html">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
   </div>

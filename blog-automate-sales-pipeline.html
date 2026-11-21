@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Sales Pipeline Automation Without Losing Touch | AI Smartr</title>
   <meta name="description" content="How to automate all seven pipeline stages, from lead capture to CRM hygiene, while keeping the conversations that close deals human." />
   <link rel="icon" type="image/png" href="logo-192.png" />
-  <link rel="apple-touch-icon" href="logo-192.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
   <link rel="stylesheet" href="shared.css" />
   <style>
 
@@ -179,6 +180,7 @@
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-brand">
@@ -198,6 +200,7 @@
     </ul>
   </div>
 </nav>
+<main id="main">
 
 <section class="post-hero">
   <div class="post-hero-grid"></div>
@@ -324,7 +327,7 @@
 
     <aside class="post-sidebar">
       <div class="sidebar-card">
-        <h5>In This Article</h5>
+        <p class="sc-h">In This Article</p>
         <a href="#lead-capture" class="toc-link">Lead Capture and Enrichment</a>
         <a href="#scoring" class="toc-link">Lead Scoring</a>
         <a href="#outreach" class="toc-link">Personalized Outreach</a>
@@ -334,7 +337,7 @@
         <a href="#crm-hygiene" class="toc-link">CRM Hygiene</a>
       </div>
       <div class="sidebar-card">
-        <h5>Related Articles</h5>
+        <p class="sc-h">Related Articles</p>
         <a href="blog-5-workflows-to-automate.html" class="related-link">
           <div class="related-cat">Professional Services</div>
           <div class="related-title">5 Business Workflows You Should Automate First</div>
@@ -349,7 +352,7 @@
         </a>
       </div>
       <div class="sidebar-card sidebar-cta">
-        <h5>Talk to Us</h5>
+        <p class="sc-h">Talk to Us</p>
         <p>We build sales automation that moves fast and feels personal.</p>
         <a href="contact.html" class="btn-primary" style="width:100%;text-align:center;display:block;">Book a Free Call</a>
       </div>
@@ -357,6 +360,7 @@
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -365,7 +369,7 @@
         <p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p>
       </div>
       <div class="footer-col">
-        <h5>Services</h5>
+        <p class="fh">Services</p>
         <ul>
           <li><a href="services.html">Workflow Automation</a></li>
           <li><a href="services.html">AI Agents</a></li>
@@ -374,16 +378,16 @@
           <li><a href="services.html">AI Apps</a></li>
         </ul>
       </div>
-      <div class="footer-col"><h5>Industries</h5><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
       <div class="footer-col">
-        <h5>Company</h5>
+        <p class="fh">Company</p>
         <ul>          <li><a href="about.html">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Get Started</h5>
+        <p class="fh">Get Started</p>
         <ul>
           <li><a href="contact.html">Book a Call</a></li>
           <li><a href="contact.html">Send a Message</a></li>

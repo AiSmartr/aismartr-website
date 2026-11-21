@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io; frame-src https://cal.com https://app.cal.com; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>AI Agents for Real Estate, Finance, Legal | AI Smartr</title>
   <meta name="description" content="AI Smartr builds AI agents for real estate, finance, legal, and professional services firms. Book a free 30-minute consultation and find your first agent." />
   <link rel="preload" as="image" href="mascot.webp" fetchpriority="high" />
   <link rel="icon" type="image/png" href="logo-192.png" />
-  <link rel="apple-touch-icon" href="logo-192.png" />  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
   <link rel="stylesheet" href="shared.css" />
   <link rel="stylesheet" href="hero.css" />
   <link rel="stylesheet" href="industry.css" />
@@ -224,6 +225,7 @@
   </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <nav class="nav">
   <div class="nav-inner">
@@ -244,6 +246,7 @@
     </button>
   </div>
 </nav>
+<main id="main">
 
 <section class="vh" id="vh">
     <div class="vh-embers" id="embers"></div>
@@ -411,6 +414,7 @@
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-grid">
@@ -419,7 +423,7 @@
         <p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p>
       </div>
       <div class="footer-col">
-        <h5>Services</h5>
+        <p class="fh">Services</p>
         <ul>
           <li><a href="services.html">Workflow Automation</a></li>
           <li><a href="services.html">AI Agents</a></li>
@@ -427,16 +431,16 @@
           <li><a href="services.html">Fine-Tuned Models</a></li>
         </ul>
       </div>
-      <div class="footer-col"><h5>Industries</h5><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li></ul></div>
       <div class="footer-col">
-        <h5>Company</h5>
+        <p class="fh">Company</p>
         <ul>          <li><a href="about.html">About</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h5>Get Started</h5>
+        <p class="fh">Get Started</p>
         <ul>
           <li><a href="contact.html">Book a Consultation</a></li>
           <li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li>
