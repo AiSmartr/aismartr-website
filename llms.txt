@@ -55,6 +55,9 @@ Reported ranges for production AI agents: ~171% average ROI (~192% in US enterpr
 - [AI Agents for Finance](https://aismartr.com/ai-agents-for-finance.html): Invoice and PO intake, matching, approvals, audit trails
 - [AI Agents for Legal](https://aismartr.com/ai-agents-for-legal.html): Intake, document assembly, deadlines, billing, with attorneys in control
 - [AI Agents for Professional Services](https://aismartr.com/ai-agents-for-professional-services.html): Proposals, onboarding, time capture, reporting
+- [AI Agents for New York Firms](https://aismartr.com/ai-agents-new-york.html): AI agents for New York real estate, finance, legal, and professional services firms
+- [AI ROI Calculator](https://aismartr.com/ai-roi-calculator.html): Free calculator for hours returned, value, payback, and first-year ROI
+- [ABA Opinion 512 Checklist](https://aismartr.com/blog-aba-opinion-512-ai-agents-law-firms.html): Duty-by-duty controls for AI agents at law firms
 - [Services](https://aismartr.com/services.html): Detailed breakdown of each AI service
 - [About](https://aismartr.com/about.html): Mission, values, and how we work
 - [Blog](https://aismartr.com/blog.html): Practical AI guides and strategies for businesses

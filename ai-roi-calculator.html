@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io https://*.posthog.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io https://*.posthog.com; frame-src https://cal.com https://app.cal.com; worker-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>AI Automation ROI Calculator for Firms | AI Smartr</title>
+  <meta name="description" content="Free AI ROI calculator for real estate, finance, legal, and professional services firms. Estimate hours returned, annual value, payback, and first-year ROI." />
+  <link rel="icon" type="image/png" href="logo-192.png" />
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
+  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="industry.css" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="AI Smartr" />
+  <meta property="og:title" content="AI Automation ROI Calculator for Firms | AI Smartr" />
+  <meta property="og:description" content="Free AI ROI calculator for real estate, finance, legal, and professional services firms. Estimate hours returned, annual value, payback, and first-year ROI." />
+  <meta property="og:url" content="https://aismartr.com/ai-roi-calculator.html" />
+  <meta property="og:image" content="https://aismartr.com/logo-512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AI Automation ROI Calculator for Firms | AI Smartr" />
+  <meta name="twitter:description" content="Free AI ROI calculator for real estate, finance, legal, and professional services firms. Estimate hours returned, annual value, payback, and first-year ROI." />
+  <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aismartr.com/ai-roi-calculator.html" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "@id": "https://aismartr.com/ai-roi-calculator.html#app",
+      "name": "AI Automation ROI Calculator",
+      "url": "https://aismartr.com/ai-roi-calculator.html",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Any",
+      "description": "Free AI ROI calculator for real estate, finance, legal, and professional services firms. Estimate hours returned, annual value, payback, and first-year ROI.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "ROI Calculator",
+          "item": "https://aismartr.com/ai-roi-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+  </script>
+<style>.cta-section{background:var(--burg);padding:100px 48px;position:relative;overflow:hidden;text-align:center;}.cta-grid-bg{position:absolute;inset:0;opacity:.05;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 40px);}.cta-inner{position:relative;z-index:1;max-width:700px;margin:0 auto;}.cta-headline{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:.92;text-transform:uppercase;color:#fff;margin-bottom:24px;}.cta-headline span{color:var(--gold);}.cta-sub{font-size:18px;color:rgba(255,255,255,.75);margin-bottom:40px;}@media(max-width:640px){.cta-section{padding:72px 24px;}}</style><style>
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;}
+.calc-card{background:#111;border:1px solid #1a1a1a;padding:36px;}
+.calc-card h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:20px;}
+.calc-row{display:grid;gap:6px;margin-bottom:18px;}
+.calc-row label{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);}
+.calc-row input,.calc-row select{background:#0a0a0a;border:1px solid #2a2a2a;color:#fff;padding:12px 14px;font-size:16px;font-family:inherit;width:100%;border-radius:2px;}
+.calc-row input:focus,.calc-row select:focus{outline:2px solid var(--gold);outline-offset:1px;}
+.calc-row small{font-size:12px;color:var(--gray);line-height:1.5;}
+.calc-out{display:grid;gap:2px;}
+.calc-stat{background:#0a0a0a;border:1px solid #1a1a1a;padding:18px 20px;display:flex;justify-content:space-between;align-items:baseline;gap:16px;}
+.calc-stat span{font-size:14px;color:var(--gray);}
+.calc-stat b{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:34px;color:var(--gold);line-height:1;}
+.calc-stat.big b{font-size:48px;color:var(--gold-lite);}
+.calc-note{font-size:13px;color:var(--gray);line-height:1.6;margin-top:18px;}
+@media(max-width:900px){.calc-grid{grid-template-columns:1fr;}}
+@media(max-width:640px){.calc-card{padding:24px;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo-wrap"><img src="logo-96.webp" alt="AI Smartr logo" width="48" height="48" /></div>
+      <span class="nav-wordmark">AI SMART<span>R</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="industries.html" class="active">Industries</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="btn-nav">Get Started</a></li>
+    </ul>
+    <button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<main id="main">
+
+<section class="page-hero has-mascot">
+  <div class="page-hero-grid"></div>
+  <div class="page-hero-inner">
+    <div class="ph-copy">
+      <p class="page-eyebrow">Free Tool</p>
+      <h1 class="page-title">AI AUTOMATION<br>ROI CALCULATOR.</h1>
+      <p class="page-sub">Estimate the hours an agent could return to your team, what that time is worth, and how fast it pays back. Change the numbers to match your firm.</p>
+    </div>
+    <img class="ph-mascot" src="mascot-laptop.webp" width="642" height="1000" alt="The AI Smartr mascot working on a laptop" fetchpriority="high" decoding="async">
+  </div>
+</section>
+
+<section class="ind-section">
+  <div class="ind-inner">
+    <div class="calc-grid">
+      <form class="calc-card" id="calc" onsubmit="return false" aria-label="ROI inputs">
+        <h2>Your Numbers</h2>
+        <div class="calc-row"><label for="preset">Start from an example</label>
+          <select id="preset">
+            <option value="lead">Real estate: lead response and follow-up</option>
+            <option value="invoice">Finance: invoice and PO intake</option>
+            <option value="intake">Legal: client intake and onboarding</option>
+            <option value="proposal">Professional services: proposals and reporting</option>
+            <option value="custom">Custom</option>
+          </select></div>
+        <div class="calc-row"><label for="people">People doing this work</label><input id="people" type="number" min="1" max="500" step="1" inputmode="numeric"></div>
+        <div class="calc-row"><label for="hours">Hours per person, per week</label><input id="hours" type="number" min="0.5" max="40" step="0.5" inputmode="decimal"></div>
+        <div class="calc-row"><label for="rate">Loaded cost per hour ($)</label><input id="rate" type="number" min="10" max="1000" step="1" inputmode="numeric">
+          <small>Loaded cost is wages plus benefits. The U.S. Bureau of Labor Statistics reports benefits are about 30% of private-industry compensation, so loaded cost runs about 1.4 times wages.</small></div>
+        <div class="calc-row"><label for="share">Share of that work an agent takes (%)</label><input id="share" type="number" min="5" max="95" step="5" inputmode="numeric"></div>
+        <div class="calc-row"><label for="build">One-time build cost ($)</label><input id="build" type="number" min="0" max="500000" step="500" inputmode="numeric"></div>
+        <div class="calc-row"><label for="monthly">Monthly run and support cost ($)</label><input id="monthly" type="number" min="0" max="50000" step="100" inputmode="numeric"></div>
+      </form>
+      <div class="calc-card" aria-live="polite">
+        <h2>Your Estimate</h2>
+        <div class="calc-out">
+          <div class="calc-stat"><span>Hours returned per year</span><b id="o-hours">0</b></div>
+          <div class="calc-stat"><span>Value of that time per year</span><b id="o-value">$0</b></div>
+          <div class="calc-stat"><span>First-year cost (build plus run)</span><b id="o-cost">$0</b></div>
+          <div class="calc-stat"><span>First-year net value</span><b id="o-net">$0</b></div>
+          <div class="calc-stat"><span>Payback</span><b id="o-pay">n/a</b></div>
+          <div class="calc-stat big"><span>First-year return</span><b id="o-roi">0x</b></div>
+        </div>
+        <p class="calc-note">The examples are starting points, and the build and run costs are placeholders. Replace them with your own numbers or a real quote. The calculation uses 50 working weeks a year.</p>
+        <div class="ind-cta-row"><a href="contact.html#cal-booking" class="btn-primary">Get a Real Estimate</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ind-section alt">
+  <div class="ind-inner ind-split">
+    <div>
+      <p class="section-eyebrow">How It Works</p>
+      <h2 class="section-title" style="font-size:clamp(30px,3.6vw,46px);margin-bottom:18px;">The Math.</h2>
+      <ul class="ind-list">
+        <li><span><strong>Hours returned</strong> = people &times; hours per week &times; 50 weeks &times; share automated.</span></li>
+        <li><span><strong>Value</strong> = hours returned &times; loaded cost per hour.</span></li>
+        <li><span><strong>First-year cost</strong> = one-time build + 12 months of run cost.</span></li>
+        <li><span><strong>Net value</strong> = value &minus; first-year cost.</span></li>
+        <li><span><strong>Payback</strong> = build cost &divide; (monthly value &minus; monthly run cost).</span></li>
+      </ul>
+    </div>
+    <div>
+      <p class="section-eyebrow">Beyond Time</p>
+      <h2 class="section-title" style="font-size:clamp(30px,3.6vw,46px);margin-bottom:18px;">What It Leaves Out.</h2>
+      <p class="ind-lead">Time savings are the smallest part of the picture. This estimate doesn't count faster lead response, fewer errors, or retained clients. Our <a href="blog-roi-of-ai-automation.html" style="color:var(--gold-lite);text-decoration:underline;">three-part ROI framework</a> walks through all of them.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="cta-grid-bg"></div>
+  <div class="cta-inner">
+    <h2 class="cta-headline">LET'S RUN<br>YOUR <span>NUMBERS.</span></h2>
+    <p class="cta-sub">30 minutes. No nonsense. We'll map the biggest opportunities and what they'd cost.</p>
+    <a href="contact.html#cal-booking" class="btn-primary">Book a Free Consultation</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-wordmark">AI SMART<span>R</span></div>
+        <p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p>
+      </div>
+      <div class="footer-col"><p class="fh">Services</p><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li><li><a href="ai-agents-new-york.html">New York</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Company</p><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="ai-roi-calculator.html">ROI Calculator</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Get Started</p><ul><li><a href="contact.html">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var P = {
+    lead:     {people:3, hours:6,  rate:55, share:60, build:6000, monthly:900},
+    invoice:  {people:2, hours:10, rate:48, share:70, build:6000, monthly:900},
+    intake:   {people:2, hours:8,  rate:70, share:55, build:6000, monthly:900},
+    proposal: {people:4, hours:5,  rate:85, share:50, build:6000, monthly:900}
+  };
+  var ids = ['people','hours','rate','share','build','monthly'];
+  var el = {}; ids.forEach(function(i){ el[i] = document.getElementById(i); });
+  var preset = document.getElementById('preset');
+  var money = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
+  var num = new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
+  var used = false;
+  function v(i){ var x = parseFloat(el[i].value); return isNaN(x) ? 0 : x; }
+  function calc(){
+    var hours = v('people') * v('hours') * 50 * (v('share')/100);
+    var value = hours * v('rate');
+    var cost = v('build') + 12 * v('monthly');
+    var net = value - cost;
+    var monthlyNet = value/12 - v('monthly');
+    var pay = monthlyNet > 0 ? v('build') / monthlyNet : null;
+    document.getElementById('o-hours').textContent = num.format(hours);
+    document.getElementById('o-value').textContent = money.format(value);
+    document.getElementById('o-cost').textContent = money.format(cost);
+    document.getElementById('o-net').textContent = money.format(net);
+    document.getElementById('o-pay').textContent = pay === null ? 'n/a' : (pay < 1 ? 'under 1 month' : pay.toFixed(1) + ' months');
+    document.getElementById('o-roi').textContent = cost > 0 ? (value/cost).toFixed(1) + 'x' : 'n/a';
+  }
+  function load(k){ var p = P[k]; if (!p) return; ids.forEach(function(i){ el[i].value = p[i]; }); calc(); }
+  preset.addEventListener('change', function(){ load(preset.value); });
+  ids.forEach(function(i){ el[i].addEventListener('input', function(){
+    if (preset.value !== 'custom') preset.value = 'custom';
+    calc();
+    if (!used) { used = true; if (window.aiTrack) window.aiTrack('calculator_used', {page: location.pathname}); }
+  }); });
+  load('lead');
+})();
+</script>
+<script src="shared.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>
