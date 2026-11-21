@@ -107,8 +107,7 @@ img { display: block; max-width: 100%; }
 }
 .page-hero::after, .post-hero::after {
   content: ''; position: absolute; z-index: 0; right: 3%; top: 50%; height: 150%; aspect-ratio: 1124/1912; pointer-events: none;
-  -webkit-mask: url(squid.png) center/contain no-repeat; mask: url(squid.png) center/contain no-repeat;
-  background: linear-gradient(180deg, #FFD36B, #F2A93B 45%, #E8782F); opacity: .32;
+  background: url(squid-gold.webp) center/contain no-repeat; opacity: .32;
   animation: squid-drift 10s ease-in-out infinite;
 }
 @keyframes squid-drift { 0%,100% { transform: translateY(-50%) rotate(-1.4deg); } 50% { transform: translateY(calc(-50% - 16px)) rotate(1.4deg); } }
@@ -118,8 +117,7 @@ img { display: block; max-width: 100%; }
     radial-gradient(ellipse 60% 140% at 50% 125%, rgba(255,150,60,.55) 0%, rgba(255,150,60,0) 65%),
     radial-gradient(ellipse 50% 100% at 0% 0%, rgba(232,97,44,.35) 0%, rgba(232,97,44,0) 60%) !important; }
 .cta-section::after { content: ''; position: absolute; left: 50%; top: 50%; height: 170%; aspect-ratio: 1124/1912; translate: -50% -50%; pointer-events: none;
-  -webkit-mask: url(squid.png) center/contain no-repeat; mask: url(squid.png) center/contain no-repeat;
-  background: linear-gradient(180deg, #FFD36B, #E8782F); opacity: .1; }
+  background: url(squid-gold.webp) center/contain no-repeat; opacity: .1; }
 .cta-inner { position: relative; z-index: 1; }
 
 /* warm glow behind dark sections */
@@ -133,8 +131,7 @@ img { display: block; max-width: 100%; }
 /* squid watermark behind the home services list */
 .services { overflow-x: clip; }
 .services::after { content: ''; position: absolute; z-index: -1; right: 3%; top: 50%; height: 120%; aspect-ratio: 1124/1912; translate: 0 -50%; pointer-events: none;
-  -webkit-mask: url(squid.png) center/contain no-repeat; mask: url(squid.png) center/contain no-repeat;
-  background: linear-gradient(180deg, #FFD36B, #E8782F); opacity: .1; }
+  background: url(squid-gold.webp) center/contain no-repeat; opacity: .1; }
 @media (max-width: 768px) { .services::after { opacity: .06; right: -12%; } }
 
 /* gold gradient numbers */
