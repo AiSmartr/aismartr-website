@@ -220,3 +220,7 @@ main{display:block;}
 .post-layout > *{min-width:0;}
 .post-table-wrap{max-width:100%;}
 .post-eyebrow .post-by{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#bbb;}
+
+.bench-note{max-width:1200px;margin:0 auto;padding:14px 48px 0;font-size:12px;line-height:1.6;color:#999;}
+.bench-note a{color:#bbb;text-decoration:underline;}
+@media(max-width:768px){.bench-note{padding:12px 24px 0;}}

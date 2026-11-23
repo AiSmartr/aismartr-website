@@ -22,9 +22,9 @@ Website: https://aismartr.com
 
 - **Fine-Tuned Models**: Models trained on your data for domain-specific accuracy. Document understanding, sentiment analysis, classification, and industry-specific language.
 
-## Industry Benchmarks
+## Published Benchmarks
 
-Reported ranges for production AI agents: ~171% average ROI (~192% in US enterprise benchmarks), 4 to 8 weeks to deploy packaged agents, 70 to 85% touchless support resolution, 50 to 70% lower support costs, 4 to 7x outbound and qualification volume, 60 to 80% less content and research time, 75 to 80% of invoice and PO intake automated, 60 to 75% faster approval and audit cycles, 40 to 55% faster IT resolution, and 20 to 35% of developer capacity reclaimed.
+Figures from third-party studies (they are not AI Smartr client results): 171% is the average ROI executives expect from agentic AI (PagerDuty and Wakefield Research, 2025, an expected return from a survey); 80% of US technical leaders say agents already deliver measurable economic impact (Anthropic, State of AI Agents, 2026, self-reported); the average cost to process one invoice is $9.90 and $2.67 for best-in-class teams (Ardent Partners, 2026); contacting a lead in 5 minutes instead of 30 changes the odds of reaching it 100 times (InsideSales.com and MIT, 2007); conversion rates are 8 times greater in the first five minutes (InsideSales, 2021); the average lawyer records 2.9 billable hours in an 8-hour day (Clio Legal Trends Report).
 
 ## What Clients Get
 
