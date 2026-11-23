@@ -219,3 +219,4 @@ main{display:block;}
 @media (max-width:600px){.post-body .policy-doc{padding:22px 18px;}.post-body .post-answer{padding:18px 20px;}}
 .post-layout > *{min-width:0;}
 .post-table-wrap{max-width:100%;}
+.post-eyebrow .post-by{font-family:"DM Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#bbb;}
