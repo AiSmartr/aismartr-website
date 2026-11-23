@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io https://*.posthog.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io https://*.posthog.com; frame-src https://cal.com https://app.cal.com; worker-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>AP Automation: Software vs Custom Agent for Small Firms | AI Smartr</title>
+  <meta name="description" content="Should a small accounting firm buy AP software or build a custom agent? Costs, limits, a comparison table, the controls to keep, and how to pilot." />
+  <link rel="icon" type="image/png" href="logo-192.png" />
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+
+
+    .post-hero{background:var(--burg);padding:100px 24px 64px;position:relative;overflow:hidden;}
+    .post-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .post-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .post-eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:20px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);}
+    .post-date,.post-read{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);line-height:0.95;text-transform:uppercase;color:#fff;max-width:900px;margin-bottom:24px;}
+    .post-lead{font-size:18px;color:rgba(255,255,255,0.8);max-width:700px;line-height:1.6;}
+    .post-section{background:var(--black);padding:64px 24px 80px;}
+    .post-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .post-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3vw,38px);text-transform:uppercase;color:#fff;margin-top:48px;margin-bottom:16px;line-height:1.05;}
+    .post-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--gold);margin-top:32px;margin-bottom:12px;}
+    .post-body p{font-size:16px;color:#ccc;line-height:1.75;margin-bottom:20px;}
+    .post-body ul,.post-body ol{margin:0 0 20px 20px;}
+    .post-body li{font-size:15px;color:#ccc;line-height:1.7;margin-bottom:8px;}
+    .post-body strong{color:#e8e8e8;font-weight:500;}
+    .post-stat-box{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:32px;margin:40px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .stat-item{text-align:center;}
+    .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .stat-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .post-callout{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:24px 28px;margin:32px 0;}
+    .post-callout p{margin-bottom:0;color:#ddd;}
+    .post-highlight{background:#111;border:1px solid #1a1a1a;padding:28px 32px;margin:32px 0;}
+    .post-highlight h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box{background:var(--burg);padding:40px;margin:48px 0 0;text-align:center;}
+    .post-cta-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px;}
+    .post-sidebar{position:sticky;top:80px;}
+    .sidebar-card{background:#111;border:1px solid #1a1a1a;padding:28px;margin-bottom:20px;}
+    .sidebar-card h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .toc-link{display:block;font-size:13px;color:var(--gray);padding:6px 0;border-bottom:1px solid #1a1a1a;transition:color 0.2s;}
+    .toc-link:last-child{border-bottom:none;}
+    .toc-link:hover{color:var(--gold);}
+    .related-link{display:block;padding:12px 0;border-bottom:1px solid #1a1a1a;}
+    .related-link:last-child{border-bottom:none;}
+    .related-cat{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .related-title{font-size:13px;color:#ccc;margin-top:4px;line-height:1.4;transition:color 0.2s;}
+    .related-link:hover .related-title{color:#fff;}
+    .sidebar-cta{background:var(--burg)!important;border:none!important;}
+    .sidebar-cta p{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+
+
+    @media(max-width:768px){.post-layout{grid-template-columns:1fr;}.post-sidebar{position:static;}.post-stat-box{grid-template-columns:1fr;}}
+    @media(max-width:640px){.nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AI Smartr" />
+  <meta property="og:title" content="AP Automation: Software vs Custom Agent for Small Firms | AI Smartr" />
+  <meta property="og:description" content="Should a small accounting firm buy AP software or build a custom agent? Costs, limits, a comparison table, the controls to keep, and how to pilot." />
+  <meta property="og:url" content="https://aismartr.com/blog-ap-automation-software-vs-custom-agent.html" />
+  <meta property="og:image" content="https://aismartr.com/logo-512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AP Automation: Software vs Custom Agent for Small Firms | AI Smartr" />
+  <meta name="twitter:description" content="Should a small accounting firm buy AP software or build a custom agent? Costs, limits, a comparison table, the controls to keep, and how to pilot." />
+  <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aismartr.com/blog-ap-automation-software-vs-custom-agent.html" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://aismartr.com/blog-ap-automation-software-vs-custom-agent.html#article",
+      "headline": "AP Automation for Small Accounting Firms: Software or Custom Agent?",
+      "description": "Should a small accounting firm buy AP software or build a custom agent? Costs, limits, a comparison table, the controls to keep, and how to pilot.",
+      "datePublished": "2026-11-23",
+      "dateModified": "2026-11-23",
+      "author": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "mainEntityOfPage": "https://aismartr.com/blog-ap-automation-software-vs-custom-agent.html",
+      "image": "https://aismartr.com/logo-512.png",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://aismartr.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "AP Automation for Small Accounting Firms: Software or Custom Agent?",
+          "item": "https://aismartr.com/blog-ap-automation-software-vs-custom-agent.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-brand"><div class="nav-logo-wrap"><img src="logo-96.webp" alt="AI Smartr" width="48" height="48" /></div><span class="nav-wordmark">AI SMART<span>R</span></span></a><ul class="nav-links" id="navLinks"><li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
+<li><a href="about.html">About</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html" class="btn-nav">Get Started</a></li></ul><button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button></div></nav>
+<main id="main">
+
+<section class="post-hero">
+  <div class="post-hero-grid"></div>
+  <div class="post-hero-inner">
+    <div class="post-eyebrow"><span class="post-cat">Finance</span><span class="post-date">November 23, 2026</span><span class="post-read">9 min read</span></div>
+    <h1 class="post-title">AP Automation for Small Accounting Firms: Software or Custom Agent?</h1>
+    <p class="post-lead">Accounts payable runs on intake, matching, and approvals, and a small firm has two ways to automate it. Here's how to choose between AP software and a custom agent, with the numbers and the controls.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+<section class="post-section">
+  <div class="post-layout">
+    <article class="post-body">
+<div class="post-answer"><span class="pa-label">Short answer</span><p>Buy AP software when your invoices, approvals, and accounting system fit its standard workflow, and build a custom agent when your rules, clients, or systems don't. Many small firms do both: software for the common path, an agent for the exceptions. Pilot on three months of old invoices before you trust either.</p></div>
+
+
+      <p>This applies to a firm's own payables and to the AP work an accounting or bookkeeping practice runs for clients. The same decision comes up in both.</p>
+
+      <h2 id="cost">What Does AP Cost Per Invoice, and Where Does the Time Go?</h2>
+
+      <p>Ardent Partners' 2026 benchmark puts the average cost to process one invoice at $9.90. Best-in-Class teams (the 20% with the lowest cost and shortest cycle times) process one for $2.67. Nearly 1 in 5 invoices hits an exception, and Best-in-Class teams hold that to 11.8%.</p>
+
+      <div class="post-stat-box">
+        <div class="stat-item">
+          <div class="stat-num">$9.90</div>
+          <div class="stat-lbl">average cost to process one invoice (Ardent Partners, 2026)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">$2.67</div>
+          <div class="stat-lbl">cost for Best-in-Class teams</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">72%</div>
+          <div class="stat-lbl">of finance organizations spend up to 520 hours a year on manual AP (CFO Research, 2020)</div>
+        </div>
+      </div>
+
+      <p>Here is what that gap means at small-firm volume, as an illustration. At 300 invoices a month, $9.90 each is $35,640 a year and $2.67 each is $9,612. The difference is about $26,000 a year.</p>
+
+      <p>Those benchmarks come from larger-company surveys, so your numbers will differ. Our <a href="ai-roi-calculator.html">ROI calculator</a> lets you run your own volume and hourly cost.</p>
+
+      <h2 id="software">What Does AP Software Do Well?</h2>
+
+      <p>AP software is the category with products like Bill, Ramp, Dext, and Stampli. We name them for orientation only, with no ranking or endorsement.</p>
+
+      <p>The category handles the common path well:</p>
+
+      <ul>
+        <li>Capturing invoices from email and reading the fields</li>
+        <li>Coding to your chart of accounts</li>
+        <li>Routing approvals by amount or department</li>
+        <li>Paying vendors and syncing to your accounting system</li>
+      </ul>
+
+      <p>It's fast to start, the vendor maintains it, and the upfront cost is low. For a firm with one entity and a standard approval chain, it's often the right answer.</p>
+
+      <h2 id="limits">Where Does AP Software Run Out of Road?</h2>
+
+      <p>Software is built for the standard workflow, so friction starts where your work isn't standard:</p>
+
+      <ul>
+        <li><strong>Many clients, different rules.</strong> Each client has its own coding rules, approvers, and thresholds, and each one needs its own setup.</li>
+        <li><strong>Messy inputs.</strong> Scans, photos, and one-off formats still land in an exception queue.</li>
+        <li><strong>Matching beyond the basics.</strong> Checking an invoice against a PO, a receipt, and a contract term takes logic the product may not offer.</li>
+        <li><strong>Unusual systems.</strong> If your ledger or approval tool has no clean integration, people re-key data by hand.</li>
+        <li><strong>Exceptions.</strong> Software flags the problem. A person still researches it, drafts the fix, and chases the answer.</li>
+      </ul>
+
+      <h2 id="agent">What Does a Custom AP Agent Do?</h2>
+
+      <p>An agent does the work around the invoice as well as the keying. A typical build reads each invoice and checks the vendor against your master list. It matches the PO, codes the invoice using each client's rules, and routes it for approval.</p>
+
+      <p>On an exception, it works out what's wrong. It might be an invoice $420 over its PO or a new bank account on a known vendor. The agent sends a person a one-line note with the evidence attached, and logs every step for the auditor.</p>
+
+      <p>An agent can also work inside the software you already run, the way an employee would. We cover that in <a href="blog-ai-agents-that-use-your-software.html">agents that use your software</a>.</p>
+
+      <h2 id="decide">Software or Custom Agent: How Do You Decide?</h2>
+
+      <div class="post-table-wrap">
+      <table class="post-table">
+        <thead><tr><th></th><th>AP software</th><th>Custom AP agent</th></tr></thead>
+        <tbody>
+          <tr><th>Time to start</th><td>Fastest</td><td>Slower: needs build and testing</td></tr>
+          <tr><th>Fit to your rules</th><td>Configure within the product's options</td><td>Built around your rules</td></tr>
+          <tr><th>Many clients, different rules</th><td>Usually one setup per client</td><td>One agent applying each client's rules</td></tr>
+          <tr><th>Odd formats and exceptions</th><td>Flags them for a person to fix</td><td>Researches, drafts the fix, routes a clean exception</td></tr>
+          <tr><th>Upfront cost</th><td>Lower</td><td>Higher</td></tr>
+          <tr><th>Ongoing cost</th><td>Per-user or per-volume fees</td><td>Hosting, model usage, and support</td></tr>
+          <tr><th>Who maintains it</th><td>The vendor</td><td>You or your build partner</td></tr>
+          <tr><th>Best when</th><td>Standard workflow, one entity</td><td>Custom rules, many clients, messy inputs</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p><strong>Choose software if</strong> your approval chain is simple, your invoices are mostly clean, and your accounting system has a supported integration.</p>
+
+      <p><strong>Choose a custom agent if</strong> you run AP for many clients with different rules, your exception queue eats real hours, or your systems don't connect cleanly.</p>
+
+      <p><strong>Choose both if</strong> software handles the clean 80% and an agent works the exceptions and the cross-system matching. This is the setup we'd test first for most small firms.</p>
+
+      <h2 id="controls">What Controls Should Any AP Automation Have?</h2>
+
+      <p>Whichever route you pick, these controls stay the same:</p>
+
+      <ul>
+        <li><strong>Separation of duties.</strong> The automation never approves and releases the same payment on its own.</li>
+        <li><strong>Approval thresholds.</strong> Anything above a set amount goes to a person.</li>
+        <li><strong>Vendor change checks.</strong> A new bank account on a known vendor triggers a call-back to a number you already have on file. The FBI's 2024 Internet Crime Report lists business email compromise at $2.77 billion in reported losses.</li>
+        <li><strong>Duplicate detection.</strong> Same vendor, same amount, same week gets flagged.</li>
+        <li><strong>A complete log.</strong> Every read, match, and routing decision is recorded and reviewable.</li>
+        <li><strong>Least-privilege access.</strong> The automation sees only the ledgers and clients it needs.</li>
+      </ul>
+
+      <h2 id="pilot">How Do You Test Before You Trust It?</h2>
+
+      <ol>
+        <li><strong>Shadow mode.</strong> Run the tool on the last three months of invoices without paying anything. Compare its coding, matching, and flags to what your team actually did.</li>
+        <li><strong>Measure.</strong> Track match accuracy, exception rate, and time per invoice against your own baseline and the benchmarks above.</li>
+        <li><strong>Supervised live.</strong> Let it work real invoices with a person approving every one for a few weeks.</li>
+        <li><strong>Widen slowly.</strong> Raise the auto-route limits only for categories that stay clean.</li>
+      </ol>
+
+      <p>For the wider back-office picture, see <a href="blog-ai-for-finance-teams.html">AI for finance teams</a> and <a href="blog-ai-for-accounting.html">AI for accounting</a>, or the work we do in <a href="ai-agents-for-finance.html">AI agents for finance</a>.</p>
+
+
+      <div class="post-sources" id="sources">
+        <h2>Sources</h2>
+        <ol><li><a href="https://www.medius.com/resources/guides-reports/ardent-partners-accounts-payable-metrics-that-matter/" rel="noopener" target="_blank">Ardent Partners, <em>Accounts Payable Metrics that Matter in 2026</em> (summary of findings: average $9.90 and Best-in-Class $2.67 per invoice; exception rates)</a></li><li><a href="https://www.tungstenautomation.com/reports/ardent-partners-metrics-that-matter-2026" rel="noopener" target="_blank">Ardent Partners, <em>AP Metrics that Matter in 2026</em>, report page (average cost and cycle time)</a></li><li><a href="https://www.businesswire.com/news/home/20200728005238/en/CFO-Research-Identifies-That-72-of-Finance-Organizations-Spend-as-Much-as-520-Hours-Per-Year-on-Manual-Accounts-Payable-Tasks" rel="noopener" target="_blank">CFO Research, survey of finance organizations on manual accounts payable work (Business Wire, July 28, 2020)</a></li><li><a href="https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf" rel="noopener" target="_blank">FBI Internet Crime Complaint Center, <em>2024 Internet Crime Report</em> (business email compromise losses of $2,770,151,146)</a></li></ol>
+        <p>Benchmarks come from larger-company surveys. Run your own volume and costs before you decide.</p>
+      </div>
+
+      <div class="post-cta-box">
+        <h3>Not Sure Whether Software or an Agent Fits?</h3>
+        <p>We'll look at your invoice volume, your clients' rules, and your systems, and tell you honestly which route makes sense, including when software alone is enough. Book a free 30-minute consultation.</p>
+        <a href="contact.html#cal-booking" class="btn-primary">Book a Free Call</a>
+      </div>
+
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <p class="sc-h">In This Article</p>
+        <a href="#cost" class="toc-link">Cost Per Invoice</a>
+        <a href="#software" class="toc-link">What Software Does Well</a>
+        <a href="#limits" class="toc-link">Where Software Runs Out</a>
+        <a href="#agent" class="toc-link">What an Agent Does</a>
+        <a href="#decide" class="toc-link">How to Decide</a>
+        <a href="#controls" class="toc-link">Controls</a>
+        <a href="#pilot" class="toc-link">How to Test</a>
+        <a href="#sources" class="toc-link">Sources</a>
+      </div>
+      <div class="sidebar-card">
+        <p class="sc-h">Related Articles</p>
+        <a href="blog-ai-for-accounting.html" class="related-link"><div class="related-cat">Finance</div><div class="related-title">AI Automation for Accounting Teams: Close Faster, Audit Smarter</div></a>
+        <a href="blog-ai-for-finance-teams.html" class="related-link"><div class="related-cat">Finance</div><div class="related-title">AI Automation for Finance Teams: Invoices, Purchase Orders, and Faster Approvals</div></a>
+        <a href="blog-build-vs-buy-ai-tools.html" class="related-link"><div class="related-cat">AI Automation</div><div class="related-title">Build vs. Buy: When Off-the-Shelf AI Tools Stop Being Enough</div></a>
+      </div>
+      <div class="sidebar-card sidebar-cta">
+        <p class="sc-h">Get Started</p>
+        <p>Book a free 30-minute consultation and walk away with a clear AI roadmap.</p>
+        <a href="contact.html" class="btn-primary" style="width:100%;text-align:center;display:block;font-size:12px;padding:12px 16px;">Book Free Consultation</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="footer"><div class="footer-inner"><div class="footer-grid"><div><div class="footer-brand-wordmark">AI SMART<span>R</span></div><p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p></div><div class="footer-col"><p class="fh">Services</p><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li></ul></div><div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li><li><a href="ai-agents-new-york.html">New York</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Company</p><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="ai-roi-calculator.html">ROI Calculator</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><p class="fh">Get Started</p><ul><li><a href="contact.html">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div></div><div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div></div></footer>
+<script src="shared.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>

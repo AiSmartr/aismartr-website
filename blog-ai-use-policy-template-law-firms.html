@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io https://*.posthog.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io https://*.posthog.com; frame-src https://cal.com https://app.cal.com; worker-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>AI Use Policy Template for Law Firms (Free Download) | AI Smartr</title>
+  <meta name="description" content="A free, copy-ready generative AI use policy for law firms, built around ABA Formal Opinion 512, with a Word download and a rollout plan." />
+  <link rel="icon" type="image/png" href="logo-192.png" />
+  <link rel="apple-touch-icon" href="logo-192.png" />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/outfit-variable.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="fonts/dm-mono-500.woff2" crossorigin />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+
+
+    .post-hero{background:var(--burg);padding:100px 24px 64px;position:relative;overflow:hidden;}
+    .post-hero-grid{position:absolute;inset:0;opacity:0.04;background-image:repeating-linear-gradient(0deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px),repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 1px,transparent 1px,transparent 60px);}
+    .post-hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1;}
+    .post-eyebrow{display:flex;align-items:center;gap:20px;margin-bottom:20px;}
+    .post-cat{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lite);}
+    .post-date,.post-read{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.1em;color:rgba(255,255,255,0.5);}
+    .post-title{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,5vw,72px);line-height:0.95;text-transform:uppercase;color:#fff;max-width:900px;margin-bottom:24px;}
+    .post-lead{font-size:18px;color:rgba(255,255,255,0.8);max-width:700px;line-height:1.6;}
+    .post-section{background:var(--black);padding:64px 24px 80px;}
+    .post-layout{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 320px;gap:64px;align-items:start;}
+    .post-body h2{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,3vw,38px);text-transform:uppercase;color:#fff;margin-top:48px;margin-bottom:16px;line-height:1.05;}
+    .post-body h3{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;color:var(--gold);margin-top:32px;margin-bottom:12px;}
+    .post-body p{font-size:16px;color:#ccc;line-height:1.75;margin-bottom:20px;}
+    .post-body ul,.post-body ol{margin:0 0 20px 20px;}
+    .post-body li{font-size:15px;color:#ccc;line-height:1.7;margin-bottom:8px;}
+    .post-body strong{color:#e8e8e8;font-weight:500;}
+    .post-stat-box{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:32px;margin:40px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+    .stat-item{text-align:center;}
+    .stat-num{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:40px;color:var(--gold);line-height:1;}
+    .stat-lbl{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gray);margin-top:6px;}
+    .post-callout{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:24px 28px;margin:32px 0;}
+    .post-callout p{margin-bottom:0;color:#ddd;}
+    .post-highlight{background:#111;border:1px solid #1a1a1a;padding:28px 32px;margin:32px 0;}
+    .post-highlight h4{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box{background:var(--burg);padding:40px;margin:48px 0 0;text-align:center;}
+    .post-cta-box h3{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;text-transform:uppercase;color:#fff;margin-bottom:12px;}
+    .post-cta-box p{font-size:15px;color:rgba(255,255,255,0.75);margin-bottom:24px;}
+    .post-sidebar{position:sticky;top:80px;}
+    .sidebar-card{background:#111;border:1px solid #1a1a1a;padding:28px;margin-bottom:20px;}
+    .sidebar-card h5{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+    .toc-link{display:block;font-size:13px;color:var(--gray);padding:6px 0;border-bottom:1px solid #1a1a1a;transition:color 0.2s;}
+    .toc-link:last-child{border-bottom:none;}
+    .toc-link:hover{color:var(--gold);}
+    .related-link{display:block;padding:12px 0;border-bottom:1px solid #1a1a1a;}
+    .related-link:last-child{border-bottom:none;}
+    .related-cat{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);}
+    .related-title{font-size:13px;color:#ccc;margin-top:4px;line-height:1.4;transition:color 0.2s;}
+    .related-link:hover .related-title{color:#fff;}
+    .sidebar-cta{background:var(--burg)!important;border:none!important;}
+    .sidebar-cta p{font-size:14px;color:rgba(255,255,255,0.75);margin-bottom:16px;}
+
+
+    @media(max-width:768px){.post-layout{grid-template-columns:1fr;}.post-sidebar{position:static;}.post-stat-box{grid-template-columns:1fr;}}
+    @media(max-width:640px){.nav-links.open{display:flex;flex-direction:column;position:fixed;top:60px;left:0;right:0;background:var(--black);padding:24px;border-bottom:1px solid #1a1a1a;}}
+  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="AI Smartr" />
+  <meta property="og:title" content="AI Use Policy Template for Law Firms (Free Download) | AI Smartr" />
+  <meta property="og:description" content="A free, copy-ready generative AI use policy for law firms, built around ABA Formal Opinion 512, with a Word download and a rollout plan." />
+  <meta property="og:url" content="https://aismartr.com/blog-ai-use-policy-template-law-firms.html" />
+  <meta property="og:image" content="https://aismartr.com/logo-512.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="AI Use Policy Template for Law Firms (Free Download) | AI Smartr" />
+  <meta name="twitter:description" content="A free, copy-ready generative AI use policy for law firms, built around ABA Formal Opinion 512, with a Word download and a rollout plan." />
+  <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
+  <!-- Canonical -->
+  <link rel="canonical" href="https://aismartr.com/blog-ai-use-policy-template-law-firms.html" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aismartr.com/#org",
+      "name": "AI Smartr",
+      "url": "https://aismartr.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aismartr.com/logo-512.png",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://aismartr.com/logo-512.png",
+      "description": "AI agents for real estate, finance, legal, and professional services firms, plus workflows, integrations, and custom apps.",
+      "email": "derek@aismartr.com",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "New York, NY"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "knowsAbout": [
+        "AI agents",
+        "workflow automation",
+        "real estate",
+        "finance",
+        "legal",
+        "professional services"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/ai-smartr/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://aismartr.com/#website",
+      "url": "https://aismartr.com/",
+      "name": "AI Smartr",
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://aismartr.com/blog-ai-use-policy-template-law-firms.html#article",
+      "headline": "A Free AI Use Policy Template for Law Firms",
+      "description": "A free, copy-ready generative AI use policy for law firms, built around ABA Formal Opinion 512, with a Word download and a rollout plan.",
+      "datePublished": "2026-11-23",
+      "dateModified": "2026-11-23",
+      "author": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "publisher": {
+        "@id": "https://aismartr.com/#org"
+      },
+      "mainEntityOfPage": "https://aismartr.com/blog-ai-use-policy-template-law-firms.html",
+      "image": "https://aismartr.com/logo-512.png",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://aismartr.com/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://aismartr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://aismartr.com/blog.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "A Free AI Use Policy Template for Law Firms",
+          "item": "https://aismartr.com/blog-ai-use-policy-template-law-firms.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does a law firm need a written AI policy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ABA Formal Opinion 512 expects managerial lawyers to set clear firm policies on permissible uses of generative AI and to supervise how staff use it. Whether your state requires the policy in writing depends on its rules, so check with your state bar. A written policy is the simplest way to show you did it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a lawyer bill a client for time spent using AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, for the time actually spent. The ABA gives this example: if a lawyer spends 15 minutes entering information into a tool to draft a pleading, the lawyer may bill that time and the time spent reviewing the draft. In most circumstances a lawyer can't bill a client for the time it takes to learn how to use the tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do we have to tell clients we use AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rule 1.4 requires reasonable consultation with the client about the means used to reach their objectives, and Rule 1.6 protects client information unless the client gives informed consent. Many firms address AI in the engagement letter. Your state's guidance may say more, so check it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happened in Mata v. Avianca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two New York lawyers filed a brief that cited cases ChatGPT had invented. On June 22, 2023, Judge P. Kevin Castel of the Southern District of New York imposed a $5,000 penalty on the lawyers and their firm, and the case is a widely cited example of why attorney verification belongs in every AI policy."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-brand"><div class="nav-logo-wrap"><img src="logo-96.webp" alt="AI Smartr" width="48" height="48" /></div><span class="nav-wordmark">AI SMART<span>R</span></span></a><ul class="nav-links" id="navLinks"><li><a href="services.html">Services</a></li>
+      <li><a href="industries.html">Industries</a></li>
+<li><a href="about.html">About</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="contact.html">Contact</a></li><li><a href="contact.html" class="btn-nav">Get Started</a></li></ul><button class="nav-mobile-btn" aria-label="Toggle menu" onclick="document.getElementById('navLinks').classList.toggle('open')"><span></span><span></span><span></span></button></div></nav>
+<main id="main">
+
+<section class="post-hero">
+  <div class="post-hero-grid"></div>
+  <div class="post-hero-inner">
+    <div class="post-eyebrow"><span class="post-cat">Legal</span><span class="post-date">November 23, 2026</span><span class="post-read">10 min read</span></div>
+    <h1 class="post-title">A Free AI Use Policy Template for Law Firms</h1>
+    <p class="post-lead">ABA Formal Opinion 512 expects firms to set clear rules for AI. Here's a ten-section policy you can copy or download, with the reasoning behind each part.</p>
+  </div>
+</section>
+<div class="stripe"></div>
+<section class="post-section">
+  <div class="post-layout">
+    <article class="post-body">
+<div class="post-answer"><span class="pa-label">Short answer</span><p>A law firm AI use policy needs ten sections: scope, approved tools, data rules, attorney review, AI agents, client consent, billing, logging, incidents, and training. Below is a template you can copy or download as a Word file, built around the duties in ABA Formal Opinion 512.</p></div>
+
+
+      <div class="post-callout">
+        <p><strong>A template, and not legal advice.</strong> Adapt it with your ethics counsel, your state's rules, and any court-specific orders. Brackets mark where your firm fills in its own details.</p>
+      </div>
+
+      <p><a href="ai-use-policy-template-law-firms.docx" class="btn-primary" download>Download the Word template</a></p>
+
+      <h2 id="covers">What Does a Law Firm AI Use Policy Need to Cover?</h2>
+
+      <p>A good policy answers the questions a partner, an associate, or a state bar investigator would ask: which tools, what data, who checks the output, what clients are told, how time is billed, and what gets logged. Each section ties back to a duty in Opinion 512.</p>
+
+      <div class="post-table-wrap">
+      <table class="post-table">
+        <thead><tr><th>Policy section</th><th>Duty it supports</th><th>Model Rule</th></tr></thead>
+        <tbody>
+          <tr><th>Approved tools, data rules</th><td>Competence and confidentiality</td><td>1.1, 1.6</td></tr>
+          <tr><th>Attorney review</th><td>Competence and candor to the tribunal</td><td>1.1, 3.1, 3.3</td></tr>
+          <tr><th>AI agents, logging, incidents, training</th><td>Supervision</td><td>5.1, 5.3</td></tr>
+          <tr><th>Client communication and consent</th><td>Communication</td><td>1.4</td></tr>
+          <tr><th>Billing</th><td>Reasonable fees</td><td>1.5</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <p>For the duty-by-duty reasoning, read our <a href="blog-aba-opinion-512-ai-agents-law-firms.html">Opinion 512 checklist for AI agents</a>.</p>
+
+      <h2 id="why">Why Does a Firm Need a Written Policy at All?</h2>
+
+      <p>Opinion 512 expects managerial lawyers to set clear policies on permissible uses of generative AI and to supervise how staff use it. A written policy turns that expectation into something you can train on and audit.</p>
+
+      <p>The cost of skipping verification is public. In Mata v. Avianca, two New York lawyers filed a brief citing cases that ChatGPT had invented, and on June 22, 2023, Judge P. Kevin Castel imposed a $5,000 penalty on the lawyers and their firm.</p>
+
+      <h2 id="template">The Template</h2>
+
+      <p>Copy it into your firm's format, or <a href="ai-use-policy-template-law-firms.docx" download>download the Word version</a>.</p>
+
+<div class="policy-doc">
+<h3 class="pd-title">[Firm Name] Generative AI Use Policy</h3>
+<p class="pd-meta">Effective date: [date] &nbsp;|&nbsp; Owner: [Role] &nbsp;|&nbsp; Review: every 12 months and when tools or rules change</p>
+<h4>1. Purpose and scope</h4>
+<p>This policy sets the rules for using generative AI at [Firm Name], including chatbots, drafting assistants, and AI agents. It applies to every attorney, paralegal, staff member, contractor, and vendor who works on firm matters.</p>
+<p>It supports our duties under the Rules of Professional Conduct, including competence, confidentiality, communication, supervision, candor to the tribunal, and reasonable fees.</p>
+<h4>2. Approved tools</h4>
+<p>Only tools on the Approved Tools List may be used with firm or client information. [Role, e.g., the General Counsel or Managing Partner] keeps the list.</p>
+<p>A tool is added only after review of its terms, data handling, security, and retention. Personal accounts and unapproved tools may not be used for firm work. To request a tool, [process].</p>
+<h4>3. Data rules</h4>
+<p>Level 1, never entered into any AI tool: [e.g., sealed or court-protected material, government ID numbers, bank account numbers, health records].</p>
+<p>Level 2, entered only into approved tools configured so our data is not used to train models: client confidential information and attorney work product.</p>
+<p>Level 3, allowed in any approved tool: public information and firm marketing material.</p>
+<h4>4. Attorney review and verification</h4>
+<p>A lawyer is responsible for everything produced with AI help. Before using AI output, the responsible lawyer must verify every citation, quotation, and factual claim against a primary source, and review the draft for accuracy, completeness, and tone.</p>
+<p>AI output may not be filed with a court or sent to a client without attorney review. A person signs every filing.</p>
+<h4>5. AI agents</h4>
+<p>An AI agent that takes actions, such as sending messages, updating records, or moving files, needs: a named owner; a written list of what it may access and do; least-privilege access; human approval before it sends anything to a client, files anything, or changes billing; a log of every action; and a way to switch it off immediately.</p>
+<h4>6. Client communication and consent</h4>
+<p>Our engagement letter describes how we use AI in client matters. We obtain informed consent where the Rules or the client&#x27;s instructions require it. Attorneys answer client questions about AI use honestly.</p>
+<p>[Role] reviews the engagement-letter language every [12 months].</p>
+<h4>7. Billing</h4>
+<p>We bill for time actually spent, including time spent reviewing AI output. We do not bill clients for time spent learning an AI tool. [Describe any flat-fee or per-task arrangements.]</p>
+<h4>8. Logging and records</h4>
+<p>We record which tools were used on which matters, who used them, and who reviewed the output. Agent logs are kept for [period] and retained under our records policy.</p>
+<h4>9. Incidents</h4>
+<p>Report any suspected leak of client information, any AI error that reached a client or a court, and any tool misuse to [Role] within [24 hours].</p>
+<p>[Role] decides, with ethics counsel, whether to notify the client, the court, or our insurance carrier.</p>
+<h4>10. Training, ownership, and review</h4>
+<p>Everyone completes AI training when they join and every [12 months]. [Role] owns this policy and reviews it at least once a year, and whenever tools, court rules, or ethics guidance change.</p>
+<p>Violations are handled under [firm discipline policy].</p>
+<h4>Acknowledgment</h4><p>I have read and will follow this policy. Name: ____________ &nbsp; Date: ____________</p></div>
+
+      <h2 id="rollout">How Do You Roll the Policy Out?</h2>
+
+      <ol>
+        <li><strong>Name an owner.</strong> One person is accountable for the policy and the tool list.</li>
+        <li><strong>Inventory what's already in use.</strong> Ask everyone, with amnesty, which AI tools they've tried. Shadow use is common.</li>
+        <li><strong>Approve a short list.</strong> Review terms and data handling, then publish the list.</li>
+        <li><strong>Train and acknowledge.</strong> A 30-minute session and a signed acknowledgment.</li>
+        <li><strong>Spot-check quarterly.</strong> Sample a few matters, confirm the log exists, and confirm review happened.</li>
+      </ol>
+
+      <h2 id="agents">How Do AI Agents Change the Policy?</h2>
+
+      <p>A chatbot answers questions. An agent acts: it sends messages, updates records, and moves files. Section 5 of the template covers the extra controls an agent needs, namely a named owner, scoped access, approval gates, a log, and an off switch.</p>
+
+      <p>These are the controls we build into every <a href="ai-agents-for-legal.html">AI agent for law firms</a>. Our <a href="blog-ai-security-2026.html">AI agent security guide</a> goes deeper on access, data leakage, and audit trails.</p>
+
+      <h2 id="faq">Frequently Asked Questions</h2>
+
+      <h3>Does a law firm need a written AI policy?</h3>
+
+      <p>ABA Formal Opinion 512 expects managerial lawyers to set clear firm policies on permissible uses of generative AI and to supervise how staff use it. Whether your state requires the policy in writing depends on its rules, so check with your state bar. A written policy is the simplest way to show you did it.</p>
+
+      <h3>Can a lawyer bill a client for time spent using AI?</h3>
+
+      <p>Yes, for the time actually spent. The ABA gives this example: if a lawyer spends 15 minutes entering information into a tool to draft a pleading, the lawyer may bill that time and the time spent reviewing the draft. In most circumstances a lawyer can&#x27;t bill a client for the time it takes to learn how to use the tool.</p>
+
+      <h3>Do we have to tell clients we use AI?</h3>
+
+      <p>Rule 1.4 requires reasonable consultation with the client about the means used to reach their objectives, and Rule 1.6 protects client information unless the client gives informed consent. Many firms address AI in the engagement letter. Your state&#x27;s guidance may say more, so check it.</p>
+
+      <h3>What happened in Mata v. Avianca?</h3>
+
+      <p>Two New York lawyers filed a brief that cited cases ChatGPT had invented. On June 22, 2023, Judge P. Kevin Castel of the Southern District of New York imposed a $5,000 penalty on the lawyers and their firm, and the case is a widely cited example of why attorney verification belongs in every AI policy.</p>
+
+      <p>New York firms: see our page on <a href="ai-agents-new-york.html">AI agents for New York firms</a>, which links the NYSBA and NYC Bar resources.</p>
+
+
+      <div class="post-sources" id="sources">
+        <h2>Sources</h2>
+        <ol><li><a href="https://www.americanbar.org/news/abanews/aba-news-archives/2024/07/aba-issues-first-ethics-guidance-ai-tools/" rel="noopener" target="_blank">American Bar Association, <em>ABA issues first ethics guidance on a lawyer's use of AI tools</em> (July 29, 2024)</a></li><li><a href="https://www.americanbar.org/content/dam/aba/administrative/professional_responsibility/ethics-opinions/aba-formal-opinion-512.pdf" rel="noopener" target="_blank">American Bar Association, <em>Formal Opinion 512: Generative Artificial Intelligence Tools</em> (July 29, 2024)</a></li><li><a href="https://law.justia.com/cases/federal/district-courts/new-york/nysdce/1:2022cv01461/575368/54/" rel="noopener" target="_blank"><em>Mata v. Avianca, Inc.</em>, Opinion and Order on sanctions, No. 1:22-cv-01461 (S.D.N.Y. June 22, 2023)</a></li><li><a href="https://thebarexaminer.ncbex.org/article/fall-2024/generative-artificial-intelligence-tools/" rel="noopener" target="_blank">Muchman, <em>Generative Artificial Intelligence Tools: ABA Formal Opinion 512 Provides Needed Guidance</em>, The Bar Examiner (Fall 2024)</a></li><li><a href="https://nysba.org/wp-content/uploads/2022/03/2024-April-Report-and-Recommendations-of-the-Task-Force-on-Artificial-Intelligence.pdf" rel="noopener" target="_blank">New York State Bar Association, <em>Report and Recommendations of the Task Force on Artificial Intelligence</em> (April 2024)</a></li></ol>
+        <p>The template is a starting point. State rules and court orders can differ, so check yours.</p>
+      </div>
+
+      <div class="post-cta-box">
+        <h3>Want Agents That Fit Your Policy?</h3>
+        <p>We build AI agents for law firms with scoped access, approval gates, and audit trails, so the policy you write matches how the agents work. Book a free 30-minute consultation.</p>
+        <a href="contact.html#cal-booking" class="btn-primary">Book a Free Call</a>
+      </div>
+
+    </article>
+
+    <aside class="post-sidebar">
+      <div class="sidebar-card">
+        <p class="sc-h">In This Article</p>
+        <a href="#covers" class="toc-link">What It Covers</a>
+        <a href="#why" class="toc-link">Why Write One</a>
+        <a href="#template" class="toc-link">The Template</a>
+        <a href="#rollout" class="toc-link">Rollout</a>
+        <a href="#agents" class="toc-link">AI Agents</a>
+        <a href="#faq" class="toc-link">FAQ</a>
+        <a href="#sources" class="toc-link">Sources</a>
+      </div>
+      <div class="sidebar-card">
+        <p class="sc-h">Related Articles</p>
+        <a href="blog-aba-opinion-512-ai-agents-law-firms.html" class="related-link"><div class="related-cat">Legal</div><div class="related-title">ABA Formal Opinion 512, Translated Into Controls for AI Agents</div></a>
+        <a href="blog-ai-for-law-firms.html" class="related-link"><div class="related-cat">Legal</div><div class="related-title">AI Automation for Law Firms: Reclaim Admin Time</div></a>
+        <a href="blog-ai-security-2026.html" class="related-link"><div class="related-cat">Security</div><div class="related-title">AI Security in 2026: What Every Business Needs to Know</div></a>
+      </div>
+      <div class="sidebar-card sidebar-cta">
+        <p class="sc-h">Get Started</p>
+        <p>Book a free 30-minute consultation and walk away with a clear AI roadmap.</p>
+        <a href="contact.html" class="btn-primary" style="width:100%;text-align:center;display:block;font-size:12px;padding:12px 16px;">Book Free Consultation</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="footer"><div class="footer-inner"><div class="footer-grid"><div><div class="footer-brand-wordmark">AI SMART<span>R</span></div><p class="footer-tagline">We save you time, money, and headaches.<br>AI agents for real estate, finance, legal, and professional services.</p></div><div class="footer-col"><p class="fh">Services</p><ul><li><a href="services.html">Workflow Automation</a></li><li><a href="services.html">AI Agents</a></li><li><a href="services.html">Integrations</a></li><li><a href="services.html">Fine-Tuned Models</a></li></ul></div><div class="footer-col"><p class="fh">Industries</p><ul><li><a href="ai-agents-for-real-estate.html">Real Estate</a></li><li><a href="ai-agents-for-finance.html">Finance</a></li><li><a href="ai-agents-for-legal.html">Legal</a></li><li><a href="ai-agents-for-professional-services.html">Professional Services</a></li><li><a href="ai-agents-new-york.html">New York</a></li></ul></div>
+      <div class="footer-col"><p class="fh">Company</p><ul><li><a href="about.html">About</a></li><li><a href="blog.html">Blog</a></li><li><a href="ai-roi-calculator.html">ROI Calculator</a></li><li><a href="contact.html">Contact</a></li></ul></div><div class="footer-col"><p class="fh">Get Started</p><ul><li><a href="contact.html">Book a Consultation</a></li><li><a href="mailto:derek@aismartr.com">derek@aismartr.com</a></li><li><a href="https://www.linkedin.com/company/ai-smartr/" target="_blank">LinkedIn</a></li></ul></div></div><div class="footer-bottom"><span class="footer-copy">&copy; 2026 AI Smartr. All rights reserved.</span></div></div></footer>
+<script src="shared.js" defer></script>
+<script src="analytics.js" defer></script>
+</body>
+</html>

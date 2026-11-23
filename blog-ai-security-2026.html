@@ -216,6 +216,8 @@
 <section class="post-section">
   <div class="post-layout">
     <article class="post-body">
+      <div class="post-answer"><span class="pa-label">Short answer</span><p>The five main risks of AI agents are prompt injection, data leakage, over-permissioned agents, insecure third-party skills, and no audit trail. The right approach is scoped access, approval on consequential actions, vetted components, and a complete log of what each agent does.</p></div>
+
 
       <div class="post-callout">
         <p><strong>The bar is higher for client data.</strong> Financial records, privileged communications, and transaction files demand scoped access, approval gates on sensitive actions, and a log of everything an agent does.</p>
@@ -245,7 +247,7 @@
         </div>
       </div>
 
-      <h2 id="prompt-injection">Risk 1: Prompt Injection</h2>
+      <h2 id="prompt-injection">Risk 1: What Is Prompt Injection?</h2>
 
       <p>Prompt injection is the most misunderstood AI security risk. Malicious content inside the data an agent processes carries instructions that override the agent's intended behavior.</p>
 
@@ -253,7 +255,7 @@
 
       <p>The defense is strict instruction boundaries, input sanitization, and tight limits on what the agent can do without explicit authorization. Any agent that reads external content and takes consequential actions needs it.</p>
 
-      <h2 id="data-leakage">Risk 2: Data Leakage</h2>
+      <h2 id="data-leakage">Risk 2: How Does Data Leak Through an Agent?</h2>
 
       <p>AI can leak data in ways traditional software doesn't. Send proprietary data as context to a third-party AI service and it passes through systems you don't control. Depending on the vendor's policy, it may train future models.</p>
 
@@ -263,7 +265,7 @@
 
       <p>Users can leak into each other too. If your AI application isn't scoped properly, one user's data can bleed into another user's context. That takes careful system design, and good intentions won't cover it.</p>
 
-      <h2 id="over-permissioned">Risk 3: Over-Permissioned Agents</h2>
+      <h2 id="over-permissioned">Risk 3: What Are Over-Permissioned Agents?</h2>
 
       <p>This is the most common risk we see. An agent gets connected to a CRM with admin access because that was the easiest setting to configure. It needs read access to 20 percent of the system and has write access to everything.</p>
 
@@ -271,13 +273,13 @@
 
       <p>Document what access each agent has, review it regularly, and revoke permissions that sit unused.</p>
 
-      <h2 id="third-party-skills">Risk 4: Insecure Third-Party Skills</h2>
+      <h2 id="third-party-skills">Risk 4: Why Are Third-Party Skills Risky?</h2>
 
       <p>Many agent frameworks support plugins and skills from third parties. They extend what the agent can do (search the web, read files, call APIs), and each one is also an attack surface.</p>
 
       <p>A malicious or sloppy skill can exfiltrate data, take unintended actions, or open a channel around your security controls. Before you enable one, verify the source, review the permissions it requests, and understand what data it can touch.</p>
 
-      <h2 id="audit-trail">Risk 5: No Audit Trail</h2>
+      <h2 id="audit-trail">Risk 5: Why Does an Audit Trail Matter?</h2>
 
       <p>If your agent does something unexpected and you can't find out what, you have a serious problem for security, compliance, customer trust, and your own sleep.</p>
 
@@ -290,13 +292,13 @@
         <p style="font-size:15px;color:#ccc;line-height:1.7;margin-bottom:0px;">Least-privilege access on every integration. Human approval gates on high-consequence actions. Input sanitization for any agent processing external content. Comprehensive audit logging. Clear data usage agreements with every AI vendor. Regular access reviews. That's the floor.</p>
       </div>
 
-      <h2 id="governance-as-code">Governance-as-Code Is Becoming the Standard</h2>
+      <h2 id="governance-as-code">What Is Governance-as-Code?</h2>
 
       <p>As businesses move from single chatbots to multi-agent systems that act with less supervision, the industry has settled on a term for doing it safely: governance-as-code. Instead of a policy document and a hope that people follow it, the rules live in the system: scoped permissions, mandatory approval gates, and audit logging an agent can't bypass.</p>
 
       <p>Any business giving an agent real access to email, CRM, or financial systems needs this. The five risks above are exactly what governance-as-code is built to close.</p>
 
-      <h2 id="vendor-questions">Questions to Ask Every AI Vendor</h2>
+      <h2 id="vendor-questions">What Should You Ask Every AI Vendor?</h2>
 
       <p>Evaluating AI tools or a third-party implementation? These questions separate vendors who take security seriously from those who don't.</p>
 
@@ -311,7 +313,7 @@
 
       <p>A vendor who can't answer these clearly shouldn't get your business data.</p>
 
-      <h2 id="right-approach">The Right Approach</h2>
+      <h2 id="right-approach">What Is the Right Approach?</h2>
 
       <p>Security doesn't slow AI adoption down. Done right it speeds it up, because a solid posture means you can move fast without worrying about what you missed.</p>
 

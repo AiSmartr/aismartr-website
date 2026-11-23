@@ -4,7 +4,7 @@
      POSTHOG_HOST      'https://us.i.posthog.com' (US) or 'https://eu.i.posthog.com' (EU)
      GA4_ID            optional, e.g. 'G-XXXXXXXXXX'
      PLAUSIBLE_DOMAIN  optional, e.g. 'aismartr.com'
-   Events: cta_click, email_click, generate_lead (Cal booking done), ai_referral (visit from an AI answer engine). */
+   Events: cta_click, email_click, file_download, generate_lead (Cal booking done), ai_referral (visit from an AI answer engine). */
 (function () {
   var POSTHOG_KEY = '';
   var POSTHOG_HOST = 'https://us.i.posthog.com';
@@ -65,7 +65,9 @@
     var a = e.target.closest && e.target.closest('a');
     if (!a) return;
     var href = a.getAttribute('href') || '';
-    if (a.matches('.btn-primary,.btn-go,.btn-nav,.btn-line,.btn-ghost') || href.indexOf('cal-booking') > -1 || href === '#book') {
+    if (a.hasAttribute('download')) {
+      window.aiTrack('file_download', { file: href.split('/').pop(), page: location.pathname });
+    } else if (a.matches('.btn-primary,.btn-go,.btn-nav,.btn-line,.btn-ghost') || href.indexOf('cal-booking') > -1 || href === '#book') {
       window.aiTrack('cta_click', { label: (a.textContent || '').trim().slice(0, 60), page: location.pathname });
     } else if (href.indexOf('mailto:') === 0) {
       window.aiTrack('email_click', { page: location.pathname });

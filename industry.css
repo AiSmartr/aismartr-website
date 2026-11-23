@@ -71,3 +71,10 @@ a.ind-card:hover{border-color:var(--gold);transform:translateY(-3px);}
 .ind-card.featured{border-color:var(--gold);position:relative;}
 .ind-badge{position:absolute;top:-1px;right:20px;transform:translateY(-50%);background:var(--gold);color:var(--black);font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:5px 12px;}
 h3.service-name{margin:0;}
+
+/* Answer-first summary under the hero */
+.ind-answer{padding:44px 48px 8px;background:var(--black);}
+.ind-answer-inner{max-width:1200px;margin:0 auto;border-left:3px solid var(--gold);padding:4px 0 4px 26px;}
+.ind-answer .section-eyebrow{margin-bottom:10px;}
+.ind-answer p.ind-answer-text{font-size:20px;color:#eee;line-height:1.65;max-width:920px;margin:0;}
+@media(max-width:768px){.ind-answer{padding:32px 24px 4px;}.ind-answer p.ind-answer-text{font-size:17px;}}

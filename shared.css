@@ -198,3 +198,24 @@ main{display:block;}
 .sidebar-card .sc-h{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
 
 .post-highlight .ph-h{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:18px;text-transform:uppercase;color:#fff;margin:0 0 12px;line-height:1.1;}
+
+/* Answer-first block, scripts, policy template, tables (posts) */
+.post-body .post-answer{background:#111;border:1px solid #1a1a1a;border-left:3px solid var(--gold);padding:22px 26px;margin:0 0 36px;}
+.post-body .post-answer .pa-label{display:block;font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
+.post-body .post-answer p{font-size:17px;color:#eee;line-height:1.65;margin:0;}
+.post-body .script-card{background:rgba(107,20,40,0.2);border-left:3px solid var(--gold);padding:18px 24px;margin:0 0 18px;}
+.post-body .script-card .sc-label{display:block;font-family:'DM Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;}
+.post-body .script-card p{margin:0;color:#eee;}
+.post-body .policy-doc{background:#111;border:1px solid #2a2a2a;padding:32px;margin:28px 0 40px;}
+.post-body .policy-doc .pd-title{font-family:'Barlow Condensed',sans-serif;font-size:28px;font-weight:800;color:#fff;margin:0 0 6px;}
+.post-body .policy-doc .pd-meta{font-family:'DM Mono',monospace;font-size:12px;color:#999;margin-bottom:24px;}
+.post-body .policy-doc h4{font-family:'Barlow Condensed',sans-serif;font-size:19px;font-weight:700;color:var(--gold);margin:24px 0 8px;letter-spacing:.02em;}
+.post-body .policy-doc p{margin-bottom:12px;}
+.post-table-wrap{overflow-x:auto;margin:28px 0;-webkit-overflow-scrolling:touch;}
+.post-table{width:100%;border-collapse:collapse;font-size:15px;min-width:520px;}
+.post-table th,.post-table td{border:1px solid #2a2a2a;padding:12px 14px;text-align:left;vertical-align:top;color:#ccc;line-height:1.55;}
+.post-table thead th{background:#111;color:var(--gold);font-family:'DM Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;}
+.post-table tbody th{color:#fff;font-weight:600;background:#0d0d0d;width:26%;}
+@media (max-width:600px){.post-body .policy-doc{padding:22px 18px;}.post-body .post-answer{padding:18px 20px;}}
+.post-layout > *{min-width:0;}
+.post-table-wrap{max-width:100%;}
