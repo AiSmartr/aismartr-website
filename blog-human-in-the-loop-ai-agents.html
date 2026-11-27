@@ -4,8 +4,8 @@
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://app.cal.com https://www.googletagmanager.com https://plausible.io https://*.posthog.com; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https://www.google-analytics.com; connect-src 'self' https://app.cal.com https://cal.com https://www.google-analytics.com https://*.analytics.google.com https://plausible.io https://*.posthog.com; frame-src https://cal.com https://app.cal.com; worker-src 'self' blob: data:; object-src 'none'; base-uri 'self'; form-action 'self' https://formspree.io;" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>Human-in-the-Loop AI Agents: A Design Guide | AI Smartr</title>
-  <meta name="description" content="Customers still want a person in the loop. Learn where AI agents should run alone, where humans step in, and how to design the handoff." />
+  <title>Human-in-the-Loop AI Agents: When to Step In | AI Smartr</title>
+  <meta name="description" content="Where should an AI agent run alone, and where should a person decide? A clear split, escalation triggers, and a safe rollout, with 2026 data." />
   <link rel="icon" type="image/png" href="logo-192.png" />
   <link rel="apple-touch-icon" href="logo-192.png" />
   <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin />
@@ -65,16 +65,16 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="AI Smartr" />
-  <meta property="og:title" content="Human-in-the-Loop AI Agents: A Design Guide | AI Smartr" />
-  <meta property="og:description" content="Customers still want a person in the loop. Learn where AI agents should run alone, where humans step in, and how to design the handoff." />
+  <meta property="og:title" content="Human-in-the-Loop AI Agents: When to Step In | AI Smartr" />
+  <meta property="og:description" content="Where should an AI agent run alone, and where should a person decide? A clear split, escalation triggers, and a safe rollout, with 2026 data." />
   <meta property="og:url" content="https://aismartr.com/blog-human-in-the-loop-ai-agents.html" />
   <meta property="og:image" content="https://aismartr.com/logo-512.png" />
   <meta property="og:image:width" content="512" />
   <meta property="og:image:height" content="512" />
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Human-in-the-Loop AI Agents: A Design Guide | AI Smartr" />
-  <meta name="twitter:description" content="Customers still want a person in the loop. Learn where AI agents should run alone, where humans step in, and how to design the handoff." />
+  <meta name="twitter:title" content="Human-in-the-Loop AI Agents: When to Step In | AI Smartr" />
+  <meta name="twitter:description" content="Where should an AI agent run alone, and where should a person decide? A clear split, escalation triggers, and a safe rollout, with 2026 data." />
   <meta name="twitter:image" content="https://aismartr.com/logo-512.png" />
   <!-- Canonical -->
   <link rel="canonical" href="https://aismartr.com/blog-human-in-the-loop-ai-agents.html" />
@@ -115,7 +115,8 @@
       ],
       "sameAs": [
         "https://www.linkedin.com/company/ai-smartr/"
-      ]
+      ],
+      "alternateName": "AISmartr"
     },
     {
       "@type": "WebSite",
@@ -130,10 +131,10 @@
     {
       "@type": "Article",
       "@id": "https://aismartr.com/blog-human-in-the-loop-ai-agents.html#article",
-      "headline": "Customers Still Want a Human in the Loop. Design Your AI Agents Around It.",
-      "description": "Customers still want a person in the loop. Learn where AI agents should run alone, where humans step in, and how to design the handoff.",
+      "headline": "Human-in-the-Loop AI Agents: When Should a Person Step In?",
+      "description": "Where should an AI agent run alone, and where should a person decide? A clear split, escalation triggers, and a safe rollout, with 2026 data.",
       "datePublished": "2026-10-22",
-      "dateModified": "2026-11-01",
+      "dateModified": "2026-11-27",
       "author": {
         "@id": "https://aismartr.com/#derek-moore"
       },
@@ -165,7 +166,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Customers Still Want a Human in the Loop. Design Your AI Agents Around It.",
+          "name": "Human-in-the-Loop AI Agents: When Should a Person Step In?",
           "item": "https://aismartr.com/blog-human-in-the-loop-ai-agents.html"
         }
       ]
@@ -178,7 +179,7 @@
       "worksFor": {
         "@id": "https://aismartr.com/#org"
       },
-      "url": "https://aismartr.com/about.html"
+      "url": "https://aismartr.com/about.html#derek-moore"
     }
   ]
 }
@@ -213,9 +214,9 @@
     <div class="post-eyebrow">
       <span class="post-cat">AI Agents</span>
       <span class="post-date">October 22, 2026</span>
-      <span class="post-read">6 min read</span><span class="post-by">By Derek Moore</span>
+      <span class="post-read">6 min read</span><span class="post-by">By <a href="about.html#derek-moore" style="color:inherit">Derek Moore</a></span>
     </div>
-    <h1 class="post-title">Customers Still Want a Human in the Loop. Design Your AI Agents Around It.</h1>
+    <h1 class="post-title">Human-in-the-Loop AI Agents: When Should a Person Step In?</h1>
     <p class="post-lead">Businesses are racing to put agents in front of clients. Clients aren't racing with them. In law, finance, and real estate, where trust carries the relationship, the companies that win will design for the gap.</p>
   </div>
 </section>
@@ -225,6 +226,8 @@
   <div class="post-layout">
     <article class="post-body">
       <div class="post-answer"><span class="pa-label">Short answer</span><p>Keep a human in the loop wherever trust carries the relationship. Adobe's 2026 report found customers are more comfortable when an agent works with a brand's human representative (45%) than when it makes a final decision alone (21%). Let agents run alone on routine work, and design the handoff to a person along with the agent.</p></div>
+
+      <div class="post-table-wrap"><table class="post-table"><thead><tr><th>Decision</th><th>Agent runs alone</th><th>Person stays in the loop</th></tr></thead><tbody><tr><th>Stakes</th><td>Low-stakes, reversible steps such as scheduling and status updates</td><td>Anything legal, financial, or hard to reverse</td></tr><tr><th>Money</th><td>Order and status lookups</td><td>Refunds, credits, and pricing exceptions above your threshold</td></tr><tr><th>Conversations</th><td>Routing and triage to the right team</td><td>Complaints and emotionally charged conversations</td></tr><tr><th>Output</th><td>Drafts and summaries for review, auditable record updates</td><td>Low-confidence cases, or when the customer asks for a person</td></tr></tbody></table></div>
 
 
       <div class="post-callout">

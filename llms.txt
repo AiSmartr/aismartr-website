@@ -47,6 +47,8 @@ Figures from third-party studies (they are not AI Smartr client results): 171% i
 3. Build and integration, with most implementations live within one week
 4. Ongoing monitoring, optimization, and support
 
+Full text of the industry pages and every post: https://aismartr.com/llms-full.txt
+
 ## Pages
 
 - [Home](https://aismartr.com/): Overview of services

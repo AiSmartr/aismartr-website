@@ -224,3 +224,7 @@ main{display:block;}
 .bench-note{max-width:1200px;margin:0 auto;padding:14px 48px 0;font-size:12px;line-height:1.6;color:#999;}
 .bench-note a{color:#bbb;text-decoration:underline;}
 @media(max-width:768px){.bench-note{padding:12px 24px 0;}}
+
+.author-block{padding:64px 48px;}.author-inner{max-width:900px;margin:0 auto;}.author-role{font-family:'DM Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:8px 0 14px;}.author-bio{font-size:17px;color:#ccc;line-height:1.7;}.author-bio a{color:var(--gold);}
+@media(max-width:768px){.author-block{padding:48px 24px;}}
+.author-bio a{text-decoration:underline;}
